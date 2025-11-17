@@ -2,12 +2,14 @@ import axios from 'axios';
 import { useAuthStore } from '../stores/auth';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { ACCESS_TOKEN } from '../common/constants';
+import { getLogger } from './logger';
 
 /**
  * Axios 实例（可设置 baseURL）。
  * @type {import('axios').AxiosInstance}
  */
 export const http = axios.create({ baseURL: 'http://139.196.151.216:9998' });
+const log = getLogger('http');
 
 /**
  * 注入认证头：X-Access-Token（优先取 store，回退到 AsyncStorage 的 ACCESS_TOKEN）
@@ -15,6 +17,7 @@ export const http = axios.create({ baseURL: 'http://139.196.151.216:9998' });
  * @returns {Promise<import('axios').InternalAxiosRequestConfig>}
  */
 http.interceptors.request.use(async config => {
+  config.metadata = { startTime: Date.now() };
   let token = useAuthStore.getState().token;
   if (!token) {
     const stored = await AsyncStorage.getItem(ACCESS_TOKEN);
@@ -26,6 +29,14 @@ http.interceptors.request.use(async config => {
       'X-Access-Token': token,
     };
   }
+  if (__DEV__) {
+    const method = (config.method || 'GET').toUpperCase();
+    const url = `${config.baseURL || ''}${config.url || ''}`;
+    const headers = config.headers || {};
+    const ct = headers['Content-Type'] || headers['content-type'];
+    const tokenMask = headers['X-Access-Token'] ? '***' : undefined;
+    log.info('Request', { method, url, params: config.params, data: config.data, headers: { 'Content-Type': ct, 'X-Access-Token': tokenMask } });
+  }
   return config;
 });
 
@@ -34,8 +45,29 @@ http.interceptors.request.use(async config => {
  * @type {import('axios').AxiosResponse}
  */
 http.interceptors.response.use(
-  response => response,
-  error => Promise.reject(error),
+  response => {
+    if (__DEV__) {
+      const start = response.config && response.config.metadata && response.config.metadata.startTime;
+      const duration = start ? Date.now() - start : undefined;
+      const method = (response.config.method || 'GET').toUpperCase();
+      const url = `${response.config.baseURL || ''}${response.config.url || ''}`;
+      log.info('Response', { method, url, status: response.status, duration, data: response.data });
+    }
+    return response;
+  },
+  error => {
+    if (__DEV__) {
+      const cfg = error.config || {};
+      const start = cfg.metadata && cfg.metadata.startTime;
+      const duration = start ? Date.now() - start : undefined;
+      const method = (cfg.method || 'GET').toUpperCase();
+      const url = `${cfg.baseURL || ''}${cfg.url || ''}`;
+      const status = error.response && error.response.status;
+      const message = error.message;
+      log.error('Error', { method, url, status, duration, message, data: error.response && error.response.data });
+    }
+    return Promise.reject(error);
+  },
 );
 
 export default http;

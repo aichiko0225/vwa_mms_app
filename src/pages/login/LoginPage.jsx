@@ -12,7 +12,7 @@ import logoImage from '../../assets/icons/qa-logo.png';
 export default function LoginPage() {
   const navigation = useNavigation();
   const login = useAuthStore(s => s.login);
-  const { control, handleSubmit, setValue, watch } = useForm({ defaultValues: { username: '', password: '', phone: '', code: '' } });
+  const { control, handleSubmit, setValue, watch } = useForm({ defaultValues: { username: 'FPXNUH1', password: '123456', phone: '', code: '' } });
   const [showPswd, setShowPswd] = useState(false);
   const { loading, countdown, queryPhone, sendSmsCode, login: loginReq } = useAuthFlow();
   const username = watch('username');
@@ -121,6 +121,6 @@ const styles = StyleSheet.create({
   input: { marginBottom: 12 },
   row: { flexDirection: 'row', alignItems: 'center' },
   codeBtn: { marginLeft: 8, height: 48, justifyContent: 'center' },
-  forget: { textAlign: 'right', padding: 8 },
+  forget: { textAlign: 'right', padding: 8, color: '#fff' },
   toggle: { textAlign: 'right', marginBottom: 8 }
 });

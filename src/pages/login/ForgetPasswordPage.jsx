@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { View, StyleSheet, Alert, Text as RNText } from 'react-native';
 import { Button, TextInput } from 'react-native-paper';
+import MaterialDesignIcons from '@react-native-vector-icons/material-design-icons';
 import { useRoute, useNavigation } from '@react-navigation/native';
 import { useForm, Controller } from 'react-hook-form';
 import useForgetPasswordFlow from '../../hooks/useForgetPasswordFlow';
@@ -17,9 +18,6 @@ export default function ForgetPasswordPage() {
   const { countdown, queryEmail, queryRole, sendEmailCode, validatePassword, submitForgetPassword } = useForgetPasswordFlow();
   const user = watch('user');
   const email = watch('email');
-  const code = watch('code');
-  const newPassword = watch('newPassword');
-  const confirmPassword = watch('confirmPassword');
 
   useEffect(() => { if (user) { handleQueryEmail(); handleQueryRole(); } }, [user]);
 
@@ -68,13 +66,13 @@ export default function ForgetPasswordPage() {
       Alert.alert('Validation', 'The two password entries are different!');
       return;
     }
-    if (!validatePassword(newPassword, isAdmin)) {
-      Alert.alert('Validation', isAdmin === 1
-        ? 'A 15-Bit Combination (Uppercase Letters, Lowercase Letters, Numbers And Special Characters) Containing At Least Three Of The Following Four Conditions.'
-        : 'A 12-Bit Combination (Uppercase Letters, Lowercase Letters, Numbers And Special Characters) Containing At Least Three Of The Following Four Conditions.'
-      );
-      return;
-    }
+    // if (!validatePassword(newPassword, isAdmin)) {
+    //   Alert.alert('Validation', isAdmin === 1
+    //     ? 'A 15-Bit Combination (Uppercase Letters, Lowercase Letters, Numbers And Special Characters) Containing At Least Three Of The Following Four Conditions.'
+    //     : 'A 12-Bit Combination (Uppercase Letters, Lowercase Letters, Numbers And Special Characters) Containing At Least Three Of The Following Four Conditions.'
+    //   );
+    //   return;
+    // }
     try {
       const res = await submitForgetPassword(user, email, newPassword, code);
       if (res.data && res.data.success) {
@@ -107,13 +105,25 @@ export default function ForgetPasswordPage() {
         <TextInput label="Verification Code" value={value} onChangeText={onChange} style={styles.input} />
       )} />
       <Controller control={control} name="newPassword" render={({ field: { value, onChange } }) => (
-        <TextInput label="New Password" value={value} onChangeText={onChange} secureTextEntry={showNew} style={styles.input} />
+        <TextInput
+          label="New Password"
+          value={value}
+          onChangeText={onChange}
+          secureTextEntry={showNew}
+          style={styles.input}
+          right={<TextInput.Icon icon={(props) => (<MaterialDesignIcons name={showNew ? 'eye-off' : 'eye'} size={24} color={props.color} />)} onPress={() => setShowNew(v=>!v)} />}
+        />
       )} />
-      <Button onPress={() => setShowNew(v=>!v)} style={styles.toggle} compact>{showNew ? 'Show' : 'Hide'} New Password</Button>
       <Controller control={control} name="confirmPassword" render={({ field: { value, onChange } }) => (
-        <TextInput label="Confirm Password" value={value} onChangeText={onChange} secureTextEntry={showConfirm} style={styles.input} />
+        <TextInput
+          label="Confirm Password"
+          value={value}
+          onChangeText={onChange}
+          secureTextEntry={showConfirm}
+          style={styles.input}
+          right={<TextInput.Icon icon={(props) => (<MaterialDesignIcons name={showConfirm ? 'eye-off' : 'eye'} size={24} color={props.color} />)} onPress={() => setShowConfirm(v=>!v)} />}
+        />
       )} />
-      <Button onPress={() => setShowConfirm(v=>!v)} style={styles.toggle} compact>{showConfirm ? 'Show' : 'Hide'} Confirm Password</Button>
       <Button mode="contained" onPress={handleSubmit(onSubmit)}>Save</Button>
     </View>
   );

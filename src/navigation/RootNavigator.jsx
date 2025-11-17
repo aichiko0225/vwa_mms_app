@@ -24,14 +24,14 @@ export default function RootNavigator() {
   return (
     <NavigationContainer>
       {token ? (
-        <Stack.Navigator screenOptions={{ headerShown: false }}>
+        <Stack.Navigator screenOptions={{ headerShown: false, statusBarTranslucent: true, statusBarColor: 'transparent' }}>
           <Stack.Screen name="Home" component={HomeScreen} />
         </Stack.Navigator>
       ) : (
-        <Stack.Navigator screenOptions={{ headerShown: false }}>
-          <Stack.Screen name="Login" component={LoginPage} />
-          <Stack.Screen name="ForgetPassword" component={ForgetPasswordPage} />
-          <Stack.Screen name="LoginError" component={LoginErrorPage} />
+        <Stack.Navigator>
+          <Stack.Screen name="Login" component={LoginPage} options={{ headerShown: false, statusBarTranslucent: true, statusBarColor: 'transparent', statusBarStyle: 'light' }} />
+          <Stack.Screen name="ForgetPassword" component={ForgetPasswordPage} options={{ headerShown: true, title: 'Forget Password', headerStyle: { backgroundColor: '#FFFFFF' }, headerShadowVisible: false, statusBarTranslucent: true, statusBarColor: '#FFFFFF', statusBarStyle: 'dark' }} />
+          <Stack.Screen name="LoginError" component={LoginErrorPage} options={{ headerShown: true, title: 'Error', headerStyle: { backgroundColor: '#FFFFFF' }, headerShadowVisible: false, statusBarTranslucent: true, statusBarColor: '#FFFFFF', statusBarStyle: 'dark' }} />
         </Stack.Navigator>
       )}
     </NavigationContainer>
