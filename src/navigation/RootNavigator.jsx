@@ -5,6 +5,7 @@ import LoginPage from '../pages/login/LoginPage.jsx';
 import HomeScreen from '../pages/HomeScreen.jsx';
 import ForgetPasswordPage from '../pages/login/ForgetPasswordPage.jsx';
 import LoginErrorPage from '../pages/login/ErrorPage.jsx';
+import TasksScreen from '../pages/tasks/TasksScreen.jsx';
 import { useAuthStore } from '../stores/auth';
 
 /**
@@ -26,6 +27,7 @@ export default function RootNavigator() {
       {token ? (
         <Stack.Navigator screenOptions={{ headerShown: false, statusBarTranslucent: true, statusBarColor: 'transparent' }}>
           <Stack.Screen name="Home" component={HomeScreen} />
+          <Stack.Screen name="Tasks" component={TasksScreen} options={{ headerShown: true, title: 'Tasks' }} />
         </Stack.Navigator>
       ) : (
         <Stack.Navigator>
