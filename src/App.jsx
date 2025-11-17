@@ -5,9 +5,11 @@
  * @format
  */
 
+import 'react-native-get-random-values';
 import { StatusBar, useColorScheme } from 'react-native';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { Provider as PaperProvider } from 'react-native-paper';
+import MaterialDesignIcons from '@react-native-vector-icons/material-design-icons';
 import RootNavigator from './navigation/RootNavigator';
 import { enableScreens } from 'react-native-screens';
 
@@ -21,7 +23,7 @@ enableScreens();
 function AppProviders({ children }) {
   return (
     <SafeAreaProvider>
-      <PaperProvider>
+      <PaperProvider settings={{ icon: (props) => <MaterialDesignIcons name={props.name} size={props.size} color={props.color} /> }}>
         {children}
       </PaperProvider>
     </SafeAreaProvider>

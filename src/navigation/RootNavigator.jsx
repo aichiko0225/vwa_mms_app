@@ -1,8 +1,10 @@
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import LoginScreen from '../screens/LoginScreen.jsx';
-import HomeScreen from '../screens/HomeScreen.jsx';
+import LoginPage from '../pages/login/LoginPage.jsx';
+import HomeScreen from '../pages/HomeScreen.jsx';
+import ForgetPasswordPage from '../pages/login/ForgetPasswordPage.jsx';
+import LoginErrorPage from '../pages/login/ErrorPage.jsx';
 import { useAuthStore } from '../stores/auth';
 
 /**
@@ -22,12 +24,14 @@ export default function RootNavigator() {
   return (
     <NavigationContainer>
       {token ? (
-        <Stack.Navigator>
+        <Stack.Navigator screenOptions={{ headerShown: false }}>
           <Stack.Screen name="Home" component={HomeScreen} />
         </Stack.Navigator>
       ) : (
-        <Stack.Navigator>
-          <Stack.Screen name="Login" component={LoginScreen} />
+        <Stack.Navigator screenOptions={{ headerShown: false }}>
+          <Stack.Screen name="Login" component={LoginPage} />
+          <Stack.Screen name="ForgetPassword" component={ForgetPasswordPage} />
+          <Stack.Screen name="LoginError" component={LoginErrorPage} />
         </Stack.Navigator>
       )}
     </NavigationContainer>
