@@ -6,6 +6,7 @@ import HomeScreen from '../pages/HomeScreen.jsx';
 import ForgetPasswordPage from '../pages/login/ForgetPasswordPage.jsx';
 import LoginErrorPage from '../pages/login/ErrorPage.jsx';
 import TasksScreen from '../pages/tasks/TasksScreen.jsx';
+import WebViewPage from '../pages/webview/WebViewPage.jsx';
 import { useAuthStore } from '../stores/auth';
 
 /**
@@ -28,6 +29,7 @@ export default function RootNavigator() {
         <Stack.Navigator screenOptions={{ headerShown: false, statusBarTranslucent: true, statusBarColor: 'transparent' }}>
           <Stack.Screen name="Home" component={HomeScreen} />
           <Stack.Screen name="Tasks" component={TasksScreen} options={{ headerShown: true, title: 'Tasks' }} />
+          <Stack.Screen name="WebView" component={WebViewPage} options={{ headerShown: true, title: 'H5' }} />
         </Stack.Navigator>
       ) : (
         <Stack.Navigator>

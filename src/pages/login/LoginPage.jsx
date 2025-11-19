@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { View, StyleSheet, Alert, Text as RNText, TouchableOpacity, Image } from 'react-native';
 import { Button, TextInput, Text } from 'react-native-paper';
 import MaterialDesignIcons from '@react-native-vector-icons/material-design-icons';
@@ -20,6 +20,12 @@ export default function LoginPage() {
   const phone = watch('phone');
   const code = watch('code');
 
+  useEffect(() => {
+    if (username && !phone) {
+      handleQueryPhone();
+    }
+  }, [username]);
+
   const tips = countdown > 0 ? `${countdown}s` : 'Send Code';
 
   const handleQueryPhone = async () => {
@@ -34,6 +40,9 @@ export default function LoginPage() {
   };
 
   const getCode = async () => {
+    if (!phone && username) {
+      try { const p = await queryPhone(username); setValue('phone', p); } catch {}
+    }
     if (!phone) {
       Alert.alert('Validation', 'Phone Number Cannot Be Empty');
       return;
@@ -60,8 +69,12 @@ export default function LoginPage() {
       Alert.alert('Validation', 'Please fill in username and password');
       return;
     }
+    let currentPhone = phone;
+    if (!currentPhone && username) {
+      try { currentPhone = await queryPhone(username); setValue('phone', currentPhone); } catch {}
+    }
     try {
-      const res = await loginReq(username, password, phone, code);
+      const res = await loginReq(username, password, currentPhone, code);
       if (res.data && res.data.success) {
         const result = res.data.result || {};
         const token = result.token;

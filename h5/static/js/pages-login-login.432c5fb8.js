@@ -614,505 +614,6 @@ ___CSS_LOADER_EXPORT___.push([module.id, "@charset \"UTF-8\";\n/**\n * 这里是
 
 /***/ }),
 
-/***/ 14563:
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-// ESM COMPAT FLAG
-__webpack_require__.r(__webpack_exports__);
-
-// EXPORTS
-__webpack_require__.d(__webpack_exports__, {
-  "default": function() { return /* binding */ login; }
-});
-
-;// ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js??clonedRuleSet-42[0].rules[0].use[0]!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/filter-modules-template.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/page-meta.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/index.js??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-scoped-loader/index.js!./src/pages/login/login.vue?vue&type=template&id=72e88a5e&scoped=true&
-var components = {'uniEasyinput': (__webpack_require__(68872)/* ["default"] */ .A),'uInput': (__webpack_require__(28080)/* ["default"] */ .A),'uCode': (__webpack_require__(38525)/* ["default"] */ .A),'uButton': (__webpack_require__(702)/* ["default"] */ .A),'uPopup': (__webpack_require__(71791)/* ["default"] */ .A)}
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('v-uni-view',{staticClass:"zai-box",attrs:{"id":"login-page"}},[_c('v-uni-image',{staticClass:"login-bg-img",attrs:{"src":__webpack_require__(23461),"alt":"image"}}),_c('v-uni-image',{staticStyle:{"width":"159px","height":"80px"},attrs:{"src":__webpack_require__(839),"alt":"image"}}),_c('v-uni-scroll-view',{staticClass:"page",staticStyle:{"background-color":"rgba(0, 0, 0, 0)"},attrs:{"scroll-y":true}},[_c('v-uni-view',{staticClass:"box padding-lr-xl login-paddingtop",staticStyle:{"padding-top":"10%"}},[_c('v-uni-view',{staticStyle:{"display":"flex","justify-content":"center","align-items":"center"}},[_c('v-uni-view',{staticClass:"zai-title"},[_c('v-uni-text',{staticStyle:{"text-align":"center","font-size":"20px","color":"black","display":"block","font-weight":"bold"}},[_vm._v("QA Platform")]),_c('v-uni-text',{staticStyle:{"text-align":"center","font-size":"20px","color":"black","display":"flex","align-items":"center","justify-content":"center","font-weight":"bold"}},[_vm._v("Test Case Management")])],1)],1),_c('v-uni-view',[_c('v-uni-text',{staticStyle:{"padding-top":"25px","font-size":"15px","color":"#ffffff","display":"block"}},[_vm._v("User")]),_c('v-uni-view',{staticClass:"login-input cu-form-group shadow-blur"},[_c('uni-easyinput',{staticStyle:{"display":"block","padding":"5px"},attrs:{"focus":true,"placeholder":"Please enter the account"},on:{"blur":function($event){
-arguments[0] = $event = _vm.$handleEvent($event);
-(_vm.queryPhone).apply(void 0, arguments)
-}},model:{value:(_vm.userName),callback:function ($$v) {_vm.userName=$$v},expression:"userName"}})],1),_c('v-uni-text',{staticStyle:{"font-size":"15px","color":"#ffffff","display":"block"}},[_vm._v("Password")]),_c('v-uni-view',{staticClass:"login-input cu-form-group",staticStyle:{"position":"relative"}},[_c('v-uni-view',{staticClass:"eyeBtn",class:_vm.showPswd? 'eyeClass':'',on:{"click":function($event){
-arguments[0] = $event = _vm.$handleEvent($event);
-_vm.eyeChange()
-}}}),_c('uni-easyinput',{directives:[{name:"show",rawName:"v-show",value:(!_vm.showPswd),expression:"!showPswd"}],staticStyle:{"padding":"5px"},attrs:{"focus":true,"type":"password","placeholder":"Please enter the password"},model:{value:(_vm.password),callback:function ($$v) {_vm.password=$$v},expression:"password"}}),_c('uni-easyinput',{directives:[{name:"show",rawName:"v-show",value:(_vm.showPswd),expression:"showPswd"}],attrs:{"focus":true,"type":"text","placeholder":"Please enter the password"},model:{value:(_vm.password),callback:function ($$v) {_vm.password=$$v},expression:"password"}})],1),_c('v-uni-text',{staticStyle:{"font-size":"15px","color":"#ffffff","display":"block"}},[_vm._v("Phone Number")]),_c('v-uni-view',{staticClass:"login-input cu-form-group shadow-blur"},[_c('u-input',{staticStyle:{"height":"75%","border":"0"},attrs:{"disabled":true,"placeholder":"Please enter the user associated with the mobile number"},model:{value:(_vm.phone),callback:function ($$v) {_vm.phone=$$v},expression:"phone"}},[_c('template',{staticStyle:{"background-color":"#ffffff"},slot:"suffix"},[_c('u-code',{ref:"uCode",attrs:{"seconds":"120","startText":"Send Code","changeText":"Xs Regain"},on:{"change":function($event){
-arguments[0] = $event = _vm.$handleEvent($event);
-(_vm.codeChange).apply(void 0, arguments)
-}}}),_c('u-button',{staticStyle:{"height":"4vh","background-color":"#666464","border":"0"},attrs:{"text":_vm.tips,"type":"success","size":"mini"},on:{"click":function($event){
-arguments[0] = $event = _vm.$handleEvent($event);
-(_vm.getCode).apply(void 0, arguments)
-}}})],1)],2)],1),_c('v-uni-text',{staticStyle:{"font-size":"15px","color":"#ffffff","display":"block"}},[_vm._v("Verification Code")]),_c('v-uni-view',{staticClass:"login-input cu-form-group shadow-blur"},[_c('uni-easyinput',{staticStyle:{"display":"block","padding":"5px"},attrs:{"maxlength":"6","focus":true,"placeholder":"Please enter the Verification Code"},model:{value:(_vm.code),callback:function ($$v) {_vm.code=$$v},expression:"code"}})],1)],1),_c('v-uni-view',{staticClass:"flex  flex-direction"},[_c('v-uni-button',{staticClass:"cu-btn shadow-blur round lg",attrs:{"loading":_vm.loading},on:{"click":function($event){
-arguments[0] = $event = _vm.$handleEvent($event);
-(_vm.onLogin).apply(void 0, arguments)
-}}},[_vm._v(" "+_vm._s(_vm.loading ? "Logging In...":"Login")+" ")])],1),_c('v-uni-view',{staticClass:"forgetPassword"},[_c('a',{on:{"click":function($event){
-arguments[0] = $event = _vm.$handleEvent($event);
-(_vm.forget).apply(void 0, arguments)
-}}},[_vm._v("Forget Password")])])],1)],1),(_vm.loading)?_c('v-uni-view',{staticClass:"cu-load load-modal"},[_c('v-uni-image',{attrs:{"src":"/static/login3.png","mode":"aspectFit"}})],1):_vm._e(),_c('u-popup',{directives:[{name:"show",rawName:"v-show",value:(_vm.showpopup),expression:"showpopup"}],staticStyle:{"position":"absolute","bottom":"10%","text-align":"center","left":"30%"},attrs:{"round":10,"mode":"center"}},[_c('v-uni-view',{staticClass:"progressBox"},[_c('v-uni-text',{staticClass:"words"},[_vm._v("Do Not Exit While Downloading "+_vm._s(_vm.percentVal)+"%")])],1)],1)],1)}
-var recyclableRender = false
-var staticRenderFns = []
-
-
-;// ./src/pages/login/login.vue?vue&type=template&id=72e88a5e&scoped=true&
-
-// EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/esm/objectSpread2.js
-var objectSpread2 = __webpack_require__(49943);
-// EXTERNAL MODULE: ./node_modules/core-js/modules/es.object.to-string.js
-var es_object_to_string = __webpack_require__(26099);
-// EXTERNAL MODULE: ./node_modules/core-js/modules/es.regexp.exec.js
-var es_regexp_exec = __webpack_require__(27495);
-// EXTERNAL MODULE: ./node_modules/core-js/modules/es.regexp.test.js
-var es_regexp_test = __webpack_require__(90906);
-// EXTERNAL MODULE: ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vuex3/dist/vuex.common.js
-var vuex_common = __webpack_require__(45013);
-// EXTERNAL MODULE: ./src/common/util/constants.js
-var constants = __webpack_require__(36710);
-;// ./node_modules/babel-loader/lib/index.js??clonedRuleSet-40[0].rules[0].use[0]!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js??clonedRuleSet-40[0].rules[0].use[1]!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js??clonedRuleSet-43[0].rules[0].use[0]!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/using-components.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/index.js??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-scoped-loader/index.js!./src/pages/login/login.vue?vue&type=script&lang=js&
-
-
-
-
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-
-
-/* harmony default export */ var loginvue_type_script_lang_js_ = ({
-  data: function data() {
-    return {
-      percentVal: 0,
-      showpopup: false,
-      showPswd: false,
-      showPassword: false,
-      //是否显示明文
-      loading: false,
-      userName: 'FPXNUH1',
-      password: '123456',
-      version: '',
-      phone: null,
-      code: '',
-      isSend: false,
-      tips: "Send Code"
-    };
-  },
-  onLaunch: function onLaunch() {},
-  onLoad: function onLoad() {},
-  mounted: function mounted() {
-    var _this = this;
-    // uni.getSystemInfo({
-    // success: function(e) {
-    // 	if (e.platform == 'android') {
-    // 		console.log(e)
-    // 		_this.showpopup = false;
-    // 		uni.request({
-    // 			url: 'http://120.195.219.132:48086/81/update/update.json', //检查更新的服务器地址
-    // 			data: {
-    // 				appid: plus.runtime.appid,
-    // 				version: plus.runtime.version,
-    // 				imei: plus.device.imei
-    // 			},
-    // 			success: (res) => {
-    // 				plus.runtime.getProperty(plus.runtime.appid, function(wgtinfo) {
-    // 					let client_version = wgtinfo.version
-    // 					var flag_update = client_version.split(".").splice(0,2).join(".") != res.data.version.split(".")
-    // 						.splice(0, 2)
-    // 						.join(".");
-    // 					var flag_hot = (Number(client_version.split(".")[2]) <
-    // 							Number(res.data.version.split(".")[2])) & !
-    // 						flag_update
-    // 					if (flag_update) {
-    // 						// 提醒用户更新
-    // 						uni.showModal({
-    // 							title: '更新提示',
-    // 							content: "全新改版",
-    // 							success: (showResult) => {
-    // 								if (showResult.confirm) {
-    // 									_this.showpopup = true;
-    // 									plus.nativeUI.toast("正在准备环境，请稍后!");
-    // 									console.log(res.data.url, )
-    // 									var dtask = plus.downloader.createDownload(res.data.url, 
-    // 									{
-    // 										method: 'GET',
-    // 										filename: '_doc/update/'
-    // 											},function(d,status) {
-    // 												if (status == 200) {
-    // 													var path = d.filename; //下载apk
-    // 													plus.runtime.install(path); // 自动安装apk文件
-    // 												} else {
-    // 													plus.nativeUI.alert('版本更新失败:' +status);
-    // 												}
-    // 											});
-    // 									dtask.start();
-    // 									// 关于进度的获取是使用定时器不断获取已经下载的文件的大小，再对比总大小即可
-    // 									let timer = setInterval(
-    // 										() => {
-    // 											let percent = (dtask.downloadedSize / dtask.totalSize).toFixed(2) // totalSize文件总大小，后端返回的
-    // 											_this .percentVal = Math.floor(percent *100) // 转成整数展示
-    // 											console.log(_this.percentVal)
-    // 											if (percent >=1) { // 注意百分比，及时清除定时器即可
-    // 												clearInterval(timer)
-    // 											}
-    // 										}, 18)
-    // 								}
-    // 							}
-    // 						})
-    // 					} else if (flag_hot) {
-    // 						uni.downloadFile({
-    // 							url: res.data.wgtUrl,
-    // 							success: (downloadResult) => {
-    // 								console.log(downloadResult.tempFilePath)
-    // 								if (downloadResult.statusCode === 200) {
-    // 									plus.nativeUI.toast(`正在热更新!${res.data.versionCode}`);
-    // 									plus.runtime.install(downloadResult.tempFilePath, {
-    // 											force: false
-    // 										},
-    // 										function() {
-    // 											plus.nativeUI.toast("热更新成功");
-    // 											plus.runtime.restart();
-    // 										},
-    // 										function(e) {
-    // 											console.log(e)
-    // 											plus.nativeUI.toast(`热更新失败:${e.message}`);
-    // 										});
-    // 								}
-    // 							}
-    // 						});
-    // 					}
-    // 				});
-    // 			}
-    // 		})
-    // 	}
-    // }
-    // })
-  },
-  methods: (0,objectSpread2/* default */.A)((0,objectSpread2/* default */.A)({}, (0,vuex_common.mapActions)(["h5Login", "mLogin", "PhoneLogin"])), {}, {
-    clickPwd2: function clickPwd2() {
-      this.showPswd = !this.showPswd;
-    },
-    eyeChange: function eyeChange() {
-      this.showPswd = !this.showPswd;
-    },
-    codeChange: function codeChange(text) {
-      this.tips = text;
-    },
-    getCode: function getCode() {
-      var that = this;
-      if (this.phone == null) {
-        uni.showToast({
-          icon: 'none',
-          title: 'Phone Number Cannot Be Empty'
-        });
-        return;
-      } else if (!this.password) {
-        uni.showToast({
-          icon: 'none',
-          title: 'Password Cannot Be Empty'
-        });
-        return;
-      } else {
-        var regExp = /^1[3456789]\d{9}$/; // 手机号码正则表达式
-        if (!regExp.test(this.phone)) {
-          uni.showToast({
-            icon: 'none',
-            title: 'Phone Number Format Is Incorrect'
-          });
-          return;
-        }
-      }
-      if (this.$refs.uCode.canGetCode) {
-        // 模拟向后端请求验证码
-        that.SendSms(function () {
-          // 这里此提示会被this.start()方法中的提示覆盖
-          uni.$u.toast('Verification Code Has Been Sent');
-          // 通知验证码组件内部开始倒计时
-          that.$refs.uCode.start();
-        });
-        // setTimeout(() => {
-
-        // }, 800);
-      } else {
-        uni.$u.toast('Wait Until The Countdown Is Over');
-      }
-    },
-    change: function change(e) {
-      console.log('change', e);
-    },
-    queryPhone: function queryPhone() {
-      var that = this;
-      if (that.userName == '') {
-        return;
-      }
-      var params = {
-        username: that.userName
-      };
-      this.$http.post(this.$apiUrl + '/sys/user/queryEmail', params).then(function (res) {
-        if (res.data.success && res.data.result != null) {
-          that.phone = res.data.result.phone;
-        } else {
-          that.phone = null;
-          uni.showToast({
-            duration: 2000,
-            title: res.data.message,
-            icon: 'none'
-          });
-          return;
-        }
-      });
-    },
-    SendSms: function SendSms(fun) {
-      var that = this;
-      // 用户名密码加密
-      var sm2 = (__webpack_require__(37208).sm2);
-      var publicKey = '0494006b520344b99a1fcdf1b498281fa37abb391c925cdc30a59be27507add5b74ae062d8329e0147c272d5eabcb503a5ffa3ac8c0dcbd60b5e6464d9a088411b';
-      var params = {
-        username: that.userName,
-        phone: that.phone,
-        // password:that.password,
-        password: sm2.doEncrypt(that.password, publicKey)
-      };
-      that.$http.post(that.$apiUrl + '/sys/sms/sendSms', params).then(function (res) {
-        if (res.data.success) {
-          that.isSend = true;
-          uni.showToast({
-            duration: 2000,
-            icon: 'none',
-            title: 'The Verification Code Was Sent Successfully, Please Check'
-          });
-          if (fun) {
-            fun();
-          }
-        } else {
-          that.isSend = false;
-          var title = res.data.message;
-          if (res.data.message == "该用户已冻结") {
-            title = "The User Has Been Frozen";
-          } else if (res.data.message == '用户名或密码错误') {
-            title = "Incorrect username or password";
-          } else if (res.data.message == "用户名或密码错误 您的账号已冻结，请联系管理员解冻！") {
-            title = "Your Account Has Been Frozen, Please Contact The Administrator To Unfreeze";
-          } else if (res.data.message == "您的账号已冻结，请联系管理员解冻！") {
-            title = "Your Account Has Been Frozen, Please Contact The Administrator To Unfreeze";
-          }
-          uni.showToast({
-            duration: 2000,
-            title: title,
-            icon: 'none'
-          });
-          return;
-        }
-      });
-    },
-    forget: function forget() {
-      var that = this;
-      var username = null;
-      if (that.userName) {
-        username = that.userName;
-      }
-      uni.navigateTo({
-        url: '/pages/login/forgetPass/forgetPass?username=' + username
-      });
-    },
-    onLogin: function onLogin() {
-      var _this2 = this;
-      var that = this;
-      // if (!this.userName || this.userName.length == 0) {
-      // 	uni.showToast({
-      // 		icon: "none",
-      // 		title: 'Please Fill In The Username!',
-      // 	})
-      // 	return;
-      // }
-      // if (!this.password || this.password.length == 0) {
-      // 	uni.showToast({
-      // 		icon: "none",
-      // 		title: 'Please Fill In The Password!',
-      // 	})
-      // 	return;
-      // }
-      // if (!this.isSend || this.code.length == 0) {
-      // 	uni.showToast({
-      // 		icon: "none",
-      // 		title: 'Please Get The Verification Code!',
-      // 	})
-      // 	return;
-      // }
-      var tempParams = {
-        username: this.userName,
-        password: this.password
-      };
-      // 用户名密码加密
-      var sm2 = (__webpack_require__(37208).sm2);
-      var publicKey = '0494006b520344b99a1fcdf1b498281fa37abb391c925cdc30a59be27507add5b74ae062d8329e0147c272d5eabcb503a5ffa3ac8c0dcbd60b5e6464d9a088411b';
-      var loginParams = {
-        // username: sm2.doEncrypt(tempParams.username, publicKey),
-        // password: sm2.doEncrypt(tempParams.password, publicKey),
-        password: 'afabf8a41786dec7d3c2c4c3ce017346bcab79e7ccd0185ea906fce5f14435f8c7c2ef504600ec91d89d9744b77a36947aee1ad83c0b76170dd33d92e783e0b8fcaf59e2a8a813608e829c12364570153f2d32b4b866da555021b7ba4ef4e0cd23864772541df5',
-        username: '30af15e53d7bdc0b3be6a2fa303681d3de4a9727069ac9cf022dd75f098f87ef3ebcc548b00d60de9ff2a98d5f6fc8e8c17ded9c100db9af3e129c09e3ef793799e2babd11a8bcdc518eaa096665c681348f4d8437563cd740ff1547ae7d8810a88c0b678b3bcd',
-        phone: this.phone,
-        captcha: this.code,
-        checkKey: 1762913952346
-      };
-      this.loading = true;
-      this.mLogin(loginParams).then(function (res) {
-        console.log("mLogin", res);
-        if (res.data.success) {
-          uni.showToast({
-            title: 'Login Successful!'
-          });
-          var data = res.data.result;
-          that.handleUserInfo(data, function (data) {
-            //首次登录强制修改密码
-            // if(data && (data.userInfo.firstLogin == '0'|| data.userInfo.isPassword == '0')){
-            // 	that.loading = false
-            // 	setTimeout(function() {
-            // 		uni.navigateTo({
-            // 			url: '/pages/mine/updatepwd?firstLogin=0'
-            // 		});
-            // 	}, 500);
-            // }else{
-            uni.reLaunch({
-              url: '/pages/index/index'
-            });
-            // }
-          });
-        } else {
-          _this2.loading = false;
-          if (res.data.code == 500) {
-            uni.showToast({
-              icon: 'none',
-              title: 'The Account/Password Is Incorrect. Please Fill In The Correct Account/Password!'
-            });
-            return false;
-          } else {
-            uni.showToast({
-              icon: 'none',
-              title: res.data.message
-            });
-          }
-        }
-      }).catch(function (err) {}).finally(function () {});
-    },
-    handleUserInfo: function handleUserInfo(data, fun) {
-      var that = this;
-      that.$store.state.departData = {
-        multiDepart: data.multi_depart,
-        departs: data.departs
-      };
-      that.$store.state.sysAllDictItems = data.sysAllDictItems;
-      uni.setStorageSync(constants/* USER_INFO */.nc, data.userInfo);
-      that.$store.state.user = data.userInfo;
-      this.$store.dispatch('fetchUserRole', uni.getStorageSync(constants/* USER_INFO */.nc).id);
-      if (fun) {
-        fun(data);
-      }
-    }
-  })
-});
-;// ./src/pages/login/login.vue?vue&type=script&lang=js&
- /* harmony default export */ var login_loginvue_type_script_lang_js_ = (loginvue_type_script_lang_js_); 
-// EXTERNAL MODULE: ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/h5-vue-style-loader/index.js??clonedRuleSet-12[0].rules[0].use[0]!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-12[0].rules[0].use[1]!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js??clonedRuleSet-12[0].rules[0].use[2]!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-12[0].rules[0].use[3]!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-12[0].rules[0].use[4]!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/index.js??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-scoped-loader/index.js!./src/pages/login/login.vue?vue&type=style&index=0&id=72e88a5e&scoped=true&lang=css&
-var loginvue_type_style_index_0_id_72e88a5e_scoped_true_lang_css_ = __webpack_require__(40983);
-;// ./src/pages/login/login.vue?vue&type=style&index=0&id=72e88a5e&scoped=true&lang=css&
- /* harmony default export */ var login_loginvue_type_style_index_0_id_72e88a5e_scoped_true_lang_css_ = ((/* unused pure expression or super */ null && (mod))); 
-// EXTERNAL MODULE: ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/runtime/componentNormalizer.js
-var componentNormalizer = __webpack_require__(18535);
-;// ./src/pages/login/login.vue
-
-var renderjs
-;
-
-;
-
-
-/* normalize component */
-
-var component = (0,componentNormalizer/* default */.A)(
-  login_loginvue_type_script_lang_js_,
-  render,
-  staticRenderFns,
-  false,
-  null,
-  "72e88a5e",
-  null,
-  false,
-  components,
-  renderjs
-)
-
-/* harmony default export */ var login = (component.exports);
-
-/***/ }),
-
 /***/ 20447:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -1139,38 +640,6 @@ ___CSS_LOADER_EXPORT___.push([module.id, "@charset \"UTF-8\";\n/**\n * 这里是
 
 "use strict";
 module.exports = __webpack_require__.p + "static/qa/App-bg.jpg";
-
-/***/ }),
-
-/***/ 23862:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(31601);
-/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(76314);
-/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(4417);
-/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__);
-// Imports
-
-
-
-var ___CSS_LOADER_URL_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(2685), __webpack_require__.b);
-var ___CSS_LOADER_URL_IMPORT_1___ = new URL(/* asset import */ __webpack_require__(39906), __webpack_require__.b);
-var ___CSS_LOADER_URL_IMPORT_2___ = new URL(/* asset import */ __webpack_require__(12910), __webpack_require__.b);
-var ___CSS_LOADER_URL_IMPORT_3___ = new URL(/* asset import */ __webpack_require__(89607), __webpack_require__.b);
-var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
-var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_0___);
-var ___CSS_LOADER_URL_REPLACEMENT_1___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_1___);
-var ___CSS_LOADER_URL_REPLACEMENT_2___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_2___);
-var ___CSS_LOADER_URL_REPLACEMENT_3___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_3___);
-// Module
-___CSS_LOADER_EXPORT___.push([module.id, "html[data-v-72e88a5e],\n \tbody[data-v-72e88a5e]{height:100%}uni-page-body[data-v-72e88a5e]{background-color:#fff!important;\n \t\t/* background-image: url(../../static/qa/App-bg.jpg); */background-size:100% 100%;font-family:uniicons}.cu-form-group[data-v-72e88a5e]{background-color:#fff;padding-right:5px;display:-webkit-box;display:-webkit-flex;display:flex;-webkit-box-align:center;-webkit-align-items:center;align-items:center;min-height:50px;-webkit-box-pack:justify;-webkit-justify-content:space-between;justify-content:space-between}.cu-form-group uni-input[data-v-72e88a5e]{-webkit-box-flex:1;-webkit-flex:1;flex:1;font-size:15px;color:#555;padding-right:10px}.margin-top[data-v-72e88a5e]{margin-top:15px}.login-bg-img[data-v-72e88a5e]{position:fixed;top:0;right:0;left:0;bottom:0;z-index:0;width:100%;height:100%!important}.login-input[data-v-72e88a5e]{height:51px;line-height:51px;background:#fff}.login-input uni-input[data-v-72e88a5e]{webkit-box-shadow:0 0 0 1000px #fff inset;text-align:left!important;background:transparent!important;color:#5b5b5b;text-align:center;border-left:1px solid hsla(0,0%,100%,.55)!important;height:36px;line-height:36px}\n\n \t/* .login-input .login-icon{width: 18px;height: 20px;display: inline;} */.lg.cu-btn[data-v-72e88a5e]{height:51px;line-height:51px;background:#e46f64;border-radius:5px;margin-top:16px;color:hsla(0,0%,100%,.55)}.login-icon[data-v-72e88a5e]{width:33px;height:20px;display:inline;padding-right:15px}.login-icon.pswd[data-v-72e88a5e]{background:url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ") no-repeat 0;background-size:20px}.login-icon.user[data-v-72e88a5e]{background:url(" + ___CSS_LOADER_URL_REPLACEMENT_1___ + ") no-repeat 0;background-size:20px}.input-placeholder[data-v-72e88a5e],\n \t.zai-input[data-v-72e88a5e]{color:hsla(0,0%,100%,.55)!important}.lg.cu-btn[data-v-72e88a5e]{color:#fff!important}.forgetPassword[data-v-72e88a5e]{display:flex;justify-content:right;color:#fff;padding:5px}uni-input[data-v-72e88a5e]:-internal-autofill-selected{-webkit-appearance:menulist-button;appearance:menulist-button;background-color:initial!important;background-image:none!important;color:-internal-light-dark(#000,#fff)!important}.login-paddingtop[data-v-72e88a5e]{padding-top:200 upx}.zai-box[data-v-72e88a5e]{position:absolute;width:100%;height:100%;display:flex;justify-content:center;flex-direction:column;align-items:center}.zai-logo[data-v-72e88a5e]{width:60px!important}.zai-title[data-v-72e88a5e]{font-size:14px;color:#999}.input-placeholder[data-v-72e88a5e],\n \t.zai-input[data-v-72e88a5e]{color:#94afce}.zai-label[data-v-72e88a5e]{padding:60 upx 0;text-align:center;font-size:20 upx;color:#a7b6d0}.zai-btn[data-v-72e88a5e]{background:#ff65a3;color:#fff;border:0;border-radius:100 upx;font-size:36 upx}.zai-btn[data-v-72e88a5e]:after{border:0}\n\n \t/*按钮点击效果*/.zai-btn.button-hover[data-v-72e88a5e]{-webkit-transform:translate(1 upx,1 upx);transform:translate(1 upx,1 upx)}.padding-lr-xl[data-v-72e88a5e]{padding-left:%?50?%;padding-right:%?30?%}uni-input[data-v-72e88a5e]:-internal-autofill-selected{background-color:initial!important}.eyeBtn[data-v-72e88a5e]{width:22px;height:22px;position:absolute;top:15px;right:10px;z-index:9;background:url(" + ___CSS_LOADER_URL_REPLACEMENT_2___ + ") no-repeat 50%;background-size:20px}.eyeClass[data-v-72e88a5e]{width:22px;height:22px;position:absolute;top:15px;right:10px;z-index:9;background:url(" + ___CSS_LOADER_URL_REPLACEMENT_3___ + ") no-repeat 50%;background-size:20px}", ""]);
-// Exports
-/* harmony default export */ __webpack_exports__["default"] = (___CSS_LOADER_EXPORT___);
-
 
 /***/ }),
 
@@ -1733,6 +1202,22 @@ var component = (0,componentNormalizer/* default */.A)(
 
 /***/ }),
 
+/***/ 36061:
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(82368);
+if(content.__esModule) content = content.default;
+if(typeof content === 'string') content = [[module.id, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var add = (__webpack_require__(69333)/* ["default"] */ .A)
+var update = add("2367fd43", content, true, {"sourceMap":false,"shadowMode":false});
+
+/***/ }),
+
 /***/ 38525:
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
@@ -2269,19 +1754,502 @@ module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADYAAAA8CAYAAAAt
 
 /***/ }),
 
-/***/ 40983:
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+/***/ 59726:
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-// style-loader: Adds some css to the DOM by adding a <style> tag
+"use strict";
+// ESM COMPAT FLAG
+__webpack_require__.r(__webpack_exports__);
 
-// load the styles
-var content = __webpack_require__(23862);
-if(content.__esModule) content = content.default;
-if(typeof content === 'string') content = [[module.id, content, '']];
-if(content.locals) module.exports = content.locals;
-// add the styles to the DOM
-var add = (__webpack_require__(69333)/* ["default"] */ .A)
-var update = add("72201947", content, true, {"sourceMap":false,"shadowMode":false});
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  "default": function() { return /* binding */ login; }
+});
+
+;// ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js??clonedRuleSet-42[0].rules[0].use[0]!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/filter-modules-template.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/page-meta.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/index.js??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-scoped-loader/index.js!./src/pages/login/login.vue?vue&type=template&id=6620c352&scoped=true&
+var components = {'uniEasyinput': (__webpack_require__(68872)/* ["default"] */ .A),'uInput': (__webpack_require__(28080)/* ["default"] */ .A),'uCode': (__webpack_require__(38525)/* ["default"] */ .A),'uButton': (__webpack_require__(702)/* ["default"] */ .A),'uPopup': (__webpack_require__(71791)/* ["default"] */ .A)}
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('v-uni-view',{staticClass:"zai-box",attrs:{"id":"login-page"}},[_c('v-uni-image',{staticClass:"login-bg-img",attrs:{"src":__webpack_require__(23461),"alt":"image"}}),_c('v-uni-image',{staticStyle:{"width":"159px","height":"80px"},attrs:{"src":__webpack_require__(839),"alt":"image"}}),_c('v-uni-scroll-view',{staticClass:"page",staticStyle:{"background-color":"rgba(0, 0, 0, 0)"},attrs:{"scroll-y":true}},[_c('v-uni-view',{staticClass:"box padding-lr-xl login-paddingtop",staticStyle:{"padding-top":"10%"}},[_c('v-uni-view',{staticStyle:{"display":"flex","justify-content":"center","align-items":"center"}},[_c('v-uni-view',{staticClass:"zai-title"},[_c('v-uni-text',{staticStyle:{"text-align":"center","font-size":"20px","color":"black","display":"block","font-weight":"bold"}},[_vm._v("QA Platform")]),_c('v-uni-text',{staticStyle:{"text-align":"center","font-size":"20px","color":"black","display":"flex","align-items":"center","justify-content":"center","font-weight":"bold"}},[_vm._v("Test Case Management")])],1)],1),_c('v-uni-view',[_c('v-uni-text',{staticStyle:{"padding-top":"25px","font-size":"15px","color":"#ffffff","display":"block"}},[_vm._v("User")]),_c('v-uni-view',{staticClass:"login-input cu-form-group shadow-blur"},[_c('uni-easyinput',{staticStyle:{"display":"block","padding":"5px"},attrs:{"focus":true,"placeholder":"Please enter the account"},on:{"blur":function($event){
+arguments[0] = $event = _vm.$handleEvent($event);
+(_vm.queryPhone).apply(void 0, arguments)
+}},model:{value:(_vm.userName),callback:function ($$v) {_vm.userName=$$v},expression:"userName"}})],1),_c('v-uni-text',{staticStyle:{"font-size":"15px","color":"#ffffff","display":"block"}},[_vm._v("Password")]),_c('v-uni-view',{staticClass:"login-input cu-form-group",staticStyle:{"position":"relative"}},[_c('v-uni-view',{staticClass:"eyeBtn",class:_vm.showPswd? 'eyeClass':'',on:{"click":function($event){
+arguments[0] = $event = _vm.$handleEvent($event);
+_vm.eyeChange()
+}}}),_c('uni-easyinput',{directives:[{name:"show",rawName:"v-show",value:(!_vm.showPswd),expression:"!showPswd"}],staticStyle:{"padding":"5px"},attrs:{"focus":true,"type":"password","placeholder":"Please enter the password"},model:{value:(_vm.password),callback:function ($$v) {_vm.password=$$v},expression:"password"}}),_c('uni-easyinput',{directives:[{name:"show",rawName:"v-show",value:(_vm.showPswd),expression:"showPswd"}],attrs:{"focus":true,"type":"text","placeholder":"Please enter the password"},model:{value:(_vm.password),callback:function ($$v) {_vm.password=$$v},expression:"password"}})],1),_c('v-uni-text',{staticStyle:{"font-size":"15px","color":"#ffffff","display":"block"}},[_vm._v("Phone Number")]),_c('v-uni-view',{staticClass:"login-input cu-form-group shadow-blur"},[_c('u-input',{staticStyle:{"height":"75%","border":"0"},attrs:{"disabled":true,"placeholder":"Please enter the user associated with the mobile number"},model:{value:(_vm.phone),callback:function ($$v) {_vm.phone=$$v},expression:"phone"}},[_c('template',{staticStyle:{"background-color":"#ffffff"},slot:"suffix"},[_c('u-code',{ref:"uCode",attrs:{"seconds":"120","startText":"Send Code","changeText":"Xs Regain"},on:{"change":function($event){
+arguments[0] = $event = _vm.$handleEvent($event);
+(_vm.codeChange).apply(void 0, arguments)
+}}}),_c('u-button',{staticStyle:{"height":"4vh","background-color":"#666464","border":"0"},attrs:{"text":_vm.tips,"type":"success","size":"mini"},on:{"click":function($event){
+arguments[0] = $event = _vm.$handleEvent($event);
+(_vm.getCode).apply(void 0, arguments)
+}}})],1)],2)],1),_c('v-uni-text',{staticStyle:{"font-size":"15px","color":"#ffffff","display":"block"}},[_vm._v("Verification Code")]),_c('v-uni-view',{staticClass:"login-input cu-form-group shadow-blur"},[_c('uni-easyinput',{staticStyle:{"display":"block","padding":"5px"},attrs:{"maxlength":"6","focus":true,"placeholder":"Please enter the Verification Code"},model:{value:(_vm.code),callback:function ($$v) {_vm.code=$$v},expression:"code"}})],1)],1),_c('v-uni-view',{staticClass:"flex  flex-direction"},[_c('v-uni-button',{staticClass:"cu-btn shadow-blur round lg",attrs:{"loading":_vm.loading},on:{"click":function($event){
+arguments[0] = $event = _vm.$handleEvent($event);
+(_vm.onLogin).apply(void 0, arguments)
+}}},[_vm._v(" "+_vm._s(_vm.loading ? "Logging In...":"Login")+" ")])],1),_c('v-uni-view',{staticClass:"forgetPassword"},[_c('a',{on:{"click":function($event){
+arguments[0] = $event = _vm.$handleEvent($event);
+(_vm.forget).apply(void 0, arguments)
+}}},[_vm._v("Forget Password")])])],1)],1),(_vm.loading)?_c('v-uni-view',{staticClass:"cu-load load-modal"},[_c('v-uni-image',{attrs:{"src":"/static/login3.png","mode":"aspectFit"}})],1):_vm._e(),_c('u-popup',{directives:[{name:"show",rawName:"v-show",value:(_vm.showpopup),expression:"showpopup"}],staticStyle:{"position":"absolute","bottom":"10%","text-align":"center","left":"30%"},attrs:{"round":10,"mode":"center"}},[_c('v-uni-view',{staticClass:"progressBox"},[_c('v-uni-text',{staticClass:"words"},[_vm._v("Do Not Exit While Downloading "+_vm._s(_vm.percentVal)+"%")])],1)],1)],1)}
+var recyclableRender = false
+var staticRenderFns = []
+
+
+;// ./src/pages/login/login.vue?vue&type=template&id=6620c352&scoped=true&
+
+// EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/esm/objectSpread2.js
+var objectSpread2 = __webpack_require__(49943);
+// EXTERNAL MODULE: ./node_modules/core-js/modules/es.object.to-string.js
+var es_object_to_string = __webpack_require__(26099);
+// EXTERNAL MODULE: ./node_modules/core-js/modules/es.regexp.exec.js
+var es_regexp_exec = __webpack_require__(27495);
+// EXTERNAL MODULE: ./node_modules/core-js/modules/es.regexp.test.js
+var es_regexp_test = __webpack_require__(90906);
+// EXTERNAL MODULE: ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vuex3/dist/vuex.common.js
+var vuex_common = __webpack_require__(45013);
+// EXTERNAL MODULE: ./src/common/util/constants.js
+var constants = __webpack_require__(36710);
+;// ./node_modules/babel-loader/lib/index.js??clonedRuleSet-40[0].rules[0].use[0]!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js??clonedRuleSet-40[0].rules[0].use[1]!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js??clonedRuleSet-43[0].rules[0].use[0]!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/using-components.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/index.js??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-scoped-loader/index.js!./src/pages/login/login.vue?vue&type=script&lang=js&
+
+
+
+
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+
+/* harmony default export */ var loginvue_type_script_lang_js_ = ({
+  data: function data() {
+    return {
+      percentVal: 0,
+      showpopup: false,
+      showPswd: false,
+      showPassword: false,
+      //是否显示明文
+      loading: false,
+      userName: 'FPXNUH1',
+      password: '123456',
+      version: '',
+      phone: null,
+      code: '',
+      isSend: false,
+      tips: "Send Code"
+    };
+  },
+  onLaunch: function onLaunch() {},
+  onLoad: function onLoad() {},
+  mounted: function mounted() {
+    var _this = this;
+    // uni.getSystemInfo({
+    // success: function(e) {
+    // 	if (e.platform == 'android') {
+    // 		console.log(e)
+    // 		_this.showpopup = false;
+    // 		uni.request({
+    // 			url: 'http://120.195.219.132:48086/81/update/update.json', //检查更新的服务器地址
+    // 			data: {
+    // 				appid: plus.runtime.appid,
+    // 				version: plus.runtime.version,
+    // 				imei: plus.device.imei
+    // 			},
+    // 			success: (res) => {
+    // 				plus.runtime.getProperty(plus.runtime.appid, function(wgtinfo) {
+    // 					let client_version = wgtinfo.version
+    // 					var flag_update = client_version.split(".").splice(0,2).join(".") != res.data.version.split(".")
+    // 						.splice(0, 2)
+    // 						.join(".");
+    // 					var flag_hot = (Number(client_version.split(".")[2]) <
+    // 							Number(res.data.version.split(".")[2])) & !
+    // 						flag_update
+    // 					if (flag_update) {
+    // 						// 提醒用户更新
+    // 						uni.showModal({
+    // 							title: '更新提示',
+    // 							content: "全新改版",
+    // 							success: (showResult) => {
+    // 								if (showResult.confirm) {
+    // 									_this.showpopup = true;
+    // 									plus.nativeUI.toast("正在准备环境，请稍后!");
+    // 									console.log(res.data.url, )
+    // 									var dtask = plus.downloader.createDownload(res.data.url, 
+    // 									{
+    // 										method: 'GET',
+    // 										filename: '_doc/update/'
+    // 											},function(d,status) {
+    // 												if (status == 200) {
+    // 													var path = d.filename; //下载apk
+    // 													plus.runtime.install(path); // 自动安装apk文件
+    // 												} else {
+    // 													plus.nativeUI.alert('版本更新失败:' +status);
+    // 												}
+    // 											});
+    // 									dtask.start();
+    // 									// 关于进度的获取是使用定时器不断获取已经下载的文件的大小，再对比总大小即可
+    // 									let timer = setInterval(
+    // 										() => {
+    // 											let percent = (dtask.downloadedSize / dtask.totalSize).toFixed(2) // totalSize文件总大小，后端返回的
+    // 											_this .percentVal = Math.floor(percent *100) // 转成整数展示
+    // 											console.log(_this.percentVal)
+    // 											if (percent >=1) { // 注意百分比，及时清除定时器即可
+    // 												clearInterval(timer)
+    // 											}
+    // 										}, 18)
+    // 								}
+    // 							}
+    // 						})
+    // 					} else if (flag_hot) {
+    // 						uni.downloadFile({
+    // 							url: res.data.wgtUrl,
+    // 							success: (downloadResult) => {
+    // 								console.log(downloadResult.tempFilePath)
+    // 								if (downloadResult.statusCode === 200) {
+    // 									plus.nativeUI.toast(`正在热更新!${res.data.versionCode}`);
+    // 									plus.runtime.install(downloadResult.tempFilePath, {
+    // 											force: false
+    // 										},
+    // 										function() {
+    // 											plus.nativeUI.toast("热更新成功");
+    // 											plus.runtime.restart();
+    // 										},
+    // 										function(e) {
+    // 											console.log(e)
+    // 											plus.nativeUI.toast(`热更新失败:${e.message}`);
+    // 										});
+    // 								}
+    // 							}
+    // 						});
+    // 					}
+    // 				});
+    // 			}
+    // 		})
+    // 	}
+    // }
+    // })
+  },
+  methods: (0,objectSpread2/* default */.A)((0,objectSpread2/* default */.A)({}, (0,vuex_common.mapActions)(["h5Login", "mLogin", "PhoneLogin"])), {}, {
+    clickPwd2: function clickPwd2() {
+      this.showPswd = !this.showPswd;
+    },
+    eyeChange: function eyeChange() {
+      this.showPswd = !this.showPswd;
+    },
+    codeChange: function codeChange(text) {
+      this.tips = text;
+    },
+    getCode: function getCode() {
+      var that = this;
+      if (this.phone == null) {
+        uni.showToast({
+          icon: 'none',
+          title: 'Phone Number Cannot Be Empty'
+        });
+        return;
+      } else if (!this.password) {
+        uni.showToast({
+          icon: 'none',
+          title: 'Password Cannot Be Empty'
+        });
+        return;
+      } else {
+        var regExp = /^1[3456789]\d{9}$/; // 手机号码正则表达式
+        if (!regExp.test(this.phone)) {
+          uni.showToast({
+            icon: 'none',
+            title: 'Phone Number Format Is Incorrect'
+          });
+          return;
+        }
+      }
+      if (this.$refs.uCode.canGetCode) {
+        // 模拟向后端请求验证码
+        that.SendSms(function () {
+          // 这里此提示会被this.start()方法中的提示覆盖
+          uni.$u.toast('Verification Code Has Been Sent');
+          // 通知验证码组件内部开始倒计时
+          that.$refs.uCode.start();
+        });
+        // setTimeout(() => {
+
+        // }, 800);
+      } else {
+        uni.$u.toast('Wait Until The Countdown Is Over');
+      }
+    },
+    change: function change(e) {
+      console.log('change', e);
+    },
+    queryPhone: function queryPhone() {
+      var that = this;
+      if (that.userName == '') {
+        return;
+      }
+      var params = {
+        username: that.userName
+      };
+      this.$http.post(this.$apiUrl + '/sys/user/queryEmail', params).then(function (res) {
+        if (res.data.success && res.data.result != null) {
+          that.phone = res.data.result.phone;
+        } else {
+          that.phone = null;
+          uni.showToast({
+            duration: 2000,
+            title: res.data.message,
+            icon: 'none'
+          });
+          return;
+        }
+      });
+    },
+    SendSms: function SendSms(fun) {
+      var that = this;
+      // 用户名密码加密
+      var sm2 = (__webpack_require__(37208).sm2);
+      var publicKey = '0494006b520344b99a1fcdf1b498281fa37abb391c925cdc30a59be27507add5b74ae062d8329e0147c272d5eabcb503a5ffa3ac8c0dcbd60b5e6464d9a088411b';
+      var params = {
+        username: that.userName,
+        phone: that.phone,
+        // password:that.password,
+        password: sm2.doEncrypt(that.password, publicKey)
+      };
+      that.$http.post(that.$apiUrl + '/sys/sms/sendSms', params).then(function (res) {
+        if (res.data.success) {
+          that.isSend = true;
+          uni.showToast({
+            duration: 2000,
+            icon: 'none',
+            title: 'The Verification Code Was Sent Successfully, Please Check'
+          });
+          if (fun) {
+            fun();
+          }
+        } else {
+          that.isSend = false;
+          var title = res.data.message;
+          if (res.data.message == "该用户已冻结") {
+            title = "The User Has Been Frozen";
+          } else if (res.data.message == '用户名或密码错误') {
+            title = "Incorrect username or password";
+          } else if (res.data.message == "用户名或密码错误 您的账号已冻结，请联系管理员解冻！") {
+            title = "Your Account Has Been Frozen, Please Contact The Administrator To Unfreeze";
+          } else if (res.data.message == "您的账号已冻结，请联系管理员解冻！") {
+            title = "Your Account Has Been Frozen, Please Contact The Administrator To Unfreeze";
+          }
+          uni.showToast({
+            duration: 2000,
+            title: title,
+            icon: 'none'
+          });
+          return;
+        }
+      });
+    },
+    forget: function forget() {
+      var that = this;
+      var username = null;
+      if (that.userName) {
+        username = that.userName;
+      }
+      uni.navigateTo({
+        url: '/pages/login/forgetPass/forgetPass?username=' + username
+      });
+    },
+    onLogin: function onLogin() {
+      var _this2 = this;
+      var that = this;
+      // if (!this.userName || this.userName.length == 0) {
+      // 	uni.showToast({
+      // 		icon: "none",
+      // 		title: 'Please Fill In The Username!',
+      // 	})
+      // 	return;
+      // }
+      // if (!this.password || this.password.length == 0) {
+      // 	uni.showToast({
+      // 		icon: "none",
+      // 		title: 'Please Fill In The Password!',
+      // 	})
+      // 	return;
+      // }
+      // if (!this.isSend || this.code.length == 0) {
+      // 	uni.showToast({
+      // 		icon: "none",
+      // 		title: 'Please Get The Verification Code!',
+      // 	})
+      // 	return;
+      // }
+      var tempParams = {
+        username: this.userName,
+        password: this.password
+      };
+      // 用户名密码加密
+      var sm2 = (__webpack_require__(37208).sm2);
+      var publicKey = '0494006b520344b99a1fcdf1b498281fa37abb391c925cdc30a59be27507add5b74ae062d8329e0147c272d5eabcb503a5ffa3ac8c0dcbd60b5e6464d9a088411b';
+      var loginParams = {
+        username: sm2.doEncrypt(tempParams.username, publicKey),
+        password: sm2.doEncrypt(tempParams.password, publicKey),
+        // password: 'afabf8a41786dec7d3c2c4c3ce017346bcab79e7ccd0185ea906fce5f14435f8c7c2ef504600ec91d89d9744b77a36947aee1ad83c0b76170dd33d92e783e0b8fcaf59e2a8a813608e829c12364570153f2d32b4b866da555021b7ba4ef4e0cd23864772541df5',
+        // username: '30af15e53d7bdc0b3be6a2fa303681d3de4a9727069ac9cf022dd75f098f87ef3ebcc548b00d60de9ff2a98d5f6fc8e8c17ded9c100db9af3e129c09e3ef793799e2babd11a8bcdc518eaa096665c681348f4d8437563cd740ff1547ae7d8810a88c0b678b3bcd',
+        phone: this.phone,
+        captcha: this.code,
+        checkKey: 1762913952346
+      };
+      this.loading = true;
+      this.mLogin(loginParams).then(function (res) {
+        console.log("mLogin", res);
+        if (res.data.success) {
+          uni.showToast({
+            title: 'Login Successful!'
+          });
+          var data = res.data.result;
+          that.handleUserInfo(data, function (data) {
+            //首次登录强制修改密码
+            // if(data && (data.userInfo.firstLogin == '0'|| data.userInfo.isPassword == '0')){
+            // 	that.loading = false
+            // 	setTimeout(function() {
+            // 		uni.navigateTo({
+            // 			url: '/pages/mine/updatepwd?firstLogin=0'
+            // 		});
+            // 	}, 500);
+            // }else{
+            uni.reLaunch({
+              url: '/pages/index/index'
+            });
+            // }
+          });
+        } else {
+          _this2.loading = false;
+          if (res.data.code == 500) {
+            uni.showToast({
+              icon: 'none',
+              title: 'The Account/Password Is Incorrect. Please Fill In The Correct Account/Password!'
+            });
+            return false;
+          } else {
+            uni.showToast({
+              icon: 'none',
+              title: res.data.message
+            });
+          }
+        }
+      }).catch(function (err) {}).finally(function () {});
+    },
+    handleUserInfo: function handleUserInfo(data, fun) {
+      var that = this;
+      that.$store.state.departData = {
+        multiDepart: data.multi_depart,
+        departs: data.departs
+      };
+      that.$store.state.sysAllDictItems = data.sysAllDictItems;
+      uni.setStorageSync(constants/* USER_INFO */.nc, data.userInfo);
+      that.$store.state.user = data.userInfo;
+      this.$store.dispatch('fetchUserRole', uni.getStorageSync(constants/* USER_INFO */.nc).id);
+      if (fun) {
+        fun(data);
+      }
+    }
+  })
+});
+;// ./src/pages/login/login.vue?vue&type=script&lang=js&
+ /* harmony default export */ var login_loginvue_type_script_lang_js_ = (loginvue_type_script_lang_js_); 
+// EXTERNAL MODULE: ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/h5-vue-style-loader/index.js??clonedRuleSet-12[0].rules[0].use[0]!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-12[0].rules[0].use[1]!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js??clonedRuleSet-12[0].rules[0].use[2]!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-12[0].rules[0].use[3]!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-12[0].rules[0].use[4]!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/index.js??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-scoped-loader/index.js!./src/pages/login/login.vue?vue&type=style&index=0&id=6620c352&scoped=true&lang=css&
+var loginvue_type_style_index_0_id_6620c352_scoped_true_lang_css_ = __webpack_require__(36061);
+;// ./src/pages/login/login.vue?vue&type=style&index=0&id=6620c352&scoped=true&lang=css&
+ /* harmony default export */ var login_loginvue_type_style_index_0_id_6620c352_scoped_true_lang_css_ = ((/* unused pure expression or super */ null && (mod))); 
+// EXTERNAL MODULE: ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/runtime/componentNormalizer.js
+var componentNormalizer = __webpack_require__(18535);
+;// ./src/pages/login/login.vue
+
+var renderjs
+;
+
+;
+
+
+/* normalize component */
+
+var component = (0,componentNormalizer/* default */.A)(
+  login_loginvue_type_script_lang_js_,
+  render,
+  staticRenderFns,
+  false,
+  null,
+  "6620c352",
+  null,
+  false,
+  components,
+  renderjs
+)
+
+/* harmony default export */ var login = (component.exports);
 
 /***/ }),
 
@@ -2375,6 +2343,38 @@ var update = add("48d03bdb", content, true, {"sourceMap":false,"shadowMode":fals
 
 /***/ }),
 
+/***/ 82368:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(31601);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(76314);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(4417);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__);
+// Imports
+
+
+
+var ___CSS_LOADER_URL_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(2685), __webpack_require__.b);
+var ___CSS_LOADER_URL_IMPORT_1___ = new URL(/* asset import */ __webpack_require__(39906), __webpack_require__.b);
+var ___CSS_LOADER_URL_IMPORT_2___ = new URL(/* asset import */ __webpack_require__(12910), __webpack_require__.b);
+var ___CSS_LOADER_URL_IMPORT_3___ = new URL(/* asset import */ __webpack_require__(89607), __webpack_require__.b);
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
+var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_0___);
+var ___CSS_LOADER_URL_REPLACEMENT_1___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_1___);
+var ___CSS_LOADER_URL_REPLACEMENT_2___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_2___);
+var ___CSS_LOADER_URL_REPLACEMENT_3___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_3___);
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, "html[data-v-6620c352],\n \tbody[data-v-6620c352]{height:100%}uni-page-body[data-v-6620c352]{background-color:#fff!important;\n \t\t/* background-image: url(../../static/qa/App-bg.jpg); */background-size:100% 100%;font-family:uniicons}.cu-form-group[data-v-6620c352]{background-color:#fff;padding-right:5px;display:-webkit-box;display:-webkit-flex;display:flex;-webkit-box-align:center;-webkit-align-items:center;align-items:center;min-height:50px;-webkit-box-pack:justify;-webkit-justify-content:space-between;justify-content:space-between}.cu-form-group uni-input[data-v-6620c352]{-webkit-box-flex:1;-webkit-flex:1;flex:1;font-size:15px;color:#555;padding-right:10px}.margin-top[data-v-6620c352]{margin-top:15px}.login-bg-img[data-v-6620c352]{position:fixed;top:0;right:0;left:0;bottom:0;z-index:0;width:100%;height:100%!important}.login-input[data-v-6620c352]{height:51px;line-height:51px;background:#fff}.login-input uni-input[data-v-6620c352]{webkit-box-shadow:0 0 0 1000px #fff inset;text-align:left!important;background:transparent!important;color:#5b5b5b;text-align:center;border-left:1px solid hsla(0,0%,100%,.55)!important;height:36px;line-height:36px}\n\n \t/* .login-input .login-icon{width: 18px;height: 20px;display: inline;} */.lg.cu-btn[data-v-6620c352]{height:51px;line-height:51px;background:#e46f64;border-radius:5px;margin-top:16px;color:hsla(0,0%,100%,.55)}.login-icon[data-v-6620c352]{width:33px;height:20px;display:inline;padding-right:15px}.login-icon.pswd[data-v-6620c352]{background:url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ") no-repeat 0;background-size:20px}.login-icon.user[data-v-6620c352]{background:url(" + ___CSS_LOADER_URL_REPLACEMENT_1___ + ") no-repeat 0;background-size:20px}.input-placeholder[data-v-6620c352],\n \t.zai-input[data-v-6620c352]{color:hsla(0,0%,100%,.55)!important}.lg.cu-btn[data-v-6620c352]{color:#fff!important}.forgetPassword[data-v-6620c352]{display:flex;justify-content:right;color:#fff;padding:5px}uni-input[data-v-6620c352]:-internal-autofill-selected{-webkit-appearance:menulist-button;appearance:menulist-button;background-color:initial!important;background-image:none!important;color:-internal-light-dark(#000,#fff)!important}.login-paddingtop[data-v-6620c352]{padding-top:200 upx}.zai-box[data-v-6620c352]{position:absolute;width:100%;height:100%;display:flex;justify-content:center;flex-direction:column;align-items:center}.zai-logo[data-v-6620c352]{width:60px!important}.zai-title[data-v-6620c352]{font-size:14px;color:#999}.input-placeholder[data-v-6620c352],\n \t.zai-input[data-v-6620c352]{color:#94afce}.zai-label[data-v-6620c352]{padding:60 upx 0;text-align:center;font-size:20 upx;color:#a7b6d0}.zai-btn[data-v-6620c352]{background:#ff65a3;color:#fff;border:0;border-radius:100 upx;font-size:36 upx}.zai-btn[data-v-6620c352]:after{border:0}\n\n \t/*按钮点击效果*/.zai-btn.button-hover[data-v-6620c352]{-webkit-transform:translate(1 upx,1 upx);transform:translate(1 upx,1 upx)}.padding-lr-xl[data-v-6620c352]{padding-left:%?50?%;padding-right:%?30?%}uni-input[data-v-6620c352]:-internal-autofill-selected{background-color:initial!important}.eyeBtn[data-v-6620c352]{width:22px;height:22px;position:absolute;top:15px;right:10px;z-index:9;background:url(" + ___CSS_LOADER_URL_REPLACEMENT_2___ + ") no-repeat 50%;background-size:20px}.eyeClass[data-v-6620c352]{width:22px;height:22px;position:absolute;top:15px;right:10px;z-index:9;background:url(" + ___CSS_LOADER_URL_REPLACEMENT_3___ + ") no-repeat 50%;background-size:20px}", ""]);
+// Exports
+/* harmony default export */ __webpack_exports__["default"] = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
 /***/ 87985:
 /***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
@@ -2392,4 +2392,4 @@ var update = add("4faac856", content, true, {"sourceMap":false,"shadowMode":fals
 /***/ })
 
 }]);
-//# sourceMappingURL=pages-login-login.af48cacb.js.map
+//# sourceMappingURL=pages-login-login.432c5fb8.js.map

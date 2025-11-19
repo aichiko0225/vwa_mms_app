@@ -5,6 +5,7 @@ import { useNavigation } from '@react-navigation/native';
 import tasksIcon from '../../assets/icons/read.png';
 import updateIcon from '../../assets/icons/updatePassword.png';
 import aboutIcon from '../../assets/icons/about.png';
+import h5Icon from '../../assets/icons/logo1.png';
 
 function ModuleButton({ title, icon, onPress }) {
   return (
@@ -28,6 +29,11 @@ export default function HomeTab() {
         <ModuleButton title="Tasks" icon={tasksIcon} onPress={() => navigation.navigate('Tasks')} />
         <ModuleButton title="Update Password" icon={updateIcon} onPress={() => navigation.navigate('ForgetPassword')} />
         <ModuleButton title="About" icon={aboutIcon} onPress={() => {}} />
+        <ModuleButton
+          title="Web H5"
+          icon={h5Icon}
+          onPress={() => navigation.navigate('WebView', { url: 'file:///android_asset/index.html#/pages/index/index' })}
+        />
       </View>
     </View>
   );

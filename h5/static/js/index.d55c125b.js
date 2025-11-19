@@ -283,7 +283,7 @@ __webpack_require__.g.__uniConfig.__webpack_chunk_load__ = __webpack_require__.e
 vue_runtime_esm["default"].component('pages-login-login', function (resolve) {
   var component = {
     component: Promise.all(/* require.ensure | pages-login-login */[__webpack_require__.e(972), __webpack_require__.e(638), __webpack_require__.e(872), __webpack_require__.e(841), __webpack_require__.e(791), __webpack_require__.e(949)]).then((function () {
-      return resolve(__webpack_require__(14563));
+      return resolve(__webpack_require__(59726));
     }).bind(null, __webpack_require__))['catch'](__webpack_require__.oe),
     delay: __uniConfig['async'].delay,
     timeout: __uniConfig['async'].timeout
@@ -335,7 +335,7 @@ vue_runtime_esm["default"].component('pages-login-error', function (resolve) {
 vue_runtime_esm["default"].component('pages-index-index', function (resolve) {
   var component = {
     component: Promise.all(/* require.ensure | pages-index-index */[__webpack_require__.e(593), __webpack_require__.e(638), __webpack_require__.e(425), __webpack_require__.e(329)]).then((function () {
-      return resolve(__webpack_require__(6296));
+      return resolve(__webpack_require__(3926));
     }).bind(null, __webpack_require__))['catch'](__webpack_require__.oe),
     delay: __uniConfig['async'].delay,
     timeout: __uniConfig['async'].timeout
@@ -3007,7 +3007,7 @@ function isBoolean(val) {
 /******/ 		// This function allow to reference async chunks
 /******/ 		__webpack_require__.u = function(chunkId) {
 /******/ 			// return url for filenames based on template
-/******/ 			return "static/js/" + ({"22":"pages-task-fillInInformation","25":"pages-mine-mine","135":"pages-calendar-calendar","214":"pages-task-checkItemsEdit","244":"pages-login-error","329":"pages-index-index","330":"pages-task-checkItems","429":"pages-infor-infor","581":"pages-task-detailDescription","656":"pages-mine-updatepwd","767":"pages-task-problemList","949":"pages-login-login"}[chunkId] || chunkId) + "." + {"22":"e1faec0a","25":"5b6d3b9c","135":"5a3312d0","214":"50e8262a","244":"b27b34b1","329":"cca049bf","330":"faed950b","425":"d29f39e7","429":"42638f6e","435":"ce7f18b4","581":"f4667ddf","593":"dda7b869","638":"b0daf227","656":"11eed4a1","767":"d51873eb","791":"e7543d9e","841":"dd555047","872":"ba55ef8d","949":"af48cacb","972":"f25c18a1"}[chunkId] + ".js";
+/******/ 			return "static/js/" + ({"22":"pages-task-fillInInformation","25":"pages-mine-mine","135":"pages-calendar-calendar","214":"pages-task-checkItemsEdit","244":"pages-login-error","329":"pages-index-index","330":"pages-task-checkItems","429":"pages-infor-infor","581":"pages-task-detailDescription","656":"pages-mine-updatepwd","767":"pages-task-problemList","949":"pages-login-login"}[chunkId] || chunkId) + "." + {"22":"e1faec0a","25":"5b6d3b9c","135":"5a3312d0","214":"50e8262a","244":"b27b34b1","329":"bd895de0","330":"faed950b","425":"d29f39e7","429":"42638f6e","435":"ce7f18b4","581":"f4667ddf","593":"dda7b869","638":"b0daf227","656":"11eed4a1","767":"d51873eb","791":"e7543d9e","841":"dd555047","872":"ba55ef8d","949":"432c5fb8","972":"f25c18a1"}[chunkId] + ".js";
 /******/ 		};
 /******/ 	}();
 /******/ 	
@@ -3200,4 +3200,4 @@ function isBoolean(val) {
 /******/ 	
 /******/ })()
 ;
-//# sourceMappingURL=index.41fc9b27.js.map
+//# sourceMappingURL=index.d55c125b.js.map

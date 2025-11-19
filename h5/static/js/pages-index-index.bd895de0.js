@@ -1,6 +1,6 @@
 (self["webpackChunkhello_uniapp"] = self["webpackChunkhello_uniapp"] || []).push([[329],{
 
-/***/ 6296:
+/***/ 3926:
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -12,7 +12,7 @@ __webpack_require__.d(__webpack_exports__, {
   "default": function() { return /* binding */ index; }
 });
 
-;// ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js??clonedRuleSet-42[0].rules[0].use[0]!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/filter-modules-template.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/page-meta.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/index.js??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-scoped-loader/index.js!./src/pages/index/index.vue?vue&type=template&id=9bb40a36&scoped=true&
+;// ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js??clonedRuleSet-42[0].rules[0].use[0]!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/filter-modules-template.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/page-meta.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/index.js??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-scoped-loader/index.js!./src/pages/index/index.vue?vue&type=template&id=a0144a54&scoped=true&
 var components = {'uIcon': (__webpack_require__(70495)/* ["default"] */ .A)}
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('v-uni-view',{staticClass:"riskAssessment",style:({height:_vm.containerHeight}),on:{"touchmove":function($event){$event.preventDefault();
 arguments[0] = $event = _vm.$handleEvent($event);
@@ -85,7 +85,7 @@ var recyclableRender = false
 var staticRenderFns = []
 
 
-;// ./src/pages/index/index.vue?vue&type=template&id=9bb40a36&scoped=true&
+;// ./src/pages/index/index.vue?vue&type=template&id=a0144a54&scoped=true&
 
 // EXTERNAL MODULE: ./node_modules/core-js/modules/es.error.to-string.js
 var es_error_to_string = __webpack_require__(76918);
@@ -2143,7 +2143,7 @@ var constants = __webpack_require__(36710);
         tester: that.$store.state.user.username,
         testDate: date
       };
-      that.$http.get(that.url.calendarList, {
+      that.$http.get('/testService/qaTestCalendar/appTestCalendarList', {
         params: parameter
       }).then(function (res) {
         if (res.data.success) {
@@ -2246,10 +2246,10 @@ var constants = __webpack_require__(36710);
 });
 ;// ./src/pages/index/index.vue?vue&type=script&lang=js&
  /* harmony default export */ var pages_indexvue_type_script_lang_js_ = (indexvue_type_script_lang_js_); 
-// EXTERNAL MODULE: ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/h5-vue-style-loader/index.js??clonedRuleSet-22[0].rules[0].use[0]!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-22[0].rules[0].use[1]!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js??clonedRuleSet-22[0].rules[0].use[2]!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-22[0].rules[0].use[3]!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-22[0].rules[0].use[4]!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/sass-loader/dist/cjs.js??clonedRuleSet-22[0].rules[0].use[5]!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js??clonedRuleSet-22[0].rules[0].use[6]!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/index.js??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-scoped-loader/index.js!./src/pages/index/index.vue?vue&type=style&index=0&id=9bb40a36&lang=scss&scoped=true&
-var indexvue_type_style_index_0_id_9bb40a36_lang_scss_scoped_true_ = __webpack_require__(51525);
-;// ./src/pages/index/index.vue?vue&type=style&index=0&id=9bb40a36&lang=scss&scoped=true&
- /* harmony default export */ var pages_indexvue_type_style_index_0_id_9bb40a36_lang_scss_scoped_true_ = ((/* unused pure expression or super */ null && (mod))); 
+// EXTERNAL MODULE: ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/h5-vue-style-loader/index.js??clonedRuleSet-22[0].rules[0].use[0]!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-22[0].rules[0].use[1]!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js??clonedRuleSet-22[0].rules[0].use[2]!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-22[0].rules[0].use[3]!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-22[0].rules[0].use[4]!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/sass-loader/dist/cjs.js??clonedRuleSet-22[0].rules[0].use[5]!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js??clonedRuleSet-22[0].rules[0].use[6]!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/index.js??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-scoped-loader/index.js!./src/pages/index/index.vue?vue&type=style&index=0&id=a0144a54&lang=scss&scoped=true&
+var indexvue_type_style_index_0_id_a0144a54_lang_scss_scoped_true_ = __webpack_require__(7344);
+;// ./src/pages/index/index.vue?vue&type=style&index=0&id=a0144a54&lang=scss&scoped=true&
+ /* harmony default export */ var pages_indexvue_type_style_index_0_id_a0144a54_lang_scss_scoped_true_ = ((/* unused pure expression or super */ null && (mod))); 
 ;// ./src/pages/index/index.vue
 
 var index_renderjs
@@ -2266,7 +2266,7 @@ var index_component = (0,componentNormalizer/* default */.A)(
   staticRenderFns,
   false,
   null,
-  "9bb40a36",
+  "a0144a54",
   null,
   false,
   components,
@@ -2274,6 +2274,22 @@ var index_component = (0,componentNormalizer/* default */.A)(
 )
 
 /* harmony default export */ var index = (index_component.exports);
+
+/***/ }),
+
+/***/ 7344:
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(99796);
+if(content.__esModule) content = content.default;
+if(typeof content === 'string') content = [[module.id, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var add = (__webpack_require__(69333)/* ["default"] */ .A)
+var update = add("028a7044", content, true, {"sourceMap":false,"shadowMode":false});
 
 /***/ }),
 
@@ -2984,22 +3000,6 @@ var update = add("1b41de90", content, true, {"sourceMap":false,"shadowMode":fals
 
 /***/ }),
 
-/***/ 51525:
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(77289);
-if(content.__esModule) content = content.default;
-if(typeof content === 'string') content = [[module.id, content, '']];
-if(content.locals) module.exports = content.locals;
-// add the styles to the DOM
-var add = (__webpack_require__(69333)/* ["default"] */ .A)
-var update = add("3dc19cd5", content, true, {"sourceMap":false,"shadowMode":false});
-
-/***/ }),
-
 /***/ 54064:
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
@@ -3672,27 +3672,6 @@ var component = (0,componentNormalizer/* default */.A)(
 
 /***/ }),
 
-/***/ 77289:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(31601);
-/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(76314);
-/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
-// Imports
-
-
-var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
-// Module
-___CSS_LOADER_EXPORT___.push([module.id, "@charset \"UTF-8\";\n/**\n * 这里是uni-app内置的常用样式变量\n *\n * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量\n * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App\n *\n */\n/**\n * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能\n *\n * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件\n */\n/* 颜色变量 */\n/* 行为相关颜色 */\n/* 文字基本颜色 */\n/* 背景颜色 */\n/* 边框颜色 */\n/* 尺寸变量 */\n/* 文字尺寸 */\n/* 图片尺寸 */\n/* Border Radius */\n/* 水平间距 */\n/* 垂直间距 */\n/* 透明度 */\n/* 文章场景相关 */uni-page-body[data-v-9bb40a36],\nuni-view[data-v-9bb40a36]{\n  /* display: flex; */}uni-page-body[data-v-9bb40a36]{min-height:100%;background-color:#fff}body.?%PAGE?%[data-v-9bb40a36]{background-color:#fff}.riskAssessment[data-v-9bb40a36]{width:100%;background-color:#fff;touch-action:none;position:fixed;top:env(safe-area-inset-top); /* 兼容 iOS 11.0-11.4 */top:constant(safe-area-inset-top); /* 兼容 iOS 12.0-12.1 */left:0}.type[data-v-9bb40a36]{display:inline-flex;align-items:center;padding:0 5px;margin-left:15px;border-radius:2px;font-size:12px}.part-title[data-v-9bb40a36]{display:flex;flex:d;margin-left:12px;background-color:#f9fafc;padding:2px;position:relative}.title-t[data-v-9bb40a36]{flex:1;display:flex;align-items:center;position:relative}.infor-list[data-v-9bb40a36]{display:block;width:100%;margin-top:5px;box-sizing:border-box}.infor-list .list[data-v-9bb40a36]{display:flex;padding:%?16?% %?0?%}.infor-list .list .img[data-v-9bb40a36]{width:%?64?%;height:%?64?%;padding-right:%?28?%;float:left}.infor-list .list .list-part[data-v-9bb40a36]{flex:1;display:block;justify-content:space-between;align-items:center}.infor-list .list .list-part uni-text[data-v-9bb40a36]:last-of-type{padding-left:15px;position:relative;display:flex;justify-content:flex-start;align-items:center;color:#000}.slotC .camera[data-v-9bb40a36]{display:inline-flex;align-items:center}.scanCamera[data-v-9bb40a36]{display:flex;align-items:center;justify-content:center;background:#000;flex-direction:column}.links[data-v-9bb40a36]{width:100%;overflow-x:scroll;overflow-y:hidden;padding:10px 20px;box-sizing:border-box;display:flex;align-items:center;justify-content:space-between;top:48}.links .each-links[data-v-9bb40a36]{display:flex;justify-content:center;align-items:center;white-space:nowrap;height:%?52?%;padding:0 10px}.links .each-links uni-text[data-v-9bb40a36]{text-align:center;color:#727272;font-size:%?28?%;position:relative}.links .each-links .colorActive[data-v-9bb40a36]::after{content:\"\";position:absolute;width:%?40?%;height:%?6?%;background-color:#0289fe;bottom:%?-12?%;left:50%;margin-left:%?-20?%;border-radius:%?4?%}.links .each-links .colorActive[data-v-9bb40a36]{color:#000;font-size:%?30?%}.buttonStyle[data-v-9bb40a36]{text-align:center;position:absolute;right:5%;\n  /* 将元素定位到右边 */width:120px;height:120px;margin-top:10px}.receive[data-v-9bb40a36]{font-size:15px;background-color:#17978e;color:#fff;border-radius:30px;width:90px;height:25px;text-align:center;margin-bottom:10px;float:right}.assign[data-v-9bb40a36]{font-size:15px;background-color:#e67464;color:#fff;border-radius:30px;width:90px;height:25px;text-align:center;margin-bottom:10px;float:right}.cancelTask[data-v-9bb40a36]{font-size:15px;background-color:#fff;color:#737373;border-radius:30px;width:120px;height:25px;text-align:center;margin-bottom:10px;float:right}.forward[data-v-9bb40a36]{font-size:15px;background-color:#000;color:#fff;border-radius:30px;width:90px;height:25px;text-align:center;margin-bottom:10px;float:right}.adjust[data-v-9bb40a36]{font-size:15px;background-color:#9e9e9e;color:#fff;border-radius:30px;width:90px;height:25px;text-align:center;margin-bottom:10px;float:right}.adjustNoTester[data-v-9bb40a36]{font-size:15px;background-color:#9e9e9e;color:#fff;border-radius:30px;width:90px;height:25px;text-align:center;margin-bottom:10px;float:right}", ""]);
-// Exports
-/* harmony default export */ __webpack_exports__["default"] = (___CSS_LOADER_EXPORT___);
-
-
-/***/ }),
-
 /***/ 78259:
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
@@ -3828,7 +3807,28 @@ ___CSS_LOADER_EXPORT___.push([module.id, "@charset \"UTF-8\";\n/**\n * 这里是
 /* harmony default export */ __webpack_exports__["default"] = (___CSS_LOADER_EXPORT___);
 
 
+/***/ }),
+
+/***/ 99796:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(31601);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(76314);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
+// Imports
+
+
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, "@charset \"UTF-8\";\n/**\n * 这里是uni-app内置的常用样式变量\n *\n * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量\n * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App\n *\n */\n/**\n * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能\n *\n * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件\n */\n/* 颜色变量 */\n/* 行为相关颜色 */\n/* 文字基本颜色 */\n/* 背景颜色 */\n/* 边框颜色 */\n/* 尺寸变量 */\n/* 文字尺寸 */\n/* 图片尺寸 */\n/* Border Radius */\n/* 水平间距 */\n/* 垂直间距 */\n/* 透明度 */\n/* 文章场景相关 */uni-page-body[data-v-a0144a54],\nuni-view[data-v-a0144a54]{\n  /* display: flex; */}uni-page-body[data-v-a0144a54]{min-height:100%;background-color:#fff}body.?%PAGE?%[data-v-a0144a54]{background-color:#fff}.riskAssessment[data-v-a0144a54]{width:100%;background-color:#fff;touch-action:none;position:fixed;top:env(safe-area-inset-top); /* 兼容 iOS 11.0-11.4 */top:constant(safe-area-inset-top); /* 兼容 iOS 12.0-12.1 */left:0}.type[data-v-a0144a54]{display:inline-flex;align-items:center;padding:0 5px;margin-left:15px;border-radius:2px;font-size:12px}.part-title[data-v-a0144a54]{display:flex;flex:d;margin-left:12px;background-color:#f9fafc;padding:2px;position:relative}.title-t[data-v-a0144a54]{flex:1;display:flex;align-items:center;position:relative}.infor-list[data-v-a0144a54]{display:block;width:100%;margin-top:5px;box-sizing:border-box}.infor-list .list[data-v-a0144a54]{display:flex;padding:%?16?% %?0?%}.infor-list .list .img[data-v-a0144a54]{width:%?64?%;height:%?64?%;padding-right:%?28?%;float:left}.infor-list .list .list-part[data-v-a0144a54]{flex:1;display:block;justify-content:space-between;align-items:center}.infor-list .list .list-part uni-text[data-v-a0144a54]:last-of-type{padding-left:15px;position:relative;display:flex;justify-content:flex-start;align-items:center;color:#000}.slotC .camera[data-v-a0144a54]{display:inline-flex;align-items:center}.scanCamera[data-v-a0144a54]{display:flex;align-items:center;justify-content:center;background:#000;flex-direction:column}.links[data-v-a0144a54]{width:100%;overflow-x:scroll;overflow-y:hidden;padding:10px 20px;box-sizing:border-box;display:flex;align-items:center;justify-content:space-between;top:48}.links .each-links[data-v-a0144a54]{display:flex;justify-content:center;align-items:center;white-space:nowrap;height:%?52?%;padding:0 10px}.links .each-links uni-text[data-v-a0144a54]{text-align:center;color:#727272;font-size:%?28?%;position:relative}.links .each-links .colorActive[data-v-a0144a54]::after{content:\"\";position:absolute;width:%?40?%;height:%?6?%;background-color:#0289fe;bottom:%?-12?%;left:50%;margin-left:%?-20?%;border-radius:%?4?%}.links .each-links .colorActive[data-v-a0144a54]{color:#000;font-size:%?30?%}.buttonStyle[data-v-a0144a54]{text-align:center;position:absolute;right:5%;\n  /* 将元素定位到右边 */width:120px;height:120px;margin-top:10px}.receive[data-v-a0144a54]{font-size:15px;background-color:#17978e;color:#fff;border-radius:30px;width:90px;height:25px;text-align:center;margin-bottom:10px;float:right}.assign[data-v-a0144a54]{font-size:15px;background-color:#e67464;color:#fff;border-radius:30px;width:90px;height:25px;text-align:center;margin-bottom:10px;float:right}.cancelTask[data-v-a0144a54]{font-size:15px;background-color:#fff;color:#737373;border-radius:30px;width:120px;height:25px;text-align:center;margin-bottom:10px;float:right}.forward[data-v-a0144a54]{font-size:15px;background-color:#000;color:#fff;border-radius:30px;width:90px;height:25px;text-align:center;margin-bottom:10px;float:right}.adjust[data-v-a0144a54]{font-size:15px;background-color:#9e9e9e;color:#fff;border-radius:30px;width:90px;height:25px;text-align:center;margin-bottom:10px;float:right}.adjustNoTester[data-v-a0144a54]{font-size:15px;background-color:#9e9e9e;color:#fff;border-radius:30px;width:90px;height:25px;text-align:center;margin-bottom:10px;float:right}", ""]);
+// Exports
+/* harmony default export */ __webpack_exports__["default"] = (___CSS_LOADER_EXPORT___);
+
+
 /***/ })
 
 }]);
-//# sourceMappingURL=pages-index-index.cca049bf.js.map
+//# sourceMappingURL=pages-index-index.bd895de0.js.map
