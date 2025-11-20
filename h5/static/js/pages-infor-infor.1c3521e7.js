@@ -1,22 +1,27 @@
 (self["webpackChunkhello_uniapp"] = self["webpackChunkhello_uniapp"] || []).push([[429],{
 
-/***/ 43993:
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+/***/ 5095:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-// style-loader: Adds some css to the DOM by adding a <style> tag
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(31601);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(76314);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
+// Imports
 
-// load the styles
-var content = __webpack_require__(96325);
-if(content.__esModule) content = content.default;
-if(typeof content === 'string') content = [[module.id, content, '']];
-if(content.locals) module.exports = content.locals;
-// add the styles to the DOM
-var add = (__webpack_require__(69333)/* ["default"] */ .A)
-var update = add("e1c0aeda", content, true, {"sourceMap":false,"shadowMode":false});
+
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, "@charset \"UTF-8\";\n/**\n * 这里是uni-app内置的常用样式变量\n *\n * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量\n * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App\n *\n */\n/**\n * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能\n *\n * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件\n */\n/* 颜色变量 */\n/* 行为相关颜色 */\n/* 文字基本颜色 */\n/* 背景颜色 */\n/* 边框颜色 */\n/* 尺寸变量 */\n/* 文字尺寸 */\n/* 图片尺寸 */\n/* Border Radius */\n/* 水平间距 */\n/* 垂直间距 */\n/* 透明度 */\n/* 文章场景相关 */uni-page-body[data-v-27ab5c82],\nuni-view[data-v-27ab5c82]{\n  /* display: flex; */}uni-page-body[data-v-27ab5c82]{min-height:100%;background-color:#fff}body.?%PAGE?%[data-v-27ab5c82]{background-color:#fff}.titleText[data-v-27ab5c82]{display:-webkit-box;\n  /*弹性伸缩盒子模型显示*/-webkit-box-orient:vertical;\n  /*排列方式*/-webkit-line-clamp:1;\n  /*显示文本行数(这里控制多少行隐藏)*/overflow:hidden;\n  /*溢出隐藏*/width:50%}.red-dot-text[data-v-27ab5c82]::before{content:\"●\";\n  /* 使用圆点符号作为文字前的标记 */color:red;\n  /* 设置圆点的颜色为红色 */display:inline-block;width:1em;\n  /* 调整圆点的位置 */font-size:1em;position:relative;top:-25%;left:-150%}.riskAssessment[data-v-27ab5c82]{width:100%;background-color:#f2f2f2;position:fixed;top:env(safe-area-inset-top);\n  /* 兼容 iOS 11.0-11.4 */top:constant(safe-area-inset-top);\n  /* 兼容 iOS 12.0-12.1 */left:0;touch-action:none}.infor-list[data-v-27ab5c82]{display:block;width:100%;box-sizing:border-box;padding:3%;background-color:#f2f2f2;overflow:auto}.infor-list .list[data-v-27ab5c82]{display:flex;width:100%;height:auto;border-bottom:10px solid #eee;border-radius:5px;background-color:#fff;padding:3%;box-sizing:border-box}.infor-list .list .img[data-v-27ab5c82]{width:%?96?%;height:%?96?%;padding-right:%?24?%}.infor-list .list .list-part[data-v-27ab5c82]{flex:1}.infor-list .list .list-part .title-time[data-v-27ab5c82]{display:flex;justify-content:space-between;position:relative;flex-direction:column;margin-bottom:10px}.infor-list .list .list-part .title-time uni-text[data-v-27ab5c82]:first-of-type{flex:1;color:#272727;font-size:14px}[data-v-27ab5c82] .u-icon__icon{font-size:24px!important}[data-v-27ab5c82] .u-popup__content{height:50%!important;width:100%}", ""]);
+// Exports
+/* harmony default export */ __webpack_exports__["default"] = (___CSS_LOADER_EXPORT___);
+
 
 /***/ }),
 
-/***/ 51445:
+/***/ 6042:
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -28,21 +33,21 @@ __webpack_require__.d(__webpack_exports__, {
   "default": function() { return /* binding */ infor; }
 });
 
-;// ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js??clonedRuleSet-42[0].rules[0].use[0]!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/filter-modules-template.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/page-meta.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/index.js??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-scoped-loader/index.js!./src/pages/infor/infor.vue?vue&type=template&id=1986d306&scoped=true&
+;// ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js??clonedRuleSet-42[0].rules[0].use[0]!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/filter-modules-template.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/page-meta.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/index.js??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-scoped-loader/index.js!./src/pages/infor/infor.vue?vue&type=template&id=27ab5c82&scoped=true&
 var components = {'uniNavBar': (__webpack_require__(28435)/* ["default"] */ .A),'uPopup': (__webpack_require__(71791)/* ["default"] */ .A)}
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('v-uni-view',{staticClass:"riskAssessment",style:({height:_vm.containerHeight, width:_vm.screenWidth}),on:{"touchmove":function($event){$event.preventDefault();
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('v-uni-view',{staticClass:"riskAssessment",style:({ height: _vm.containerHeight, width: _vm.screenWidth }),on:{"touchmove":function($event){$event.preventDefault();
 arguments[0] = $event = _vm.$handleEvent($event);
 
 }}},[_c('v-uni-view',[_c('uni-nav-bar',{staticStyle:{"background-color":"#ffffff","color":"black","font-weight":"bold"},attrs:{"fixed":false,"shadow":true,"title":"Message"},scopedSlots:_vm._u([{key:"right",fn:function(){return [_c('v-uni-image',{staticClass:"img",staticStyle:{"z-index":"999","width":"30%","height":"40%"},attrs:{"src":__webpack_require__(74590)},on:{"click":function($event){
 arguments[0] = $event = _vm.$handleEvent($event);
 (_vm.clearAll).apply(void 0, arguments)
-}}})]},proxy:true}])})],1),_c('div',[_c('v-uni-view',{staticClass:"infor-list",style:({height:_vm.pageHeight}),attrs:{"id":"infor-list"}},[_c('v-uni-scroll-view',{staticStyle:{"height":"100%"},attrs:{"scroll-y":"true","lower-threshold":"0px"},on:{"scrolltolower":function($event){
+}}})]},proxy:true}])})],1),_c('div',[_c('v-uni-view',{staticClass:"infor-list",style:({ height: _vm.pageHeight }),attrs:{"id":"infor-list"}},[_c('v-uni-scroll-view',{staticStyle:{"height":"100%"},attrs:{"scroll-y":"true","lower-threshold":"0px"},on:{"scrolltolower":function($event){
 arguments[0] = $event = _vm.$handleEvent($event);
 (_vm.scrolltolower).apply(void 0, arguments)
 }}},_vm._l((_vm.messageList),function(item,index){return _c('v-uni-view',{key:index,staticClass:"list",on:{"click":function($event){
 arguments[0] = $event = _vm.$handleEvent($event);
-_vm.toggle('center',item)
-}}},[_c('v-uni-image',{staticClass:"img",attrs:{"src":_vm.imgPath}}),_c('v-uni-view',{staticClass:"list-part"},[_c('v-uni-view',{staticClass:"title-time"},[_c('v-uni-view',{staticStyle:{"display":"flex","justify-content":"space-between","margin-top":"4%"}},[_c('v-uni-view',{staticClass:"titleText"},[_vm._v(" "+_vm._s(item.titile)+" ")]),(item.readFlag==0)?_c('p',{staticClass:"red-dot-text"}):_vm._e(),_c('v-uni-view',{staticStyle:{"font-size":"12px"}},[_vm._v(_vm._s(item.sendTime.slice(0, 10)))])],1),_c('v-uni-view',{staticStyle:{"color":"#999","margin-top":"2%"}},[_vm._v(" "+_vm._s(item.msgContent.length >65 ? item.msgContent.slice(0, 45) + '...' : item.msgContent)+" ")])],1)],1)],1)}),1)],1)],1),_c('u-popup',{attrs:{"closeable":true,"show":_vm.show,"round":30,"mode":"center"},on:{"close":function($event){
+_vm.toggle('center', item)
+}}},[_c('v-uni-image',{staticClass:"img",attrs:{"src":_vm.imgPath}}),_c('v-uni-view',{staticClass:"list-part"},[_c('v-uni-view',{staticClass:"title-time"},[_c('v-uni-view',{staticStyle:{"display":"flex","justify-content":"space-between","margin-top":"4%"}},[_c('v-uni-view',{staticClass:"titleText"},[_vm._v(" "+_vm._s(item.titile)+" ")]),(item.readFlag == 0)?_c('p',{staticClass:"red-dot-text"}):_vm._e(),_c('v-uni-view',{staticStyle:{"font-size":"12px"}},[_vm._v(_vm._s(item.sendTime.slice(0, 10)))])],1),_c('v-uni-view',{staticStyle:{"color":"#999","margin-top":"2%"}},[_vm._v(" "+_vm._s(item.msgContent.length > 65 ? item.msgContent.slice(0, 45) + '...' : item.msgContent)+" ")])],1)],1)],1)}),1)],1)],1),_c('u-popup',{attrs:{"closeable":true,"show":_vm.show,"round":30,"mode":"center"},on:{"close":function($event){
 arguments[0] = $event = _vm.$handleEvent($event);
 _vm.closePopup(_vm.popForm)
 },"open":function($event){
@@ -56,7 +61,7 @@ var recyclableRender = false
 var staticRenderFns = []
 
 
-;// ./src/pages/infor/infor.vue?vue&type=template&id=1986d306&scoped=true&
+;// ./src/pages/infor/infor.vue?vue&type=template&id=27ab5c82&scoped=true&
 
 // EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/esm/toConsumableArray.js + 3 modules
 var toConsumableArray = __webpack_require__(31969);
@@ -132,10 +137,21 @@ var publicMessage = __webpack_require__(78259);
 //
 //
 //
+//
+//
 
 var platform = uni.getSystemInfoSync().platform;
 
 
+
+/**
+ * URL 列表
+ */
+var URL = {
+  list: '/testService/qaTestCalendar/getMyAnnouncementSend',
+  edit: '/sys/sysAnnouncementSend/editByAnntIdAndUserId',
+  readAll: '/sys/sysAnnouncementSend/readAll'
+};
 /* harmony default export */ var inforvue_type_script_lang_js_ = ({
   data: function data() {
     return {
@@ -148,11 +164,6 @@ var platform = uni.getSystemInfoSync().platform;
       connecting: false,
       socketTask: false,
       msg: false,
-      url: {
-        list: '/actMessage/actMessage/list',
-        edit: '/sys/sysAnnouncementSend/editByAnntIdAndUserId',
-        readAll: '/sys/sysAnnouncementSend/readAll'
-      },
       popForm: {},
       params: {
         pageNo: 0,
@@ -178,28 +189,24 @@ var platform = uni.getSystemInfoSync().platform;
     }
   },
   onLoad: function onLoad(e) {
+    // #ifdef APP-PLUS
     var info = uni.getSystemInfoSync();
     if (info.uniPlatform.toLowerCase() === 'app') {
       console.log("load");
       plus.navigator.setStatusBarStyle("dark");
     }
     this.getScreenHeight();
+    // #ifdef APP-PLUS
     this.getMessageList();
   },
-  onShow: function onShow() {
-    var info = uni.getSystemInfoSync();
-    if (info.uniPlatform.toLowerCase() === 'app') {
-      console.log("show");
-      plus.navigator.setStatusBarStyle("dark");
-    }
-    // this.getMessageList()
-  },
   mounted: function mounted() {
+    // #ifdef APP-PLUS
     var info = uni.getSystemInfoSync();
     if (info.uniPlatform.toLowerCase() === 'app') {
       console.log("mounted");
       plus.navigator.setStatusBarStyle("dark");
     }
+    // #endif
   },
   methods: {
     clearAll: function clearAll() {
@@ -209,7 +216,7 @@ var platform = uni.getSystemInfoSync().platform;
         content: 'Are You Sure To Clear All?',
         success: function success(res) {
           if (res.confirm) {
-            that.$http.put(that.url.readAll).then(function (res) {
+            that.$http.put(URL.readAll).then(function (res) {
               if (res.data.success) {
                 uni.showToast({
                   title: 'Read All!'
@@ -240,7 +247,7 @@ var platform = uni.getSystemInfoSync().platform;
       var postData = {
         anntId: item.anntId
       };
-      this.$http.put(this.url.edit, postData).then(function (res) {
+      this.$http.put(URL.edit, postData).then(function (res) {
         if (res.data.success) {
           _this.getMessageList();
         }
@@ -269,7 +276,7 @@ var platform = uni.getSystemInfoSync().platform;
       } else {
         that.params.pageNo = 1;
       }
-      this.$http.get("/testService/qaTestCalendar/getMyAnnouncementSend", {
+      this.$http.get(URL.list, {
         params: this.params
       }).then(function (res) {
         if (res.data.success) {
@@ -339,6 +346,14 @@ var platform = uni.getSystemInfoSync().platform;
             msg: 'Hello'
           };
         },
+        // #ifdef MP
+        header: {
+          'content-type': 'application/json'
+        },
+        // #endif
+        // #ifdef MP-WEIXIN
+        method: 'GET',
+        // #endif
         success: function success(res) {
           // 这里是接口调用成功的回调，不是连接成功的回调，请注意
         },
@@ -402,10 +417,10 @@ var platform = uni.getSystemInfoSync().platform;
 });
 ;// ./src/pages/infor/infor.vue?vue&type=script&lang=js&
  /* harmony default export */ var infor_inforvue_type_script_lang_js_ = (inforvue_type_script_lang_js_); 
-// EXTERNAL MODULE: ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/h5-vue-style-loader/index.js??clonedRuleSet-22[0].rules[0].use[0]!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-22[0].rules[0].use[1]!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js??clonedRuleSet-22[0].rules[0].use[2]!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-22[0].rules[0].use[3]!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-22[0].rules[0].use[4]!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/sass-loader/dist/cjs.js??clonedRuleSet-22[0].rules[0].use[5]!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js??clonedRuleSet-22[0].rules[0].use[6]!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/index.js??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-scoped-loader/index.js!./src/pages/infor/infor.vue?vue&type=style&index=0&id=1986d306&lang=scss&scoped=true&
-var inforvue_type_style_index_0_id_1986d306_lang_scss_scoped_true_ = __webpack_require__(43993);
-;// ./src/pages/infor/infor.vue?vue&type=style&index=0&id=1986d306&lang=scss&scoped=true&
- /* harmony default export */ var infor_inforvue_type_style_index_0_id_1986d306_lang_scss_scoped_true_ = ((/* unused pure expression or super */ null && (mod))); 
+// EXTERNAL MODULE: ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/h5-vue-style-loader/index.js??clonedRuleSet-22[0].rules[0].use[0]!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-22[0].rules[0].use[1]!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js??clonedRuleSet-22[0].rules[0].use[2]!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-22[0].rules[0].use[3]!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-22[0].rules[0].use[4]!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/sass-loader/dist/cjs.js??clonedRuleSet-22[0].rules[0].use[5]!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js??clonedRuleSet-22[0].rules[0].use[6]!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/index.js??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-scoped-loader/index.js!./src/pages/infor/infor.vue?vue&type=style&index=0&id=27ab5c82&lang=scss&scoped=true&
+var inforvue_type_style_index_0_id_27ab5c82_lang_scss_scoped_true_ = __webpack_require__(67264);
+;// ./src/pages/infor/infor.vue?vue&type=style&index=0&id=27ab5c82&lang=scss&scoped=true&
+ /* harmony default export */ var infor_inforvue_type_style_index_0_id_27ab5c82_lang_scss_scoped_true_ = ((/* unused pure expression or super */ null && (mod))); 
 // EXTERNAL MODULE: ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/runtime/componentNormalizer.js
 var componentNormalizer = __webpack_require__(18535);
 ;// ./src/pages/infor/infor.vue
@@ -424,7 +439,7 @@ var component = (0,componentNormalizer/* default */.A)(
   staticRenderFns,
   false,
   null,
-  "1986d306",
+  "27ab5c82",
   null,
   false,
   components,
@@ -432,6 +447,22 @@ var component = (0,componentNormalizer/* default */.A)(
 )
 
 /* harmony default export */ var infor = (component.exports);
+
+/***/ }),
+
+/***/ 67264:
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(5095);
+if(content.__esModule) content = content.default;
+if(typeof content === 'string') content = [[module.id, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var add = (__webpack_require__(69333)/* ["default"] */ .A)
+var update = add("779b5a46", content, true, {"sourceMap":false,"shadowMode":false});
 
 /***/ }),
 
@@ -494,28 +525,7 @@ var getAllMessageList = function getAllMessageList() {
 "use strict";
 module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE4AAABNCAYAAAAIPlKzAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAUQSURBVHhe7Zu7ctQwFIbzJDwJT8KTUFPT0DBUlHQ0DCUz9AwVFbxAatjsLbubmP12ohlZe2TrciTZu/ln/kmIbVn6kI5u1k33rCQ9g0tUc3CPj4/dbn/otve7br2575brbbdYrrt/d6vu72J1+sm/+TvXuY/7ea6lqoM7HB5OhV89AQJOqnmedEiPdGuqCrj9sYast/fH2pMHasykz3t4X2kVBUeTultuxEKWNu/d7fdPOdFXEXD7w6FbrtoAc01sLNGM1cFtjk1FKkBrb7a7pxzqSA0czXLRqFmGmuarFf9UwPG/KWV0qt4ce+FcZYFjLLVcbcXMTd13xxj8kDEWTAZHlZcyNDenNt0kcMQzKRNzNeWJVTS4S6lprmNrXhQ4YoL00ktxzPw3ChwBVXrhpZiOLlTB4OjCpZddmkMHykHgLjWu+RzSWQSBazVRb2VmQGMaBTe3WYGWmXMPaRAcqwpSotdiVnl8GgTHkoyU4LWYpTGfvOBYBJQSuzb7OgovuJodwq/b2+79zx/d6+/fTn715fPJ/M7f8dfff8RnSxsOkkRwNYYfwALMiw/vupu3b4LMvQAFpJRmKUvTMREcGx5SAhqOheUzaZCW9A5tw8OVCK7EbhQ17OWnjyKEHAOwdDOGh6szcCWGINQMqdBarlH73A2fM3Bs7koPppqYJBW2hHmXlAcNw8XWGTh2xqUHU1wTmnEpeHCxdQYu97MEY3o+qWA1XKLZwsVWDxwLedJDKZYKVMvEPDojKV85thc6e+C09hJaNFHX9OBS3nJszyJ64LQ6BqkgLaw9TLE7iB44vj+THohxy9jmWjvWwceoB05jNSSkmWrNHKS/2+YeKY+pho9RD5xGjzpUIK6ZeSbBW4JsaomZ+LvXiV0m8NMUx95n8qVhu2ftgTOfj+ZYKoCxOzkHgH1dCujuNM3tLYFnX3dt35tr+Bj1wEk3x1rKvLF0vw3GBYvtWieBdeG7dkHn2ki9xg01HamXs69LYOzmTNpuGlJztm3fm2tvjdOIcW7Tsm0XnJowFOMwv7vXecbUIn4OvQ+btDTsjXFT6VXHruOQe8iLlMdUe3tVjXHcWLCuaSlm5tg7jtOaOYw1n1qW8pZj78xBa646FrBruMQKiXeuqrk60rLWSb2zhr2rI0ijZ8X0eCEBvISlYU+u7R4VnYHTXAFuAa8ENDy6AqzVQRgDTypgCZeChu2OAZ2BK7HLJRVS08Q0Mygu5dFdLqS5r1qyxhEGSvSeroP2VZHmTr47IDaFzel1awEzDt7J1/x2xIzpKKwbg6iNXAfiEEie5TqwSsYxn4O/HUFaXysBJyb+mPtbAJIc9bUS0ppFzN2+w8JecGgqh3Vb2V4NcTUIjm9gpQSvxe4QxNYgODTVE8+lPXZQZBQcmvrJZ237OgRbQeCuraOQhh+ugsChazkoEnrsPBgcmusx8lBzOjJUUeA0Fzqn6Jgz+lHgUI1P+Vs4JK7ZigaHLq2zsPcSQpUEDl1KzYutaUbJ4BAxYa7Hzeno7M2XWGWBM5rbsfPQ4+NDUgGHqPKLAidyNM0MKCWeSVIDZzTVgfLYiedYqYNDrCpofMCjYZbGhk46p6oIOCMWAWuee7XNe7WapaSi4IyIf2x4lDiVaJv0eU/qECNGVcDZohmzucvOeO7nFjxPOqQ3tOhYQtXBuWIsRZOi8Hx/RmwEiPmslp/8m79znfu4P2cMpqHm4OaqZ3BJ6rr/HpSLpmzhFg4AAAAASUVORK5CYII=";
 
-/***/ }),
-
-/***/ 96325:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(31601);
-/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(76314);
-/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
-// Imports
-
-
-var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
-// Module
-___CSS_LOADER_EXPORT___.push([module.id, "@charset \"UTF-8\";\n/**\n * 这里是uni-app内置的常用样式变量\n *\n * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量\n * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App\n *\n */\n/**\n * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能\n *\n * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件\n */\n/* 颜色变量 */\n/* 行为相关颜色 */\n/* 文字基本颜色 */\n/* 背景颜色 */\n/* 边框颜色 */\n/* 尺寸变量 */\n/* 文字尺寸 */\n/* 图片尺寸 */\n/* Border Radius */\n/* 水平间距 */\n/* 垂直间距 */\n/* 透明度 */\n/* 文章场景相关 */uni-page-body[data-v-1986d306],\nuni-view[data-v-1986d306]{\n  /* display: flex; */}uni-page-body[data-v-1986d306]{min-height:100%;background-color:#fff}body.?%PAGE?%[data-v-1986d306]{background-color:#fff}.titleText[data-v-1986d306]{display:-webkit-box; /*弹性伸缩盒子模型显示*/-webkit-box-orient:vertical; /*排列方式*/-webkit-line-clamp:1; /*显示文本行数(这里控制多少行隐藏)*/overflow:hidden; /*溢出隐藏*/width:50%}.red-dot-text[data-v-1986d306]::before{content:\"●\";\n  /* 使用圆点符号作为文字前的标记 */color:red;\n  /* 设置圆点的颜色为红色 */display:inline-block;width:1em;\n  /* 调整圆点的位置 */font-size:1em;position:relative;top:-25%;left:-150%}.riskAssessment[data-v-1986d306]{width:100%;background-color:#f2f2f2;position:fixed;top:env(safe-area-inset-top); /* 兼容 iOS 11.0-11.4 */top:constant(safe-area-inset-top); /* 兼容 iOS 12.0-12.1 */left:0;touch-action:none}.infor-list[data-v-1986d306]{display:block;width:100%;box-sizing:border-box;padding:3%;background-color:#f2f2f2;overflow:auto}.infor-list .list[data-v-1986d306]{display:flex;width:100%;height:auto;border-bottom:10px solid #eee;border-radius:5px;background-color:#fff;padding:3%;box-sizing:border-box}.infor-list .list .img[data-v-1986d306]{width:%?96?%;height:%?96?%;padding-right:%?24?%}.infor-list .list .list-part[data-v-1986d306]{flex:1}.infor-list .list .list-part .title-time[data-v-1986d306]{display:flex;justify-content:space-between;position:relative;flex-direction:column;margin-bottom:10px}.infor-list .list .list-part .title-time uni-text[data-v-1986d306]:first-of-type{flex:1;color:#272727;font-size:14px}[data-v-1986d306] .u-icon__icon{font-size:24px!important}[data-v-1986d306] .u-popup__content{height:50%!important;width:100%}", ""]);
-// Exports
-/* harmony default export */ __webpack_exports__["default"] = (___CSS_LOADER_EXPORT___);
-
-
 /***/ })
 
 }]);
-//# sourceMappingURL=pages-infor-infor.42638f6e.js.map
+//# sourceMappingURL=pages-infor-infor.1c3521e7.js.map

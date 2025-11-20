@@ -226,7 +226,7 @@ var api = __webpack_require__(21629);
       });
     },
     logOut: function logOut() {
-      api/* default */.A.logout().then(function (res) {
+      api/* default */.Ay.logout().then(function (res) {
         uni.clearStorageSync();
         uni.reLaunch({
           url: '/pages/login/login'
@@ -317,4 +317,4 @@ var update = add("2f6f19f8", content, true, {"sourceMap":false,"shadowMode":fals
 /***/ })
 
 }]);
-//# sourceMappingURL=pages-mine-mine.5b6d3b9c.js.map
+//# sourceMappingURL=pages-mine-mine.57314fd8.js.map

@@ -1,0 +1,147 @@
+[
+  {
+    "path": "/pages/login/login",
+    "name": "login",
+    "title": "登录"
+  },
+  {
+    "path": "/pages/index/index",
+    "name": "index",
+    "title": "主页"
+  },
+  {
+    "path": "/pages/home/home",
+    "name": "home",
+    "title": "首页"
+  },
+  {
+    "path": "/pages/user/people",
+    "name": "people",
+    "title": "个人中心"
+  },
+  {
+    "path": "/pages/login/error",
+    "name": "error",
+    "title": "错误页面"
+  },
+  {
+    "path": "/pages/login/qyweixinLogin",
+    "name": "qyweixinLogin",
+    "title": "微信登录跳转"
+  },
+  {
+    "path": "/pages/user/userdetail",
+    "name": "userdetail",
+    "title": "个人详情"
+  },
+  {
+    "path": "/pages/user/useredit",
+    "name": "useredit",
+    "title": "个人编辑"
+  },
+  {
+    "path": "/pages/user/userexit",
+    "name": "userexit",
+    "title": "退出"
+  },
+  {
+    "path": "/pages/common/exit",
+    "name": "exit",
+    "title": "退出"
+  },
+  {
+    "path": "/pages/common/success",
+    "name": "success",
+    "title": "success"
+  },
+  {
+    "path": "/pages/dataentry/index",
+    "name": "dataentry",
+    "title": "试验数据录入"
+  },
+  {
+    "path": "/pages/question/index",
+    "name": "question",
+    "title": "问题录入"
+  },
+  {
+    "path": "/pages/question/detailed",
+    "name": "detailed",
+    "title": "问题录入明细"
+  },
+  {
+    "path": "/pages/question/saoma/index",
+    "name": "saoma",
+    "title": "扫码"
+  },
+  {
+    "path": "/pages/task/worklist",
+    "name": "task",
+    "title": "任务工时"
+  },
+  {
+    "path": "/pages/task/workdetailed",
+    "name": "workdetailed",
+    "title": "工时明细"
+  },
+  {
+    "path": "/pages/makeuse/start",
+    "name": "start",
+    "title": "开始使用"
+  },
+  {
+    "path": "/pages/makeuse/end",
+    "name": "end",
+    "title": "结束使用"
+  },
+  {
+    "path": "/pages/question/hs-scancode/hs-scancode",
+    "name": "scana",
+    "title": "扫码"
+  },
+  {
+    "path": "/pages/spotcheck/spotlist",
+    "name": "spotlist",
+    "title": "点检录入列表"
+  },
+  {
+    "path": "/pages/spotcheck/spotdetailed",
+    "name": "spotdetailed",
+    "title": "点检录入明细"
+  },
+  {
+    "path": "/pages/repair/repairlist",
+    "name": "repairlist",
+    "title": "维修信息列表"
+  },
+  {
+    "path": "/pages/repair/repairdetailed",
+    "name": "repairdetailed",
+    "title": "维修信息录入"
+  },
+  {
+    "path": "/pages/account/accountlist",
+    "name": "acclist",
+    "title": "设备台账列表"
+  },
+  {
+    "path": "/pages/account/accountdetailed",
+    "name": "accdetailed",
+    "title": "设备台账信息"
+  },
+  {
+    "path": "/pages/dataentry/entrydetailed",
+    "name": "entrydetailed",
+    "title": "原始数据"
+  },
+  {
+    "path": "/pages/spotcheck/spotlist",
+    "name": "spotlist",
+    "title": "设备点检微信"
+  },
+  {
+    "path": "/pages/spotcheck/wxonScan",
+    "name": "wxonScan",
+    "title": "微信扫码"
+  }
+]

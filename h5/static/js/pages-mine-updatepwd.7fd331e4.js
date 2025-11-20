@@ -237,7 +237,7 @@ var constants = __webpack_require__(36710);
                 title: 'The Password Is Changed Successfully. Please Log In Again'
               });
               setTimeout(function () {
-                api/* default */.A.logout().then(function (res) {
+                api/* default */.Ay.logout().then(function (res) {
                   uni.clearStorageSync();
                   uni.navigateTo({
                     url: '/pages/login/login'
@@ -322,4 +322,4 @@ ___CSS_LOADER_EXPORT___.push([module.id, "@charset \"UTF-8\";\n/**\n * 这里是
 /***/ })
 
 }]);
-//# sourceMappingURL=pages-mine-updatepwd.11eed4a1.js.map
+//# sourceMappingURL=pages-mine-updatepwd.7fd331e4.js.map
