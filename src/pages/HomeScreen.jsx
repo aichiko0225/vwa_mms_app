@@ -7,9 +7,9 @@ import UserTab from './user/UserTab.jsx';
 
 const tabIcons = (name) => {
   const map = {
-    Home: 'home',
-    Message: 'email',
-    User: 'account',
+    HomeTab: 'home',
+    MessageTab: 'email',
+    UserTab: 'account',
   }
   return map[name];
 }
@@ -29,11 +29,9 @@ export default function HomeScreen() {
         },
       })}
     >
-      <Tab.Screen name="Home" component={HomeTab} />
-      <Tab.Screen name="Message" component={MessageTab} />
-      <Tab.Screen name="User" component={UserTab} options={{
-        tabBarBadge: undefined,
-      }} />
+      <Tab.Screen name="HomeTab" component={HomeTab} options={{ tabBarLabel: 'Home' }} />
+      <Tab.Screen name="MessageTab" component={MessageTab} options={{ tabBarLabel: 'Message' }} />
+      <Tab.Screen name="UserTab" component={UserTab} options={{ tabBarLabel: 'User', tabBarBadge: undefined }} />
     </Tab.Navigator>
   );
 }

@@ -32,7 +32,11 @@ export default function HomeTab() {
         <ModuleButton
           title="Web H5"
           icon={h5Icon}
-          onPress={() => navigation.navigate('WebView', { url: 'file:///android_asset/index.html#/pages/index/index' })}
+          onPress={() => navigation.navigate('WebView', 
+            { 
+              url: 'file:///android_asset/index.html#/pages/index/index'
+              // __DEV__ ? 'http://192.168.51.43:8080/#/pages/index/index' : 'file:///android_asset/index.html#/pages/index/index' 
+            })}
         />
       </View>
     </View>
