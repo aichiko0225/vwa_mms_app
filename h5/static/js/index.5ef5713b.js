@@ -184,6 +184,7 @@ var STORAGE_OPTIONS = {
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   L: function() { return /* binding */ rnWebViewMixin; }
 /* harmony export */ });
+/* unused harmony export sendMessageToRN */
 /* harmony import */ var core_js_modules_es_date_to_json_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(60739);
 /* harmony import */ var core_js_modules_es_date_to_json_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_date_to_json_js__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var core_js_modules_es_json_stringify_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(33110);
@@ -443,7 +444,7 @@ vue_runtime_esm["default"].component('pages-login-error', function (resolve) {
 vue_runtime_esm["default"].component('pages-index-index', function (resolve) {
   var component = {
     component: Promise.all(/* require.ensure | pages-index-index */[__webpack_require__.e(593), __webpack_require__.e(638), __webpack_require__.e(425), __webpack_require__.e(329)]).then((function () {
-      return resolve(__webpack_require__(83608));
+      return resolve(__webpack_require__(62988));
     }).bind(null, __webpack_require__))['catch'](__webpack_require__.oe),
     delay: __uniConfig['async'].delay,
     timeout: __uniConfig['async'].timeout
@@ -1241,9 +1242,9 @@ app.$mount();
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var C_Users_A200477427_developers_VWA_MMS_iphone_fore_end_new_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2775);
-/* harmony import */ var C_Users_A200477427_developers_VWA_MMS_iphone_fore_end_new_node_modules_babel_runtime_helpers_esm_regenerator_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(95223);
-/* harmony import */ var C_Users_A200477427_developers_VWA_MMS_iphone_fore_end_new_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(50575);
+/* harmony import */ var C_Users_A200477427_developers_VWA_MMS_vwa_mms_app_uni_test_case_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2775);
+/* harmony import */ var C_Users_A200477427_developers_VWA_MMS_vwa_mms_app_uni_test_case_node_modules_babel_runtime_helpers_esm_regenerator_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(95223);
+/* harmony import */ var C_Users_A200477427_developers_VWA_MMS_vwa_mms_app_uni_test_case_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(50575);
 /* harmony import */ var core_js_modules_es_array_map_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(62062);
 /* harmony import */ var core_js_modules_es_array_map_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_array_map_js__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var core_js_modules_es_date_to_json_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(60739);
@@ -1277,7 +1278,7 @@ app.$mount();
 
 
 vue__WEBPACK_IMPORTED_MODULE_9__["default"].use((vuex__WEBPACK_IMPORTED_MODULE_10___default()));
-var store = new (vuex__WEBPACK_IMPORTED_MODULE_10___default().Store)((0,C_Users_A200477427_developers_VWA_MMS_iphone_fore_end_new_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_0__/* ["default"] */ .A)((0,C_Users_A200477427_developers_VWA_MMS_iphone_fore_end_new_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_0__/* ["default"] */ .A)((0,C_Users_A200477427_developers_VWA_MMS_iphone_fore_end_new_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_0__/* ["default"] */ .A)((0,C_Users_A200477427_developers_VWA_MMS_iphone_fore_end_new_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_0__/* ["default"] */ .A)({
+var store = new (vuex__WEBPACK_IMPORTED_MODULE_10___default().Store)((0,C_Users_A200477427_developers_VWA_MMS_vwa_mms_app_uni_test_case_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_0__/* ["default"] */ .A)((0,C_Users_A200477427_developers_VWA_MMS_vwa_mms_app_uni_test_case_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_0__/* ["default"] */ .A)((0,C_Users_A200477427_developers_VWA_MMS_vwa_mms_app_uni_test_case_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_0__/* ["default"] */ .A)((0,C_Users_A200477427_developers_VWA_MMS_vwa_mms_app_uni_test_case_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_0__/* ["default"] */ .A)({
   state: {
     messageNum: 0,
     hasLogin: false,
@@ -1556,9 +1557,9 @@ var store = new (vuex__WEBPACK_IMPORTED_MODULE_10___default().Store)((0,C_Users_
   },
   // lazy loading openid
   getUserOpenId: function () {
-    var _getUserOpenId = (0,C_Users_A200477427_developers_VWA_MMS_iphone_fore_end_new_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .A)(/*#__PURE__*/(0,C_Users_A200477427_developers_VWA_MMS_iphone_fore_end_new_node_modules_babel_runtime_helpers_esm_regenerator_js__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .A)().m(function _callee(_ref7) {
+    var _getUserOpenId = (0,C_Users_A200477427_developers_VWA_MMS_vwa_mms_app_uni_test_case_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .A)(/*#__PURE__*/(0,C_Users_A200477427_developers_VWA_MMS_vwa_mms_app_uni_test_case_node_modules_babel_runtime_helpers_esm_regenerator_js__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .A)().m(function _callee(_ref7) {
       var commit, state;
-      return (0,C_Users_A200477427_developers_VWA_MMS_iphone_fore_end_new_node_modules_babel_runtime_helpers_esm_regenerator_js__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .A)().w(function (_context) {
+      return (0,C_Users_A200477427_developers_VWA_MMS_vwa_mms_app_uni_test_case_node_modules_babel_runtime_helpers_esm_regenerator_js__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .A)().w(function (_context) {
         while (1) switch (_context.n) {
           case 0:
             commit = _ref7.commit, state = _ref7.state;
@@ -1662,7 +1663,7 @@ var store = new (vuex__WEBPACK_IMPORTED_MODULE_10___default().Store)((0,C_Users_
 /* harmony export */   as: function() { return /* binding */ hasMenu; }
 /* harmony export */ });
 /* unused harmony exports randomNumber, randomString, randomUUID */
-/* harmony import */ var C_Users_A200477427_developers_VWA_MMS_iphone_fore_end_new_node_modules_babel_runtime_helpers_esm_toConsumableArray_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(31969);
+/* harmony import */ var C_Users_A200477427_developers_VWA_MMS_vwa_mms_app_uni_test_case_node_modules_babel_runtime_helpers_esm_toConsumableArray_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(31969);
 /* harmony import */ var core_js_modules_es_array_filter_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2008);
 /* harmony import */ var core_js_modules_es_array_filter_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_array_filter_js__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var core_js_modules_es_array_index_of_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(25276);
@@ -2678,7 +2679,7 @@ module.exports = __webpack_require__.p + "static/fonts/VWAGTheSans_Regular.ttf";
 /* harmony export */   cy: function() { return /* binding */ isArray; },
 /* harmony export */   jJ: function() { return /* binding */ forEach; }
 /* harmony export */ });
-/* harmony import */ var C_Users_A200477427_developers_VWA_MMS_iphone_fore_end_new_node_modules_babel_runtime_helpers_esm_typeof_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(65376);
+/* harmony import */ var C_Users_A200477427_developers_VWA_MMS_vwa_mms_app_uni_test_case_node_modules_babel_runtime_helpers_esm_typeof_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(65376);
 /* harmony import */ var core_js_modules_es_error_to_string_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(76918);
 /* harmony import */ var core_js_modules_es_error_to_string_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_error_to_string_js__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var core_js_modules_es_object_to_string_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(26099);
@@ -2729,7 +2730,7 @@ function isArray(val) {
  * @returns {boolean} True if value is an Object, otherwise false
  */
 function isObject(val) {
-  return val !== null && (0,C_Users_A200477427_developers_VWA_MMS_iphone_fore_end_new_node_modules_babel_runtime_helpers_esm_typeof_js__WEBPACK_IMPORTED_MODULE_0__/* ["default"] */ .A)(val) === 'object';
+  return val !== null && (0,C_Users_A200477427_developers_VWA_MMS_vwa_mms_app_uni_test_case_node_modules_babel_runtime_helpers_esm_typeof_js__WEBPACK_IMPORTED_MODULE_0__/* ["default"] */ .A)(val) === 'object';
 }
 
 /**
@@ -2771,7 +2772,7 @@ function forEach(obj, fn) {
   }
 
   // Force an array if not already something iterable
-  if ((0,C_Users_A200477427_developers_VWA_MMS_iphone_fore_end_new_node_modules_babel_runtime_helpers_esm_typeof_js__WEBPACK_IMPORTED_MODULE_0__/* ["default"] */ .A)(obj) !== 'object') {
+  if ((0,C_Users_A200477427_developers_VWA_MMS_vwa_mms_app_uni_test_case_node_modules_babel_runtime_helpers_esm_typeof_js__WEBPACK_IMPORTED_MODULE_0__/* ["default"] */ .A)(obj) !== 'object') {
     /*eslint no-param-reassign:0*/
     obj = [obj];
   }
@@ -2917,7 +2918,7 @@ function isBoolean(val) {
 /******/ 		// This function allow to reference async chunks
 /******/ 		__webpack_require__.u = function(chunkId) {
 /******/ 			// return url for filenames based on template
-/******/ 			return "static/js/" + ({"22":"pages-task-fillInInformation","25":"pages-mine-mine","135":"pages-calendar-calendar","214":"pages-task-checkItemsEdit","244":"pages-login-error","329":"pages-index-index","330":"pages-task-checkItems","429":"pages-infor-infor","581":"pages-task-detailDescription","656":"pages-mine-updatepwd","767":"pages-task-problemList","949":"pages-login-login"}[chunkId] || chunkId) + "." + {"22":"e1faec0a","25":"57314fd8","135":"5a3312d0","214":"f51fc4f7","244":"b27b34b1","329":"8145009e","330":"faed950b","425":"d29f39e7","429":"d2f25918","435":"ce7f18b4","581":"f4667ddf","593":"3fccbc62","638":"b0daf227","656":"7fd331e4","767":"d51873eb","791":"e7543d9e","841":"dd555047","872":"ba55ef8d","949":"432c5fb8","972":"f25c18a1"}[chunkId] + ".js";
+/******/ 			return "static/js/" + ({"22":"pages-task-fillInInformation","25":"pages-mine-mine","135":"pages-calendar-calendar","214":"pages-task-checkItemsEdit","244":"pages-login-error","329":"pages-index-index","330":"pages-task-checkItems","429":"pages-infor-infor","581":"pages-task-detailDescription","656":"pages-mine-updatepwd","767":"pages-task-problemList","949":"pages-login-login"}[chunkId] || chunkId) + "." + {"22":"e1faec0a","25":"afff8b62","135":"5a3312d0","214":"743dad14","244":"b27b34b1","329":"c2f2b252","330":"faed950b","425":"ad9cda8f","429":"91d4d1a9","435":"ce7f18b4","581":"f4667ddf","593":"d04a0a2a","638":"b0daf227","656":"7fd331e4","767":"d51873eb","791":"e7543d9e","841":"dd555047","872":"ba55ef8d","949":"858aad4f","972":"f25c18a1"}[chunkId] + ".js";
 /******/ 		};
 /******/ 	}();
 /******/ 	
@@ -3110,4 +3111,4 @@ function isBoolean(val) {
 /******/ 	
 /******/ })()
 ;
-//# sourceMappingURL=index.eb95e76c.js.map
+//# sourceMappingURL=index.5ef5713b.js.map

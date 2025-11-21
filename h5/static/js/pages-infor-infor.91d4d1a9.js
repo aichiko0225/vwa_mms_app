@@ -528,4 +528,4 @@ module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE4AAABNCAYAAAAI
 /***/ })
 
 }]);
-//# sourceMappingURL=pages-infor-infor.d2f25918.js.map
+//# sourceMappingURL=pages-infor-infor.91d4d1a9.js.map
