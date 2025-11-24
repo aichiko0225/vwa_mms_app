@@ -20,12 +20,6 @@ export default function LoginPage() {
   const phone = watch('phone');
   const code = watch('code');
 
-  useEffect(() => {
-    if (username && !phone) {
-      handleQueryPhone();
-    }
-  }, [username]);
-
   const tips = countdown > 0 ? `${countdown}s` : 'Send Code';
 
   const handleQueryPhone = async () => {
@@ -38,6 +32,12 @@ export default function LoginPage() {
       Alert.alert('Info', e.message);
     }
   };
+
+    useEffect(() => {
+    if (username && !phone) {
+      handleQueryPhone();
+    }
+  }, [username, phone]);
 
   const getCode = async () => {
     if (!phone && username) {

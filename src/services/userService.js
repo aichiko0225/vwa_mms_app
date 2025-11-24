@@ -44,6 +44,7 @@ const userService = {
    * @returns {Promise} 包含重置结果的Promise对象
    */
   forgetPassword: params => http.put(APIPATHS.sys.forgetPassword, params),
+  changePassword: params => http.put(APIPATHS.sys.changePassword, params),
 };
 
 export default userService;

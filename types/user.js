@@ -1,0 +1,96 @@
+/**
+ * @typedef {Object} UserLoginReq
+ * @property {string} username 用户名
+ * @property {string} password 密码
+ * @property {string} phone 手机号
+ * @property {string} captcha 验证码
+ * @property {number} checkKey 校验键
+ */
+
+/**
+ * @typedef {Object} UserInfoModel
+ * @property {string|null} departId 部门ID
+ * @property {string|null} positionCode 职位代码
+ * @property {string} departName 部门名称
+ * @property {string|null} dep 备用部门字段
+ * @property {string|null} departNameAbbr 部门简称
+ * @property {string} id 用户唯一ID
+ * @property {string} nameCn 中文名
+ * @property {string} nameEn 英文名
+ * @property {string} username 用户名
+ * @property {string} realname 真实姓名
+ * @property {string} email 邮箱
+ * @property {string|null} workNo 工号
+ * @property {string|null} department 部门
+ * @property {string} phone 手机号
+ * @property {string|null} roleName 角色名称
+ * @property {string} userType 用户类型
+ * @property {string|null} post 岗位
+ * @property {string|null} managerId 上级ID
+ * @property {string|null} personalGrade 个人等级
+ * @property {string|null} functionGrade 职能等级
+ * @property {string|null} avatar 头像地址
+ * @property {string|null} birthday 生日
+ * @property {string|null} sex 性别
+ * @property {string|null} orgCode 组织编码
+ * @property {string|null} orgCodeTxt 组织编码文本
+ * @property {number} status 状态
+ * @property {number} delFlag 删除标识
+ * @property {string|null} telephone 电话
+ * @property {string} createBy 创建人
+ * @property {string} createTime 创建时间
+ * @property {string} updateBy 更新人
+ * @property {string} updateTime 更新时间
+ * @property {number} activitiSync 流程同步标记
+ * @property {number} userIdentity 用户身份标识
+ * @property {string} departIds 多部门ID集合
+ * @property {string} relTenantIds 租户ID集合
+ * @property {string|null} clientId 客户端ID
+ * @property {string|null} idCard 身份证号
+ * @property {string|null} officeLocation 办公地点
+ * @property {string|null} station 工位
+ * @property {string|null} responsibility 责任描述
+ * @property {string|null} education 学历
+ * @property {string|null} marriage 婚姻状况
+ * @property {string|null} driverCardData 驾驶证信息
+ * @property {string|null} attnameUser 用户附件名
+ * @property {string|null} userUrl 用户链接
+ * @property {string|null} attnameDriver 驾驶员附件名
+ * @property {string|null} attnameUrl 附件链接
+ * @property {string|null} qualification 资质
+ * @property {number|string|null} isPrincipal 是否负责人
+ * @property {string|null} companyId 公司ID
+ * @property {number|string|null} isQuit 是否离职
+ * @property {string|null} quitRemark 离职备注
+ * @property {string|null} departmentId 部门ID（冗余）
+ * @property {string|null} validDate 有效期
+ * @property {string|null} userId 用户ID（冗余）
+ * @property {string|null} roleCode 角色编码
+ * @property {string|null} roleId 角色ID
+ * @property {Array<Object>|null} roleList 角色列表
+ * @property {string|null} durableServiceName 持久化服务名
+ * @property {string|null} nameEmail 姓名与邮箱组合
+ * @property {string|null} typeName 类型名称
+ * @property {string|null} zname 自定义名称
+ * @property {string|null} electronicSignature 电子签名
+ * @property {string|null} skinColor 皮肤主题色
+ * @property {string|null} them 主题（拼写按源数据）
+ * @property {string|null} costCenter 成本中心
+ * @property {string|null} costCenterName 成本中心名称
+ * @property {string|null} stationRuleNum 工位规则编号
+ * @property {string|null} stationRule 工位规则
+ * @property {string|null} empSubGrp 员工子组
+ * @property {Array<Object>|null} companyList 公司列表
+ * @property {Array<Object>|null} departList 部门列表
+ * @property {Array<Object>|null} positionList 职位列表
+ * @property {Array<Object>|null} userList 用户列表
+ * @property {string|null} endTime 结束时间
+ * @property {string|null} id_ 备用ID
+ * @property {string|null} code 代码
+ * @property {string} loginFailed 登录失败次数
+ * @property {string} firstLogin 首次登录标记
+ * @property {string} passwordModificationTime 密码修改时间
+ * @property {string} isPassword 是否需要修改密码
+ */
+
+

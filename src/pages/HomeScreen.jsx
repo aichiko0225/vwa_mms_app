@@ -14,6 +14,14 @@ const tabIcons = (name) => {
   return map[name];
 }
 
+const TabBarIcon = ({ name, color, size }) => (
+  <MaterialDesignIcons name={name} color={color} size={size} />
+);
+
+const renderTabBarIcon = (routeName) => ({ color, size }) => (
+  <TabBarIcon name={tabIcons(routeName)} color={color} size={size} />
+);
+
 const Tab = createBottomTabNavigator();
 
 export default function HomeScreen() {
@@ -23,15 +31,12 @@ export default function HomeScreen() {
         headerShown: false,
         tabBarActiveTintColor: '#5c3ecb',
         tabBarInactiveTintColor: '#999',
-        tabBarIcon: ({ color, size }) => {
-          const name = tabIcons(route.name);
-          return <MaterialDesignIcons name={name} color={color} size={size} />;
-        },
+        tabBarIcon: renderTabBarIcon(route.name),
       })}
     >
       <Tab.Screen name="HomeTab" component={HomeTab} options={{ tabBarLabel: 'Home' }} />
       <Tab.Screen name="MessageTab" component={MessageTab} options={{ tabBarLabel: 'Message' }} />
-      <Tab.Screen name="UserTab" component={UserTab} options={{ tabBarLabel: 'User', tabBarBadge: undefined }} />
+      <Tab.Screen name="UserTab" component={UserTab} options={{ headerShown: true, title: 'User', tabBarLabel: 'User', tabBarBadge: undefined }} />
     </Tab.Navigator>
   );
 }

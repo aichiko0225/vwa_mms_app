@@ -7,6 +7,8 @@ import ForgetPasswordPage from '../pages/login/ForgetPasswordPage.jsx';
 import LoginErrorPage from '../pages/login/ErrorPage.jsx';
 import TasksScreen from '../pages/tasks/TasksScreen.jsx';
 import WebViewPage from '../pages/webview/WebViewPage.jsx';
+import AboutPage from '../pages/user/AboutPage.jsx';
+import UpdatePasswordPage from '../pages/user/UpdatePasswordPage.jsx';
 import { useAuthStore } from '../stores/auth';
 
 /**
@@ -30,6 +32,8 @@ export default function RootNavigator() {
           <Stack.Screen name="Home" component={HomeScreen} />
           <Stack.Screen name="Tasks" component={TasksScreen} options={{ headerShown: true, title: 'Tasks' }} />
           <Stack.Screen name="WebView" component={WebViewPage} options={{ headerShown: true, title: 'H5' }} />
+          <Stack.Screen name="About" component={AboutPage} options={{ headerShown: true, title: 'About' }} />
+          <Stack.Screen name="UpdatePassword" component={UpdatePasswordPage} options={{ headerShown: true, title: 'Update Password' }} />
         </Stack.Navigator>
       ) : (
         <Stack.Navigator>
