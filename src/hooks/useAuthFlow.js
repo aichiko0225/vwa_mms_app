@@ -66,5 +66,15 @@ export default function useAuthFlow() {
     }
   };
 
-  return { loading, countdown, queryPhone, sendSmsCode, login };
+  const logout = async () => {
+    setLoading(true);
+    try {
+      const res = await userService.logout();
+      return res;
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  return { loading, countdown, queryPhone, sendSmsCode, login, logout };
 }

@@ -13,7 +13,6 @@ export const getLevel = () => base.getLevel();
 
 export const getLogger = (name = 'app') => {
   const l = base.getLogger(name);
-  try { l.setLevel(defaultLevel); } catch {}
   return l
 };
 

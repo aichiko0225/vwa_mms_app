@@ -15,11 +15,11 @@ const userService = {
    */
   appSelectUserRoleByUsername: username => http.post(APIPATHS.sys.appSelectUserRoleByUsername, { username }),
   /**
-   * 根据用户ID查询角色
+   * 根据用户ID查询用户信息
    * @param {string} userId 用户ID
-   * @returns {Promise} 角色查询结果
+   * @returns {Promise} 包含用户信息的Promise对象
    */
-  selectUserRoleByUserId: userId => http.post(APIPATHS.sys.selectUserRoleByUserId, { userId }),
+  selectUserInfoById: userId => http.get(APIPATHS.sys.queryById, {params:{ id: userId }}),
   /**
    * 发送短信验证码
    * @param {object} params 包含用户名、手机号、密码的参数对象
@@ -32,6 +32,11 @@ const userService = {
    * @returns {Promise} 包含登录结果的Promise对象
    */
   login: params => http.post(APIPATHS.sys.login, params),
+  /**
+   * 用户注销
+   * @returns {Promise} 包含注销结果的Promise对象
+   */
+  logout: () => http.post(APIPATHS.sys.logout),
   /**
    * H5用户登录
    * @param {UserLoginReq} params 包含用户名、密码、手机号、验证码的参数对象

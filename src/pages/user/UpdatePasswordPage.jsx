@@ -1,18 +1,28 @@
 import React, { useState } from 'react';
 import { View, StyleSheet } from 'react-native';
 import { Button, TextInput, Text } from 'react-native-paper';
+import Toast from 'react-native-toast-message';
 import MaterialDesignIcons from '@react-native-vector-icons/material-design-icons';
 import { useForm, Controller } from 'react-hook-form';
 import { useAuthStore } from '../../stores/auth';
 import userService from '../../services/userService';
 import { PUBLIC_KEY } from '../../common/constants';
+import useDialog from '../../hooks/useDialog';
+import useAuthFlow from '../../hooks/useAuthFlow';
 
 export default function UpdatePasswordPage() {
   const { control, handleSubmit, watch } = useForm({ defaultValues: { oldPassword: '', newPassword: '', confirmPassword: '' } });
   const [showOld, setShowOld] = useState(true);
   const [showNew, setShowNew] = useState(true);
   const [showConfirm, setShowConfirm] = useState(true);
+  const showToast = (message) => {
+    try { Toast.show({ type: 'error', text1: message, position: 'top' }); } catch { }
+  };
   const username = useAuthStore(s => s.user?.username);
+
+  const dialog = useDialog();
+
+  const { logout: logoutReq } = useAuthFlow();
 
   const encrypt = v => {
     try {
@@ -22,17 +32,16 @@ export default function UpdatePasswordPage() {
   };
 
   const onSubmit = async ({ oldPassword, newPassword, confirmPassword }) => {
-    if (!newPassword || !confirmPassword) return;
-    if (newPassword === oldPassword) return;
-    if (confirmPassword !== newPassword) return;
+    if (!newPassword || !confirmPassword) { showToast('Please fill in new and confirm password'); return; }
+    // if (newPassword === oldPassword) { showToast('New password must differ from original'); return; }
+    if (confirmPassword !== newPassword) { showToast('Passwords do not match'); return; }
     const params = { password: encrypt(newPassword), username };
     const res = await userService.changePassword(params);
     if (res.data && res.data.success) {
-      alert('Password changed. Please login again.');
+      await dialog.alert({ title: 'Success', message: 'Password updated successfully' });
+      await logoutReq();
       useAuthStore.getState().logout();
-    } else {
-      alert((res.data && res.data.message) || 'Modify failed');
-    }
+    } else { showToast((res.data && res.data.message) || 'Modify failed'); }
   };
 
   return (
@@ -45,7 +54,7 @@ export default function UpdatePasswordPage() {
           onChangeText={onChange}
           secureTextEntry={showOld}
           style={styles.input}
-          right={<TextInput.Icon icon={(props) => (<MaterialDesignIcons name={showOld ? 'eye-off' : 'eye'} size={24} color={props.color} />)} onPress={() => setShowOld(v=>!v)} />}
+          right={<TextInput.Icon icon={(props) => (<MaterialDesignIcons name={showOld ? 'eye-off' : 'eye'} size={24} color={props.color} />)} onPress={() => setShowOld(v => !v)} />}
         />
       )} />
       <Controller control={control} name="newPassword" render={({ field: { value, onChange } }) => (
@@ -55,7 +64,7 @@ export default function UpdatePasswordPage() {
           onChangeText={onChange}
           secureTextEntry={showNew}
           style={styles.input}
-          right={<TextInput.Icon icon={(props) => (<MaterialDesignIcons name={showNew ? 'eye-off' : 'eye'} size={24} color={props.color} />)} onPress={() => setShowNew(v=>!v)} />}
+          right={<TextInput.Icon icon={(props) => (<MaterialDesignIcons name={showNew ? 'eye-off' : 'eye'} size={24} color={props.color} />)} onPress={() => setShowNew(v => !v)} />}
         />
       )} />
       <Controller control={control} name="confirmPassword" render={({ field: { value, onChange } }) => (
@@ -65,7 +74,7 @@ export default function UpdatePasswordPage() {
           onChangeText={onChange}
           secureTextEntry={showConfirm}
           style={styles.input}
-          right={<TextInput.Icon icon={(props) => (<MaterialDesignIcons name={showConfirm ? 'eye-off' : 'eye'} size={24} color={props.color} />)} onPress={() => setShowConfirm(v=>!v)} />}
+          right={<TextInput.Icon icon={(props) => (<MaterialDesignIcons name={showConfirm ? 'eye-off' : 'eye'} size={24} color={props.color} />)} onPress={() => setShowConfirm(v => !v)} />}
         />
       )} />
       <Button mode="contained" onPress={handleSubmit(onSubmit)}>Save</Button>
@@ -78,4 +87,3 @@ const styles = StyleSheet.create({
   header: { fontSize: 18, fontWeight: 'bold', textAlign: 'center', marginBottom: 12 },
   input: { marginBottom: 12 }
 });
-

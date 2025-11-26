@@ -4,12 +4,10 @@ import { WebView } from 'react-native-webview';
 import { useRoute } from '@react-navigation/native';
 import { useAuthStore } from '../../stores/auth';
  
-
 const ACTIONS = {
   logout: 'logout',
   lifecycle: 'lifecycle',
 }
-
 
 export default function WebViewPage() {
 

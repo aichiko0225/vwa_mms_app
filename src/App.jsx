@@ -13,6 +13,8 @@ import { Provider as PaperProvider } from 'react-native-paper';
 import MaterialDesignIcons from '@react-native-vector-icons/material-design-icons';
 import RootNavigator from './navigation/RootNavigator';
 import { enableScreens } from 'react-native-screens';
+import Toast from 'react-native-toast-message';
+import GlobalDialogProvider from './components/GlobalDialogProvider';
 
 enableScreens();
 
@@ -36,7 +38,10 @@ export default function App() {
   return (
     <AppProviders>
       <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
-      <RootNavigator />
+      <GlobalDialogProvider>
+        <RootNavigator />
+        <Toast position="top" />
+      </GlobalDialogProvider>
     </AppProviders>
   );
 }

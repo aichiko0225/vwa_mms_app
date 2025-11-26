@@ -17,12 +17,13 @@ export const APIPATHS = {
   sys: {
     // 认证
     login: '/sys/login', // 登录
+    logout: '/sys/logout', // 退出登录
     qyweixinLogin: '/sys/qyweixinLogin', // 企业微信登录
     phoneLogin: '/sys/phoneLogin', // 手机号登录
-    logout: '/sys/logout', // 退出登录
     h5Login: '/sys/h5/login', // H5 登录
     // 用户
     selectUserRoleByUserId: '/sys/user/selectUserRoleByUserId', // 根据用户ID获取角色
+    queryById: '/sys/user/queryById', // 根据用户ID查询用户信息
     changePassword: '/sys/user/changeMyPassword', // 修改密码
     updateAvatar: '/sys/user/updateAvatar', // 更新头像
     appSelectUserRoleByUsername: '/sys/user/appSelectUserRoleByUsername', // 根据用户名查询角色

@@ -93,4 +93,16 @@
  * @property {string} isPassword 是否需要修改密码
  */
 
+/**
+ * @typedef {Object} UserRoleModel
+ * @description 用户角色模型
+ * @property {string} id ID
+ * @property {string} roleId 角色ID
+ * @property {string} roleCode 角色编码
+ * @property {string} roleName 角色名称
+ * @property {string} username 用户名
+ * @property {string} realname 真实姓名
+ * @property {string} createTime 创建时间
+ */
+
 export const Types = {};

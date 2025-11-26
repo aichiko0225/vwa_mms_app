@@ -28,18 +28,14 @@ const renderTabBarIcon = (routeName) => ({ color, size }) => (
 const Tab = createBottomTabNavigator();
 
 export default function HomeScreen() {
-  const { dicts, refresh: refreshDicts, initialized: sysReady } = useSystemData();
-  const { roles, refresh: refreshRoles, initialized: userReady } = useUserData();
+  const { userInfo, roles, refresh: refreshRoles, initialized: userReady } = useUserData();
   const user = useAuthStore(s => s.user);
 
   useEffect(() => {
-    // 启动时刷新系统字典（仅一次，后续读取缓存）
-    if (sysReady) { refreshDicts().catch(() => {}); }
-  }, [sysReady, refreshDicts]);
-
-  useEffect(() => {
     // 用户登录后刷新用户角色（不缓存）
-    if (userReady && user && user.id) { refreshRoles(user.id).catch(() => {}); }
+    if (userReady && user && user.id) { 
+      // refreshRoles(user.id).catch(() => {});
+    }
   }, [userReady, user, refreshRoles]);
 
   return (
