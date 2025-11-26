@@ -1,22 +1,24 @@
 import base from 'loglevel';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 const defaultLevel = __DEV__ ? 'debug' : 'warn';
 base.setLevel(defaultLevel);
 
-export const setLevel = (level) => { try { base.setLevel(level); } catch {} };
+const LEVEL_KEY = 'LOG_LEVEL';
+
+export const setLevel = (level) => { try { base.setLevel(level); AsyncStorage.setItem(LEVEL_KEY, String(level)); } catch {} };
 export const getLevel = () => base.getLevel();
 
-const stamp = () => new Date().toISOString();
+(async () => { try { const saved = await AsyncStorage.getItem(LEVEL_KEY); if (saved) base.setLevel(saved); } catch {} })();
 
 export const getLogger = (name = 'app') => {
   const l = base.getLogger(name);
   try { l.setLevel(defaultLevel); } catch {}
-  return {
-    debug: (message, meta) => l.debug(`[${stamp()}] ${message}`, meta),
-    info: (message, meta) => l.info(`[${stamp()}] ${message}`, meta),
-    warn: (message, meta) => l.warn(`[${stamp()}] ${message}`, meta),
-    error: (message, meta) => l.error(`[${stamp()}] ${message}`, meta),
-  };
+  return l
 };
 
-export default { getLogger, setLevel, getLevel };
+export const setLoggerLevel = (name, level) => { try { base.getLogger(name).setLevel(level); } catch {} };
+
+const logger = getLogger('app');
+
+export default logger

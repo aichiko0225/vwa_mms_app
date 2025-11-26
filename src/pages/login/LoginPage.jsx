@@ -76,6 +76,7 @@ export default function LoginPage() {
     try {
       const res = await loginReq(username, password, currentPhone, code);
       if (res.data && res.data.success) {
+        /** @type {import('@types').AuthSession} */
         const result = res.data.result || {};
         const token = result.token;
         const userInfo = result.userInfo;

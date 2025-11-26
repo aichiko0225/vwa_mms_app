@@ -1,6 +1,22 @@
 (self["webpackChunkhello_uniapp"] = self["webpackChunkhello_uniapp"] || []).push([[429],{
 
-/***/ 5095:
+/***/ 45303:
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(52419);
+if(content.__esModule) content = content.default;
+if(typeof content === 'string') content = [[module.id, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var add = (__webpack_require__(69333)/* ["default"] */ .A)
+var update = add("32682b72", content, true, {"sourceMap":false,"shadowMode":false});
+
+/***/ }),
+
+/***/ 52419:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -14,14 +30,14 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "@charset \"UTF-8\";\n/**\n * 这里是uni-app内置的常用样式变量\n *\n * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量\n * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App\n *\n */\n/**\n * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能\n *\n * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件\n */\n/* 颜色变量 */\n/* 行为相关颜色 */\n/* 文字基本颜色 */\n/* 背景颜色 */\n/* 边框颜色 */\n/* 尺寸变量 */\n/* 文字尺寸 */\n/* 图片尺寸 */\n/* Border Radius */\n/* 水平间距 */\n/* 垂直间距 */\n/* 透明度 */\n/* 文章场景相关 */uni-page-body[data-v-27ab5c82],\nuni-view[data-v-27ab5c82]{\n  /* display: flex; */}uni-page-body[data-v-27ab5c82]{min-height:100%;background-color:#fff}body.?%PAGE?%[data-v-27ab5c82]{background-color:#fff}.titleText[data-v-27ab5c82]{display:-webkit-box;\n  /*弹性伸缩盒子模型显示*/-webkit-box-orient:vertical;\n  /*排列方式*/-webkit-line-clamp:1;\n  /*显示文本行数(这里控制多少行隐藏)*/overflow:hidden;\n  /*溢出隐藏*/width:50%}.red-dot-text[data-v-27ab5c82]::before{content:\"●\";\n  /* 使用圆点符号作为文字前的标记 */color:red;\n  /* 设置圆点的颜色为红色 */display:inline-block;width:1em;\n  /* 调整圆点的位置 */font-size:1em;position:relative;top:-25%;left:-150%}.riskAssessment[data-v-27ab5c82]{width:100%;background-color:#f2f2f2;position:fixed;top:env(safe-area-inset-top);\n  /* 兼容 iOS 11.0-11.4 */top:constant(safe-area-inset-top);\n  /* 兼容 iOS 12.0-12.1 */left:0;touch-action:none}.infor-list[data-v-27ab5c82]{display:block;width:100%;box-sizing:border-box;padding:3%;background-color:#f2f2f2;overflow:auto}.infor-list .list[data-v-27ab5c82]{display:flex;width:100%;height:auto;border-bottom:10px solid #eee;border-radius:5px;background-color:#fff;padding:3%;box-sizing:border-box}.infor-list .list .img[data-v-27ab5c82]{width:%?96?%;height:%?96?%;padding-right:%?24?%}.infor-list .list .list-part[data-v-27ab5c82]{flex:1}.infor-list .list .list-part .title-time[data-v-27ab5c82]{display:flex;justify-content:space-between;position:relative;flex-direction:column;margin-bottom:10px}.infor-list .list .list-part .title-time uni-text[data-v-27ab5c82]:first-of-type{flex:1;color:#272727;font-size:14px}[data-v-27ab5c82] .u-icon__icon{font-size:24px!important}[data-v-27ab5c82] .u-popup__content{height:50%!important;width:100%}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "@charset \"UTF-8\";\n/**\n * 这里是uni-app内置的常用样式变量\n *\n * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量\n * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App\n *\n */\n/**\n * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能\n *\n * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件\n */\n/* 颜色变量 */\n/* 行为相关颜色 */\n/* 文字基本颜色 */\n/* 背景颜色 */\n/* 边框颜色 */\n/* 尺寸变量 */\n/* 文字尺寸 */\n/* 图片尺寸 */\n/* Border Radius */\n/* 水平间距 */\n/* 垂直间距 */\n/* 透明度 */\n/* 文章场景相关 */uni-page-body[data-v-52ef7fac],\nuni-view[data-v-52ef7fac]{\n  /* display: flex; */}uni-page-body[data-v-52ef7fac]{min-height:100%;background-color:#fff}body.?%PAGE?%[data-v-52ef7fac]{background-color:#fff}.titleText[data-v-52ef7fac]{display:-webkit-box;\n  /*弹性伸缩盒子模型显示*/-webkit-box-orient:vertical;\n  /*排列方式*/-webkit-line-clamp:1;\n  /*显示文本行数(这里控制多少行隐藏)*/overflow:hidden;\n  /*溢出隐藏*/width:50%}.red-dot-text[data-v-52ef7fac]::before{content:\"●\";\n  /* 使用圆点符号作为文字前的标记 */color:red;\n  /* 设置圆点的颜色为红色 */display:inline-block;width:1em;\n  /* 调整圆点的位置 */font-size:1em;position:relative;top:-25%;left:-150%}.riskAssessment[data-v-52ef7fac]{width:100%;background-color:#f2f2f2;position:fixed;top:env(safe-area-inset-top);\n  /* 兼容 iOS 11.0-11.4 */top:constant(safe-area-inset-top);\n  /* 兼容 iOS 12.0-12.1 */left:0;touch-action:none}.infor-list[data-v-52ef7fac]{display:block;width:100%;box-sizing:border-box;padding:3%;background-color:#f2f2f2;overflow:auto}.infor-list .list[data-v-52ef7fac]{display:flex;width:100%;height:auto;border-bottom:10px solid #eee;border-radius:5px;background-color:#fff;padding:3%;box-sizing:border-box}.infor-list .list .img[data-v-52ef7fac]{width:%?96?%;height:%?96?%;padding-right:%?24?%}.infor-list .list .list-part[data-v-52ef7fac]{flex:1}.infor-list .list .list-part .title-time[data-v-52ef7fac]{display:flex;justify-content:space-between;position:relative;flex-direction:column;margin-bottom:10px}.infor-list .list .list-part .title-time uni-text[data-v-52ef7fac]:first-of-type{flex:1;color:#272727;font-size:14px}[data-v-52ef7fac] .u-icon__icon{font-size:24px!important}[data-v-52ef7fac] .u-popup__content{height:50%!important;width:100%}", ""]);
 // Exports
 /* harmony default export */ __webpack_exports__["default"] = (___CSS_LOADER_EXPORT___);
 
 
 /***/ }),
 
-/***/ 6042:
+/***/ 59680:
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -33,7 +49,7 @@ __webpack_require__.d(__webpack_exports__, {
   "default": function() { return /* binding */ infor; }
 });
 
-;// ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js??clonedRuleSet-42[0].rules[0].use[0]!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/filter-modules-template.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/page-meta.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/index.js??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-scoped-loader/index.js!./src/pages/infor/infor.vue?vue&type=template&id=27ab5c82&scoped=true&
+;// ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js??clonedRuleSet-42[0].rules[0].use[0]!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/filter-modules-template.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/page-meta.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/index.js??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-scoped-loader/index.js!./src/pages/infor/infor.vue?vue&type=template&id=52ef7fac&scoped=true&
 var components = {'uniNavBar': (__webpack_require__(28435)/* ["default"] */ .A),'uPopup': (__webpack_require__(71791)/* ["default"] */ .A)}
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('v-uni-view',{staticClass:"riskAssessment",style:({ height: _vm.containerHeight, width: _vm.screenWidth }),on:{"touchmove":function($event){$event.preventDefault();
 arguments[0] = $event = _vm.$handleEvent($event);
@@ -61,7 +77,7 @@ var recyclableRender = false
 var staticRenderFns = []
 
 
-;// ./src/pages/infor/infor.vue?vue&type=template&id=27ab5c82&scoped=true&
+;// ./src/pages/infor/infor.vue?vue&type=template&id=52ef7fac&scoped=true&
 
 // EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/esm/toConsumableArray.js + 3 modules
 var toConsumableArray = __webpack_require__(31969);
@@ -79,6 +95,8 @@ var es_regexp_to_string = __webpack_require__(38781);
 var constants = __webpack_require__(36710);
 // EXTERNAL MODULE: ./src/pages/task/publicMessage.js
 var publicMessage = __webpack_require__(78259);
+// EXTERNAL MODULE: ./src/api/api.js
+var api = __webpack_require__(21629);
 ;// ./node_modules/babel-loader/lib/index.js??clonedRuleSet-40[0].rules[0].use[0]!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js??clonedRuleSet-40[0].rules[0].use[1]!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js??clonedRuleSet-43[0].rules[0].use[0]!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/using-components.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/index.js??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-scoped-loader/index.js!./src/pages/infor/infor.vue?vue&type=script&lang=js&
 
 
@@ -144,13 +162,14 @@ var platform = uni.getSystemInfoSync().platform;
 
 
 
+
 /**
  * URL 列表
  */
 var URL = {
-  list: '/testService/qaTestCalendar/getMyAnnouncementSend',
-  edit: '/sys/sysAnnouncementSend/editByAnntIdAndUserId',
-  readAll: '/sys/sysAnnouncementSend/readAll'
+  list: api/* API */.nC.testCase.getMyAnnouncementSend,
+  edit: api/* API */.nC.sys.announcementEdit,
+  readAll: api/* API */.nC.sys.announcementReadAll
 };
 /* harmony default export */ var inforvue_type_script_lang_js_ = ({
   data: function data() {
@@ -417,10 +436,10 @@ var URL = {
 });
 ;// ./src/pages/infor/infor.vue?vue&type=script&lang=js&
  /* harmony default export */ var infor_inforvue_type_script_lang_js_ = (inforvue_type_script_lang_js_); 
-// EXTERNAL MODULE: ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/h5-vue-style-loader/index.js??clonedRuleSet-22[0].rules[0].use[0]!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-22[0].rules[0].use[1]!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js??clonedRuleSet-22[0].rules[0].use[2]!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-22[0].rules[0].use[3]!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-22[0].rules[0].use[4]!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/sass-loader/dist/cjs.js??clonedRuleSet-22[0].rules[0].use[5]!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js??clonedRuleSet-22[0].rules[0].use[6]!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/index.js??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-scoped-loader/index.js!./src/pages/infor/infor.vue?vue&type=style&index=0&id=27ab5c82&lang=scss&scoped=true&
-var inforvue_type_style_index_0_id_27ab5c82_lang_scss_scoped_true_ = __webpack_require__(67264);
-;// ./src/pages/infor/infor.vue?vue&type=style&index=0&id=27ab5c82&lang=scss&scoped=true&
- /* harmony default export */ var infor_inforvue_type_style_index_0_id_27ab5c82_lang_scss_scoped_true_ = ((/* unused pure expression or super */ null && (mod))); 
+// EXTERNAL MODULE: ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/h5-vue-style-loader/index.js??clonedRuleSet-22[0].rules[0].use[0]!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-22[0].rules[0].use[1]!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js??clonedRuleSet-22[0].rules[0].use[2]!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-22[0].rules[0].use[3]!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-22[0].rules[0].use[4]!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/sass-loader/dist/cjs.js??clonedRuleSet-22[0].rules[0].use[5]!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js??clonedRuleSet-22[0].rules[0].use[6]!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/index.js??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-scoped-loader/index.js!./src/pages/infor/infor.vue?vue&type=style&index=0&id=52ef7fac&lang=scss&scoped=true&
+var inforvue_type_style_index_0_id_52ef7fac_lang_scss_scoped_true_ = __webpack_require__(45303);
+;// ./src/pages/infor/infor.vue?vue&type=style&index=0&id=52ef7fac&lang=scss&scoped=true&
+ /* harmony default export */ var infor_inforvue_type_style_index_0_id_52ef7fac_lang_scss_scoped_true_ = ((/* unused pure expression or super */ null && (mod))); 
 // EXTERNAL MODULE: ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/runtime/componentNormalizer.js
 var componentNormalizer = __webpack_require__(18535);
 ;// ./src/pages/infor/infor.vue
@@ -439,7 +458,7 @@ var component = (0,componentNormalizer/* default */.A)(
   staticRenderFns,
   false,
   null,
-  "27ab5c82",
+  "52ef7fac",
   null,
   false,
   components,
@@ -447,22 +466,6 @@ var component = (0,componentNormalizer/* default */.A)(
 )
 
 /* harmony default export */ var infor = (component.exports);
-
-/***/ }),
-
-/***/ 67264:
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(5095);
-if(content.__esModule) content = content.default;
-if(typeof content === 'string') content = [[module.id, content, '']];
-if(content.locals) module.exports = content.locals;
-// add the styles to the DOM
-var add = (__webpack_require__(69333)/* ["default"] */ .A)
-var update = add("779b5a46", content, true, {"sourceMap":false,"shadowMode":false});
 
 /***/ }),
 
@@ -489,6 +492,8 @@ module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANEAAADICAYAAAB2
 /* harmony import */ var core_js_modules_es_regexp_to_string_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_regexp_to_string_js__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _common_service_service_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(75678);
 /* harmony import */ var _store_index_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(59984);
+/* harmony import */ var _api_api__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(21629);
+
 
 
 
@@ -500,7 +505,7 @@ var getAllMessageList = function getAllMessageList() {
     pageSize: 10
   };
   // 方便以后写调查询消息接口
-  _common_service_service_js__WEBPACK_IMPORTED_MODULE_3__/* .http */ .L.get("/testService/qaTestCalendar/getMyAnnouncementSend", {
+  _common_service_service_js__WEBPACK_IMPORTED_MODULE_3__/* .http */ .L.get(_api_api__WEBPACK_IMPORTED_MODULE_5__/* .API */ .nC.testCase.getMyAnnouncementSend, {
     params: params
   }).then(function (res) {
     _store_index_js__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .A.dispatch('changeMessageNum', res.data.code);
@@ -528,4 +533,4 @@ module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE4AAABNCAYAAAAI
 /***/ })
 
 }]);
-//# sourceMappingURL=pages-infor-infor.91d4d1a9.js.map
+//# sourceMappingURL=pages-infor-infor.bc641cc3.js.map

@@ -8,6 +8,22 @@ module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAAUCAYAAABv
 
 /***/ }),
 
+/***/ 12481:
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(75509);
+if(content.__esModule) content = content.default;
+if(typeof content === 'string') content = [[module.id, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var add = (__webpack_require__(69333)/* ["default"] */ .A)
+var update = add("2d754ec4", content, true, {"sourceMap":false,"shadowMode":false});
+
+/***/ }),
+
 /***/ 49107:
 /***/ (function(module) {
 
@@ -16,7 +32,7 @@ module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADg
 
 /***/ }),
 
-/***/ 69267:
+/***/ 71953:
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -28,7 +44,7 @@ __webpack_require__.d(__webpack_exports__, {
   "default": function() { return /* binding */ mine; }
 });
 
-;// ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js??clonedRuleSet-42[0].rules[0].use[0]!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/filter-modules-template.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/page-meta.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/index.js??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-scoped-loader/index.js!./src/pages/mine/mine.vue?vue&type=template&id=7015177e&scoped=true&
+;// ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js??clonedRuleSet-42[0].rules[0].use[0]!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/filter-modules-template.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/page-meta.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/index.js??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-scoped-loader/index.js!./src/pages/mine/mine.vue?vue&type=template&id=3516d64f&scoped=true&
 var components = {'uniIcons': (__webpack_require__(97972)/* ["default"] */ .A)}
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return (_vm.refresh)?_c('v-uni-view',{staticClass:"mine",style:({height:_vm.containerHeight}),on:{"touchmove":function($event){$event.preventDefault();
 arguments[0] = $event = _vm.$handleEvent($event);
@@ -47,7 +63,7 @@ var recyclableRender = false
 var staticRenderFns = []
 
 
-;// ./src/pages/mine/mine.vue?vue&type=template&id=7015177e&scoped=true&
+;// ./src/pages/mine/mine.vue?vue&type=template&id=3516d64f&scoped=true&
 
 // EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/esm/defineProperty.js
 var defineProperty = __webpack_require__(2775);
@@ -113,6 +129,7 @@ var api = __webpack_require__(21629);
 
 
 
+
 /* harmony default export */ var minevue_type_script_lang_js_ = ({
   data: function data() {
     return {
@@ -141,7 +158,7 @@ var api = __webpack_require__(21629);
     this.userInfo.telephone = this.user.phone;
     if (this.user.avatar) {
       console.log("头像：" + this.user.avatar);
-      this.userInfo.avatar = this.$apiUrl + '/sys/common/downloadFile?url=' + this.user.avatar;
+      this.userInfo.avatar = this.$apiUrl + api/* API */.nC.sys.downloadFile + '?url=' + this.user.avatar;
     }
   },
   onShow: function onShow() {
@@ -162,7 +179,7 @@ var api = __webpack_require__(21629);
         //album 从相册选图，camera 使用相机
         success: function success(res) {
           var uploadTask = uni.uploadFile((0,defineProperty/* default */.A)((0,defineProperty/* default */.A)({
-            url: that.$apiUrl + '/sys/common/upload',
+            url: that.$apiUrl + api/* API */.nC.sys.upload,
             filePath: res.tempFilePaths[0],
             biz: 'temp',
             name: 'file',
@@ -182,13 +199,13 @@ var api = __webpack_require__(21629);
                 avatar: data.message,
                 username: that.userInfo.userName
               };
-              that.$http.put(that.$apiUrl + '/sys/user/updateAvatar', params).then(function (res) {
+              that.$http.put(that.$apiUrl + api/* API */.nC.sys.updateAvatar, params).then(function (res) {
                 if (res.data.success) {
                   uni.showToast({
                     icon: 'none',
                     title: 'Successfully. '
                   });
-                  that.$set(that.userInfo, 'avatar', "".concat(that.$apiUrl, "/sys/common/downloadFile?url=").concat(data.message));
+                  that.$set(that.userInfo, 'avatar', "".concat(that.$apiUrl).concat(api/* API */.nC.sys.downloadFile, "?url=").concat(data.message));
                   var userInfo = uni.getStorageSync('login_user_info');
                   uni.setStorageSync('login_user_info', JSON.stringify((0,objectSpread2/* default */.A)((0,objectSpread2/* default */.A)({}, userInfo), {}, {
                     data: (0,objectSpread2/* default */.A)((0,objectSpread2/* default */.A)({}, userInfo.data), {}, {
@@ -246,10 +263,10 @@ var api = __webpack_require__(21629);
 });
 ;// ./src/pages/mine/mine.vue?vue&type=script&lang=js&
  /* harmony default export */ var mine_minevue_type_script_lang_js_ = (minevue_type_script_lang_js_); 
-// EXTERNAL MODULE: ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/h5-vue-style-loader/index.js??clonedRuleSet-22[0].rules[0].use[0]!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-22[0].rules[0].use[1]!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js??clonedRuleSet-22[0].rules[0].use[2]!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-22[0].rules[0].use[3]!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-22[0].rules[0].use[4]!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/sass-loader/dist/cjs.js??clonedRuleSet-22[0].rules[0].use[5]!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js??clonedRuleSet-22[0].rules[0].use[6]!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/index.js??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-scoped-loader/index.js!./src/pages/mine/mine.vue?vue&type=style&index=0&id=7015177e&lang=scss&scoped=true&
-var minevue_type_style_index_0_id_7015177e_lang_scss_scoped_true_ = __webpack_require__(94335);
-;// ./src/pages/mine/mine.vue?vue&type=style&index=0&id=7015177e&lang=scss&scoped=true&
- /* harmony default export */ var mine_minevue_type_style_index_0_id_7015177e_lang_scss_scoped_true_ = ((/* unused pure expression or super */ null && (mod))); 
+// EXTERNAL MODULE: ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/h5-vue-style-loader/index.js??clonedRuleSet-22[0].rules[0].use[0]!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-22[0].rules[0].use[1]!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js??clonedRuleSet-22[0].rules[0].use[2]!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-22[0].rules[0].use[3]!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-22[0].rules[0].use[4]!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/sass-loader/dist/cjs.js??clonedRuleSet-22[0].rules[0].use[5]!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js??clonedRuleSet-22[0].rules[0].use[6]!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/index.js??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-scoped-loader/index.js!./src/pages/mine/mine.vue?vue&type=style&index=0&id=3516d64f&lang=scss&scoped=true&
+var minevue_type_style_index_0_id_3516d64f_lang_scss_scoped_true_ = __webpack_require__(12481);
+;// ./src/pages/mine/mine.vue?vue&type=style&index=0&id=3516d64f&lang=scss&scoped=true&
+ /* harmony default export */ var mine_minevue_type_style_index_0_id_3516d64f_lang_scss_scoped_true_ = ((/* unused pure expression or super */ null && (mod))); 
 // EXTERNAL MODULE: ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/runtime/componentNormalizer.js
 var componentNormalizer = __webpack_require__(18535);
 ;// ./src/pages/mine/mine.vue
@@ -268,7 +285,7 @@ var component = (0,componentNormalizer/* default */.A)(
   staticRenderFns,
   false,
   null,
-  "7015177e",
+  "3516d64f",
   null,
   false,
   components,
@@ -279,7 +296,7 @@ var component = (0,componentNormalizer/* default */.A)(
 
 /***/ }),
 
-/***/ 80331:
+/***/ 75509:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -293,28 +310,12 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "@charset \"UTF-8\";\n/**\n * 这里是uni-app内置的常用样式变量\n *\n * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量\n * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App\n *\n */\n/**\n * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能\n *\n * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件\n */\n/* 颜色变量 */\n/* 行为相关颜色 */\n/* 文字基本颜色 */\n/* 背景颜色 */\n/* 边框颜色 */\n/* 尺寸变量 */\n/* 文字尺寸 */\n/* 图片尺寸 */\n/* Border Radius */\n/* 水平间距 */\n/* 垂直间距 */\n/* 透明度 */\n/* 文章场景相关 */uni-page-body[data-v-7015177e],\nuni-view[data-v-7015177e]{\n  /* display: flex; */}uni-page-body[data-v-7015177e]{min-height:100%;background-color:#fff}body.?%PAGE?%[data-v-7015177e]{background-color:#fff}.mine[data-v-7015177e]{width:100%;background-color:#f2f2f2;position:fixed;top:env(safe-area-inset-top); /* 兼容 iOS 11.0-11.4 */top:constant(safe-area-inset-top); /* 兼容 iOS 12.0-12.1 */left:0;touch-action:none}.mine-top-view[data-v-7015177e]{width:100%;height:25%;background-color:#fff;box-sizing:border-box;padding:20% 17px 50px 17px;display:flex}.mine-top-view .touxiang[data-v-7015177e]{width:%?128?%;height:%?128?%;display:flex;border-radius:15px;margin-right:%?34?%}.mine-top-view .touxiang-infor[data-v-7015177e]{flex:1;display:flex}.button-list[data-v-7015177e]{width:100%;height:58%;margin-top:%?16?%;box-sizing:border-box}.button-list .list-part[data-v-7015177e]{height:12%;background-color:#fff;display:flex;justify-content:space-between;align-items:center;margin-bottom:2%}.button-list .list-part .img[data-v-7015177e]{margin:2% 5% 0 10%;width:20px;height:20px}.logout[data-v-7015177e]{height:7.5%;background-color:#fff;display:flex;justify-content:center;align-items:center;margin-bottom:2%}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "@charset \"UTF-8\";\n/**\n * 这里是uni-app内置的常用样式变量\n *\n * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量\n * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App\n *\n */\n/**\n * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能\n *\n * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件\n */\n/* 颜色变量 */\n/* 行为相关颜色 */\n/* 文字基本颜色 */\n/* 背景颜色 */\n/* 边框颜色 */\n/* 尺寸变量 */\n/* 文字尺寸 */\n/* 图片尺寸 */\n/* Border Radius */\n/* 水平间距 */\n/* 垂直间距 */\n/* 透明度 */\n/* 文章场景相关 */uni-page-body[data-v-3516d64f],\nuni-view[data-v-3516d64f]{\n  /* display: flex; */}uni-page-body[data-v-3516d64f]{min-height:100%;background-color:#fff}body.?%PAGE?%[data-v-3516d64f]{background-color:#fff}.mine[data-v-3516d64f]{width:100%;background-color:#f2f2f2;position:fixed;top:env(safe-area-inset-top); /* 兼容 iOS 11.0-11.4 */top:constant(safe-area-inset-top); /* 兼容 iOS 12.0-12.1 */left:0;touch-action:none}.mine-top-view[data-v-3516d64f]{width:100%;height:25%;background-color:#fff;box-sizing:border-box;padding:20% 17px 50px 17px;display:flex}.mine-top-view .touxiang[data-v-3516d64f]{width:%?128?%;height:%?128?%;display:flex;border-radius:15px;margin-right:%?34?%}.mine-top-view .touxiang-infor[data-v-3516d64f]{flex:1;display:flex}.button-list[data-v-3516d64f]{width:100%;height:58%;margin-top:%?16?%;box-sizing:border-box}.button-list .list-part[data-v-3516d64f]{height:12%;background-color:#fff;display:flex;justify-content:space-between;align-items:center;margin-bottom:2%}.button-list .list-part .img[data-v-3516d64f]{margin:2% 5% 0 10%;width:20px;height:20px}.logout[data-v-3516d64f]{height:7.5%;background-color:#fff;display:flex;justify-content:center;align-items:center;margin-bottom:2%}", ""]);
 // Exports
 /* harmony default export */ __webpack_exports__["default"] = (___CSS_LOADER_EXPORT___);
 
 
-/***/ }),
-
-/***/ 94335:
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(80331);
-if(content.__esModule) content = content.default;
-if(typeof content === 'string') content = [[module.id, content, '']];
-if(content.locals) module.exports = content.locals;
-// add the styles to the DOM
-var add = (__webpack_require__(69333)/* ["default"] */ .A)
-var update = add("2f6f19f8", content, true, {"sourceMap":false,"shadowMode":false});
-
 /***/ })
 
 }]);
-//# sourceMappingURL=pages-mine-mine.afff8b62.js.map
+//# sourceMappingURL=pages-mine-mine.bb5600e8.js.map

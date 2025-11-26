@@ -93,4 +93,4 @@
  * @property {string} isPassword 是否需要修改密码
  */
 
-
+export const Types = {};

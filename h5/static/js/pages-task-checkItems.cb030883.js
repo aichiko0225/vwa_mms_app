@@ -1,5 +1,26 @@
 (self["webpackChunkhello_uniapp"] = self["webpackChunkhello_uniapp"] || []).push([[330],{
 
+/***/ 1112:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(31601);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(76314);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
+// Imports
+
+
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, "@charset \"UTF-8\";\n/**\n * 这里是uni-app内置的常用样式变量\n *\n * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量\n * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App\n *\n */\n/**\n * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能\n *\n * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件\n */\n/* 颜色变量 */\n/* 行为相关颜色 */\n/* 文字基本颜色 */\n/* 背景颜色 */\n/* 边框颜色 */\n/* 尺寸变量 */\n/* 文字尺寸 */\n/* 图片尺寸 */\n/* Border Radius */\n/* 水平间距 */\n/* 垂直间距 */\n/* 透明度 */\n/* 文章场景相关 */uni-page-body[data-v-4fe6d1c4],\nuni-view[data-v-4fe6d1c4]{\n  /* display: flex; */}uni-page-body[data-v-4fe6d1c4]{min-height:100%;background-color:#fff}body.?%PAGE?%[data-v-4fe6d1c4]{background-color:#fff}.riskAssessment[data-v-4fe6d1c4]{width:100%;background-color:#fff;position:fixed;top:env(safe-area-inset-top); /* 兼容 iOS 11.0-11.4 */top:constant(safe-area-inset-top); /* 兼容 iOS 12.0-12.1 */left:0;touch-action:none}.status_bar[data-v-4fe6d1c4]{height:5%;width:100%;background-color:#fff}.top_view[data-v-4fe6d1c4]{height:5%;width:100%;position:fixed;background-color:#f8f8f8;top:0;z-index:999;align-items:center}.type[data-v-4fe6d1c4]{display:inline-flex;align-items:center;padding:0 5px;margin-left:15px;border-radius:2px;font-size:12px}.part-title[data-v-4fe6d1c4]{display:flex;margin:0 7px;background-color:#fff;padding:2px;position:relative;border-radius:3px}.title-t[data-v-4fe6d1c4]{flex:1;align-items:center;position:relative;width:100%;padding:10px}.infor-list[data-v-4fe6d1c4]{display:block;width:100%;margin-top:5px;height:80%;box-sizing:border-box}.infor-list .list[data-v-4fe6d1c4]{display:flex;padding:%?5?% %?0?%}.infor-list .list .img[data-v-4fe6d1c4]{width:%?64?%;height:%?64?%;padding-right:%?28?%;float:left}.infor-list .list .list-part[data-v-4fe6d1c4]{flex:1;display:block;justify-content:space-between;align-items:center}.infor-list .list .list-part uni-text[data-v-4fe6d1c4]:last-of-type{position:relative;display:flex;justify-content:flex-start;align-items:center;color:#000}.links[data-v-4fe6d1c4]{width:100%;overflow-x:scroll;padding:4px 0;height:4%;display:flex;align-items:center;top:48}.links .each-links[data-v-4fe6d1c4]{display:flex;flex:1;justify-content:center;align-items:center;white-space:nowrap;height:%?52?%;padding:0 10px}.links .each-links uni-text[data-v-4fe6d1c4]{text-align:center;color:#727272;font-size:%?28?%;position:relative}.links .each-links .colorActive[data-v-4fe6d1c4]::after{content:\"\";position:absolute;width:%?40?%;height:%?6?%;background-color:#0289fe;bottom:%?-12?%;left:50%;margin-left:%?-20?%;border-radius:%?4?%}.links .each-links .colorActive[data-v-4fe6d1c4]{color:#000;font-size:%?30?%}.testcase[data-v-4fe6d1c4]{border-radius:5px;background-color:#e6f7ff;color:#0780d8;height:30px;font-size:12px;width:116px;margin:inherit;display:flex;align-items:center;justify-content:center}.testResult[data-v-4fe6d1c4]{border-radius:5px;background-color:#e6f7ff;color:#0780d8;height:30px;font-size:12px;width:80px;margin-left:15px;display:flex;align-items:center;justify-content:center}.edit[data-v-4fe6d1c4]{color:#2b9c94;font-size:14px;font-weight:700;padding:6% 3%;display:flex;align-items:center;justify-content:center}.red-dot-text[data-v-4fe6d1c4]::before{content:\"●\";\n  /* 使用圆点符号作为文字前的标记 */color:red;\n  /* 设置圆点的颜色为红色 */display:inline-block;width:1em;\n  /* 调整圆点的位置 */font-size:1.5em}.checkbox[data-v-4fe6d1c4]{display:flex;justify-content:center;align-items:center;margin-left:5px}", ""]);
+// Exports
+/* harmony default export */ __webpack_exports__["default"] = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
 /***/ 8275:
 /***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
@@ -32,7 +53,222 @@ var update = add("ccbc7dae", content, true, {"sourceMap":false,"shadowMode":fals
 
 /***/ }),
 
-/***/ 27165:
+/***/ 40615:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(31601);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(76314);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
+// Imports
+
+
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, "@charset \"UTF-8\";\n/**\n * 这里是uni-app内置的常用样式变量\n *\n * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量\n * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App\n *\n */\n/**\n * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能\n *\n * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件\n */\n/* 颜色变量 */\n/* 行为相关颜色 */\n/* 文字基本颜色 */\n/* 背景颜色 */\n/* 边框颜色 */\n/* 尺寸变量 */\n/* 文字尺寸 */\n/* 图片尺寸 */\n/* Border Radius */\n/* 水平间距 */\n/* 垂直间距 */\n/* 透明度 */\n/* 文章场景相关 */.uni-grid-wrap[data-v-6f48037d]{display:flex;flex:1;flex-direction:column;width:100%}.uni-grid[data-v-6f48037d]{display:flex;flex-direction:row;flex-wrap:wrap}.uni-grid--border[data-v-6f48037d]{position:relative;z-index:1;border-left:1px #d2d2d2 solid}", ""]);
+// Exports
+/* harmony default export */ __webpack_exports__["default"] = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
+/***/ 41092:
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  A: function() { return /* binding */ uni_grid; }
+});
+
+;// ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js??clonedRuleSet-42[0].rules[0].use[0]!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/filter-modules-template.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/page-meta.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/index.js??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-scoped-loader/index.js!./src/uni_modules/uni-grid/components/uni-grid/uni-grid.vue?vue&type=template&id=6f48037d&scoped=true&
+var components;
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('v-uni-view',{staticClass:"uni-grid-wrap"},[_c('v-uni-view',{ref:"uni-grid",staticClass:"uni-grid",class:{ 'uni-grid--border': _vm.showBorder },style:({ 'border-left-color':_vm.borderColor}),attrs:{"id":_vm.elId}},[_vm._t("default")],2)],1)}
+var recyclableRender = false
+var staticRenderFns = []
+
+
+// EXTERNAL MODULE: ./node_modules/core-js/modules/es.error.to-string.js
+var es_error_to_string = __webpack_require__(76918);
+// EXTERNAL MODULE: ./node_modules/core-js/modules/es.iterator.constructor.js
+var es_iterator_constructor = __webpack_require__(18111);
+// EXTERNAL MODULE: ./node_modules/core-js/modules/es.iterator.for-each.js
+var es_iterator_for_each = __webpack_require__(7588);
+// EXTERNAL MODULE: ./node_modules/core-js/modules/es.number.constructor.js
+var es_number_constructor = __webpack_require__(2892);
+// EXTERNAL MODULE: ./node_modules/core-js/modules/es.object.to-string.js
+var es_object_to_string = __webpack_require__(26099);
+// EXTERNAL MODULE: ./node_modules/core-js/modules/es.parse-int.js
+var es_parse_int = __webpack_require__(58940);
+// EXTERNAL MODULE: ./node_modules/core-js/modules/es.regexp.exec.js
+var es_regexp_exec = __webpack_require__(27495);
+// EXTERNAL MODULE: ./node_modules/core-js/modules/es.regexp.to-string.js
+var es_regexp_to_string = __webpack_require__(38781);
+// EXTERNAL MODULE: ./node_modules/core-js/modules/web.dom-collections.for-each.js
+var web_dom_collections_for_each = __webpack_require__(23500);
+;// ./node_modules/babel-loader/lib/index.js??clonedRuleSet-40[0].rules[0].use[0]!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js??clonedRuleSet-40[0].rules[0].use[1]!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js??clonedRuleSet-43[0].rules[0].use[0]!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/using-components.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/index.js??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-scoped-loader/index.js!./src/uni_modules/uni-grid/components/uni-grid/uni-grid.vue?vue&type=script&lang=js&
+
+
+
+
+
+
+
+
+
+//
+//
+//
+//
+//
+//
+//
+//
+
+/**
+ * Grid 宫格
+ * @description 宫格组件
+ * @tutorial https://ext.dcloud.net.cn/plugin?id=27
+ * @property {Number} column 每列显示个数
+ * @property {String} borderColor 边框颜色
+ * @property {Boolean} showBorder 是否显示边框
+ * @property {Boolean} square 是否方形显示
+ * @property {Boolean} Boolean 点击背景是否高亮
+ * @event {Function} change 点击 grid 触发，e={detail:{index:0}}，index 为当前点击 gird 下标
+ */
+/* harmony default export */ var uni_gridvue_type_script_lang_js_ = ({
+  name: 'UniGrid',
+  emits: ['change'],
+  props: {
+    // 每列显示个数
+    column: {
+      type: Number,
+      default: 3
+    },
+    // 是否显示边框
+    showBorder: {
+      type: Boolean,
+      default: true
+    },
+    // 边框颜色
+    borderColor: {
+      type: String,
+      default: '#D2D2D2'
+    },
+    // 是否正方形显示,默认为 true
+    square: {
+      type: Boolean,
+      default: true
+    },
+    highlight: {
+      type: Boolean,
+      default: true
+    }
+  },
+  provide: function provide() {
+    return {
+      grid: this
+    };
+  },
+  data: function data() {
+    var elId = "Uni_".concat(Math.ceil(Math.random() * 10e5).toString(36));
+    return {
+      elId: elId,
+      width: 0
+    };
+  },
+  created: function created() {
+    this.children = [];
+  },
+  mounted: function mounted() {
+    var _this = this;
+    this.$nextTick(function () {
+      _this.init();
+    });
+  },
+  methods: {
+    init: function init() {
+      var _this2 = this;
+      setTimeout(function () {
+        _this2._getSize(function (width) {
+          _this2.children.forEach(function (item, index) {
+            item.width = width;
+          });
+        });
+      }, 50);
+    },
+    change: function change(e) {
+      this.$emit('change', e);
+    },
+    _getSize: function _getSize(fn) {
+      var _this3 = this;
+      uni.createSelectorQuery().in(this).select("#".concat(this.elId)).boundingClientRect().exec(function (ret) {
+        _this3.width = parseInt((ret[0].width - 1) / _this3.column) + 'px';
+        fn(_this3.width);
+      });
+    }
+  }
+});
+;// ./src/uni_modules/uni-grid/components/uni-grid/uni-grid.vue?vue&type=script&lang=js&
+ /* harmony default export */ var uni_grid_uni_gridvue_type_script_lang_js_ = (uni_gridvue_type_script_lang_js_); 
+// EXTERNAL MODULE: ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/h5-vue-style-loader/index.js??clonedRuleSet-22[0].rules[0].use[0]!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-22[0].rules[0].use[1]!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js??clonedRuleSet-22[0].rules[0].use[2]!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-22[0].rules[0].use[3]!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-22[0].rules[0].use[4]!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/sass-loader/dist/cjs.js??clonedRuleSet-22[0].rules[0].use[5]!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js??clonedRuleSet-22[0].rules[0].use[6]!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/index.js??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-scoped-loader/index.js!./src/uni_modules/uni-grid/components/uni-grid/uni-grid.vue?vue&type=style&index=0&id=6f48037d&lang=scss&scoped=true&
+var uni_gridvue_type_style_index_0_id_6f48037d_lang_scss_scoped_true_ = __webpack_require__(8275);
+;// ./src/uni_modules/uni-grid/components/uni-grid/uni-grid.vue?vue&type=style&index=0&id=6f48037d&lang=scss&scoped=true&
+ /* harmony default export */ var uni_grid_uni_gridvue_type_style_index_0_id_6f48037d_lang_scss_scoped_true_ = ((/* unused pure expression or super */ null && (mod))); 
+// EXTERNAL MODULE: ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/runtime/componentNormalizer.js
+var componentNormalizer = __webpack_require__(18535);
+;// ./src/uni_modules/uni-grid/components/uni-grid/uni-grid.vue
+
+var renderjs
+;
+
+;
+
+
+/* normalize component */
+
+var component = (0,componentNormalizer/* default */.A)(
+  uni_grid_uni_gridvue_type_script_lang_js_,
+  render,
+  staticRenderFns,
+  false,
+  null,
+  "6f48037d",
+  null,
+  false,
+  components,
+  renderjs
+)
+
+/* harmony default export */ var uni_grid = (component.exports);
+
+/***/ }),
+
+/***/ 48914:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(31601);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(76314);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
+// Imports
+
+
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, "@charset \"UTF-8\";\n/**\n * 这里是uni-app内置的常用样式变量\n *\n * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量\n * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App\n *\n */\n/**\n * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能\n *\n * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件\n */\n/* 颜色变量 */\n/* 行为相关颜色 */\n/* 文字基本颜色 */\n/* 背景颜色 */\n/* 边框颜色 */\n/* 尺寸变量 */\n/* 文字尺寸 */\n/* 图片尺寸 */\n/* Border Radius */\n/* 水平间距 */\n/* 垂直间距 */\n/* 透明度 */\n/* 文章场景相关 */uni-page-body[data-v-38a019fc]{min-height:100%;background-color:#fff}body.?%PAGE?%[data-v-38a019fc]{background-color:#fff}[data-v-38a019fc] uni-checkbox{display:flex}[data-v-38a019fc] uni-checkbox:not([disabled]) .uni-checkbox-input:hover{border-color:#d1d1d1}[data-v-38a019fc] uni-checkbox .uni-checkbox-input.uni-checkbox-input-checked{color:#fff!important;background:#0289fe;border-color:#0289fe!important}[data-v-38a019fc] uni-checkbox .uni-checkbox-input{border-radius:50%;width:%?38?%;height:%?38?%;margin-right:%?20?%}[data-v-38a019fc] uni-checkbox-group{height:78%}.popup-content[data-v-38a019fc]{height:15%!important}.popup-content[data-v-38a019fc]  .uni-searchbar{padding:%?20?% %?30?%}.pop-wuzi[data-v-38a019fc]{height:60vh;overflow-y:auto;padding:0 %?30?%}.pop-wuzi .wuzi-list[data-v-38a019fc]{display:flex;align-items:center;padding:%?20?% 0;border-bottom:%?1?% solid #f5f5f5}.pop-wuzi .wuzi-list .title-g[data-v-38a019fc]{flex:1;display:flex;flex-direction:row;justify-content:space-between}.pop-wuzi .wuzi-list .title-g uni-view[data-v-38a019fc]{font-size:%?26?%}.pop-wuzi .wuzi-list .title-g uni-view[data-v-38a019fc]:last-of-type{font-size:%?24?%;color:#888}[data-v-38a019fc] .pop-content{height:80%!important;border-top-right-radius:%?30?%;border-top-left-radius:%?30?%;overflow:hidden}[data-v-38a019fc] uni-view{border-radius:10px 10px 0 0!important}[data-v-38a019fc] .uni-grid{display:flex;justify-content:center}.grid-item[data-v-38a019fc]{width:95%;height:100%;border-radius:3px!important;background-color:#f0f0f0;display:flex;justify-content:center;align-items:center;margin:3% 3%;padding:3% 0}.grid-item-click[data-v-38a019fc]{width:95%;height:100%;border-radius:3px!important;background-color:#e67464;color:#fff;display:flex;justify-content:center;align-items:center;margin:3% 3%;padding:3% 0}.active-bg[data-v-38a019fc]{background-color:red /* 被点击的宫格背景色设置为红色 */}", ""]);
+// Exports
+/* harmony default export */ __webpack_exports__["default"] = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
+/***/ 54920:
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -44,7 +280,7 @@ __webpack_require__.d(__webpack_exports__, {
   "default": function() { return /* binding */ checkItems; }
 });
 
-;// ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js??clonedRuleSet-42[0].rules[0].use[0]!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/filter-modules-template.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/page-meta.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/index.js??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-scoped-loader/index.js!./src/pages/task/checkItems.vue?vue&type=template&id=69f175c2&scoped=true&
+;// ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js??clonedRuleSet-42[0].rules[0].use[0]!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/filter-modules-template.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/page-meta.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/index.js??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-scoped-loader/index.js!./src/pages/task/checkItems.vue?vue&type=template&id=4fe6d1c4&scoped=true&
 var components = {'uniNavBar': (__webpack_require__(28435)/* ["default"] */ .A),'uniIcons': (__webpack_require__(97972)/* ["default"] */ .A)}
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('v-uni-view',{staticClass:"riskAssessment",style:({height:_vm.containerHeight,width:_vm.containerWidth}),on:{"touchmove":function($event){$event.preventDefault();
 arguments[0] = $event = _vm.$handleEvent($event);
@@ -78,7 +314,7 @@ var recyclableRender = false
 var staticRenderFns = []
 
 
-;// ./src/pages/task/checkItems.vue?vue&type=template&id=69f175c2&scoped=true&
+;// ./src/pages/task/checkItems.vue?vue&type=template&id=4fe6d1c4&scoped=true&
 
 // EXTERNAL MODULE: ./node_modules/core-js/modules/es.array.index-of.js
 var es_array_index_of = __webpack_require__(25276);
@@ -304,6 +540,8 @@ var component = (0,componentNormalizer/* default */.A)(
 )
 
 /* harmony default export */ var testDuration = (component.exports);
+// EXTERNAL MODULE: ./src/api/api.js
+var api = __webpack_require__(21629);
 ;// ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js??clonedRuleSet-42[0].rules[0].use[0]!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/filter-modules-template.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/page-meta.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/index.js??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-scoped-loader/index.js!./src/pages/task/measuredValue.vue?vue&type=template&id=5c7ac649&scoped=true&
 var measuredValuevue_type_template_id_5c7ac649_scoped_true_components = {'uniPopup': (__webpack_require__(45272)/* ["default"] */ .A)}
 var measuredValuevue_type_template_id_5c7ac649_scoped_true_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('uni-popup',{ref:"popup",staticStyle:{"height":"300px","background-color":"aqua !important"},attrs:{"background-color":"#fff"},on:{"change":function($event){
@@ -529,6 +767,7 @@ var temporaryBus = __webpack_require__(73840);
 
 
 
+
 /* harmony default export */ var checkItemsvue_type_script_lang_js_ = ({
   components: {
     testDuration: testDuration,
@@ -619,7 +858,7 @@ var temporaryBus = __webpack_require__(73840);
           resultId: data.id,
           isTemp: '1'
         };
-        that.$http.get("/testService/qaTestResultSubtable/appList", {
+        that.$http.get(api/* API */.nC.testCase.qaTestResultSubtable_appList, {
           params: params
         }).then(function (res) {
           if (res.data.success) {
@@ -649,7 +888,7 @@ var temporaryBus = __webpack_require__(73840);
         ids: selectIds,
         testResult: item.value
       };
-      that.$http.post("/testService/qaTestResultSubtable/batchEditTestResult", params).then(function (res) {
+      that.$http.post(api/* API */.nC.testCase.qaTestResultSubtable_batchEditTestResult, params).then(function (res) {
         if (res.data.success) {
           uni.showToast({
             icon: 'none',
@@ -673,7 +912,7 @@ var temporaryBus = __webpack_require__(73840);
       var that = this;
       var resultData = that.tqsResultData;
       resultData.testDuration = testDuration;
-      that.$http.post("/testService/qaTestResult/appResultSubmit", resultData).then(function (res) {
+      that.$http.post(api/* API */.nC.testCase.appResultSubmit, resultData).then(function (res) {
         if (res.data.success) {
           uni.showToast({
             title: 'Submit Successfully'
@@ -784,10 +1023,10 @@ var temporaryBus = __webpack_require__(73840);
 });
 ;// ./src/pages/task/checkItems.vue?vue&type=script&lang=js&
  /* harmony default export */ var task_checkItemsvue_type_script_lang_js_ = (checkItemsvue_type_script_lang_js_); 
-// EXTERNAL MODULE: ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/h5-vue-style-loader/index.js??clonedRuleSet-22[0].rules[0].use[0]!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-22[0].rules[0].use[1]!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js??clonedRuleSet-22[0].rules[0].use[2]!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-22[0].rules[0].use[3]!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-22[0].rules[0].use[4]!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/sass-loader/dist/cjs.js??clonedRuleSet-22[0].rules[0].use[5]!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js??clonedRuleSet-22[0].rules[0].use[6]!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/index.js??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-scoped-loader/index.js!./src/pages/task/checkItems.vue?vue&type=style&index=0&id=69f175c2&lang=scss&scoped=true&
-var checkItemsvue_type_style_index_0_id_69f175c2_lang_scss_scoped_true_ = __webpack_require__(82284);
-;// ./src/pages/task/checkItems.vue?vue&type=style&index=0&id=69f175c2&lang=scss&scoped=true&
- /* harmony default export */ var task_checkItemsvue_type_style_index_0_id_69f175c2_lang_scss_scoped_true_ = ((/* unused pure expression or super */ null && (mod))); 
+// EXTERNAL MODULE: ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/h5-vue-style-loader/index.js??clonedRuleSet-22[0].rules[0].use[0]!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-22[0].rules[0].use[1]!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js??clonedRuleSet-22[0].rules[0].use[2]!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-22[0].rules[0].use[3]!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-22[0].rules[0].use[4]!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/sass-loader/dist/cjs.js??clonedRuleSet-22[0].rules[0].use[5]!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js??clonedRuleSet-22[0].rules[0].use[6]!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/index.js??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-scoped-loader/index.js!./src/pages/task/checkItems.vue?vue&type=style&index=0&id=4fe6d1c4&lang=scss&scoped=true&
+var checkItemsvue_type_style_index_0_id_4fe6d1c4_lang_scss_scoped_true_ = __webpack_require__(83164);
+;// ./src/pages/task/checkItems.vue?vue&type=style&index=0&id=4fe6d1c4&lang=scss&scoped=true&
+ /* harmony default export */ var task_checkItemsvue_type_style_index_0_id_4fe6d1c4_lang_scss_scoped_true_ = ((/* unused pure expression or super */ null && (mod))); 
 ;// ./src/pages/task/checkItems.vue
 
 var checkItems_renderjs
@@ -804,7 +1043,7 @@ var checkItems_component = (0,componentNormalizer/* default */.A)(
   staticRenderFns,
   false,
   null,
-  "69f175c2",
+  "4fe6d1c4",
   null,
   false,
   components,
@@ -812,221 +1051,6 @@ var checkItems_component = (0,componentNormalizer/* default */.A)(
 )
 
 /* harmony default export */ var checkItems = (checkItems_component.exports);
-
-/***/ }),
-
-/***/ 40615:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(31601);
-/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(76314);
-/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
-// Imports
-
-
-var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
-// Module
-___CSS_LOADER_EXPORT___.push([module.id, "@charset \"UTF-8\";\n/**\n * 这里是uni-app内置的常用样式变量\n *\n * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量\n * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App\n *\n */\n/**\n * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能\n *\n * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件\n */\n/* 颜色变量 */\n/* 行为相关颜色 */\n/* 文字基本颜色 */\n/* 背景颜色 */\n/* 边框颜色 */\n/* 尺寸变量 */\n/* 文字尺寸 */\n/* 图片尺寸 */\n/* Border Radius */\n/* 水平间距 */\n/* 垂直间距 */\n/* 透明度 */\n/* 文章场景相关 */.uni-grid-wrap[data-v-6f48037d]{display:flex;flex:1;flex-direction:column;width:100%}.uni-grid[data-v-6f48037d]{display:flex;flex-direction:row;flex-wrap:wrap}.uni-grid--border[data-v-6f48037d]{position:relative;z-index:1;border-left:1px #d2d2d2 solid}", ""]);
-// Exports
-/* harmony default export */ __webpack_exports__["default"] = (___CSS_LOADER_EXPORT___);
-
-
-/***/ }),
-
-/***/ 41092:
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-
-// EXPORTS
-__webpack_require__.d(__webpack_exports__, {
-  A: function() { return /* binding */ uni_grid; }
-});
-
-;// ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js??clonedRuleSet-42[0].rules[0].use[0]!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/filter-modules-template.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/page-meta.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/index.js??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-scoped-loader/index.js!./src/uni_modules/uni-grid/components/uni-grid/uni-grid.vue?vue&type=template&id=6f48037d&scoped=true&
-var components;
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('v-uni-view',{staticClass:"uni-grid-wrap"},[_c('v-uni-view',{ref:"uni-grid",staticClass:"uni-grid",class:{ 'uni-grid--border': _vm.showBorder },style:({ 'border-left-color':_vm.borderColor}),attrs:{"id":_vm.elId}},[_vm._t("default")],2)],1)}
-var recyclableRender = false
-var staticRenderFns = []
-
-
-// EXTERNAL MODULE: ./node_modules/core-js/modules/es.error.to-string.js
-var es_error_to_string = __webpack_require__(76918);
-// EXTERNAL MODULE: ./node_modules/core-js/modules/es.iterator.constructor.js
-var es_iterator_constructor = __webpack_require__(18111);
-// EXTERNAL MODULE: ./node_modules/core-js/modules/es.iterator.for-each.js
-var es_iterator_for_each = __webpack_require__(7588);
-// EXTERNAL MODULE: ./node_modules/core-js/modules/es.number.constructor.js
-var es_number_constructor = __webpack_require__(2892);
-// EXTERNAL MODULE: ./node_modules/core-js/modules/es.object.to-string.js
-var es_object_to_string = __webpack_require__(26099);
-// EXTERNAL MODULE: ./node_modules/core-js/modules/es.parse-int.js
-var es_parse_int = __webpack_require__(58940);
-// EXTERNAL MODULE: ./node_modules/core-js/modules/es.regexp.exec.js
-var es_regexp_exec = __webpack_require__(27495);
-// EXTERNAL MODULE: ./node_modules/core-js/modules/es.regexp.to-string.js
-var es_regexp_to_string = __webpack_require__(38781);
-// EXTERNAL MODULE: ./node_modules/core-js/modules/web.dom-collections.for-each.js
-var web_dom_collections_for_each = __webpack_require__(23500);
-;// ./node_modules/babel-loader/lib/index.js??clonedRuleSet-40[0].rules[0].use[0]!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js??clonedRuleSet-40[0].rules[0].use[1]!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js??clonedRuleSet-43[0].rules[0].use[0]!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/using-components.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/index.js??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-scoped-loader/index.js!./src/uni_modules/uni-grid/components/uni-grid/uni-grid.vue?vue&type=script&lang=js&
-
-
-
-
-
-
-
-
-
-//
-//
-//
-//
-//
-//
-//
-//
-
-/**
- * Grid 宫格
- * @description 宫格组件
- * @tutorial https://ext.dcloud.net.cn/plugin?id=27
- * @property {Number} column 每列显示个数
- * @property {String} borderColor 边框颜色
- * @property {Boolean} showBorder 是否显示边框
- * @property {Boolean} square 是否方形显示
- * @property {Boolean} Boolean 点击背景是否高亮
- * @event {Function} change 点击 grid 触发，e={detail:{index:0}}，index 为当前点击 gird 下标
- */
-/* harmony default export */ var uni_gridvue_type_script_lang_js_ = ({
-  name: 'UniGrid',
-  emits: ['change'],
-  props: {
-    // 每列显示个数
-    column: {
-      type: Number,
-      default: 3
-    },
-    // 是否显示边框
-    showBorder: {
-      type: Boolean,
-      default: true
-    },
-    // 边框颜色
-    borderColor: {
-      type: String,
-      default: '#D2D2D2'
-    },
-    // 是否正方形显示,默认为 true
-    square: {
-      type: Boolean,
-      default: true
-    },
-    highlight: {
-      type: Boolean,
-      default: true
-    }
-  },
-  provide: function provide() {
-    return {
-      grid: this
-    };
-  },
-  data: function data() {
-    var elId = "Uni_".concat(Math.ceil(Math.random() * 10e5).toString(36));
-    return {
-      elId: elId,
-      width: 0
-    };
-  },
-  created: function created() {
-    this.children = [];
-  },
-  mounted: function mounted() {
-    var _this = this;
-    this.$nextTick(function () {
-      _this.init();
-    });
-  },
-  methods: {
-    init: function init() {
-      var _this2 = this;
-      setTimeout(function () {
-        _this2._getSize(function (width) {
-          _this2.children.forEach(function (item, index) {
-            item.width = width;
-          });
-        });
-      }, 50);
-    },
-    change: function change(e) {
-      this.$emit('change', e);
-    },
-    _getSize: function _getSize(fn) {
-      var _this3 = this;
-      uni.createSelectorQuery().in(this).select("#".concat(this.elId)).boundingClientRect().exec(function (ret) {
-        _this3.width = parseInt((ret[0].width - 1) / _this3.column) + 'px';
-        fn(_this3.width);
-      });
-    }
-  }
-});
-;// ./src/uni_modules/uni-grid/components/uni-grid/uni-grid.vue?vue&type=script&lang=js&
- /* harmony default export */ var uni_grid_uni_gridvue_type_script_lang_js_ = (uni_gridvue_type_script_lang_js_); 
-// EXTERNAL MODULE: ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/h5-vue-style-loader/index.js??clonedRuleSet-22[0].rules[0].use[0]!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-22[0].rules[0].use[1]!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js??clonedRuleSet-22[0].rules[0].use[2]!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-22[0].rules[0].use[3]!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-22[0].rules[0].use[4]!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/sass-loader/dist/cjs.js??clonedRuleSet-22[0].rules[0].use[5]!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js??clonedRuleSet-22[0].rules[0].use[6]!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/index.js??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-scoped-loader/index.js!./src/uni_modules/uni-grid/components/uni-grid/uni-grid.vue?vue&type=style&index=0&id=6f48037d&lang=scss&scoped=true&
-var uni_gridvue_type_style_index_0_id_6f48037d_lang_scss_scoped_true_ = __webpack_require__(8275);
-;// ./src/uni_modules/uni-grid/components/uni-grid/uni-grid.vue?vue&type=style&index=0&id=6f48037d&lang=scss&scoped=true&
- /* harmony default export */ var uni_grid_uni_gridvue_type_style_index_0_id_6f48037d_lang_scss_scoped_true_ = ((/* unused pure expression or super */ null && (mod))); 
-// EXTERNAL MODULE: ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/runtime/componentNormalizer.js
-var componentNormalizer = __webpack_require__(18535);
-;// ./src/uni_modules/uni-grid/components/uni-grid/uni-grid.vue
-
-var renderjs
-;
-
-;
-
-
-/* normalize component */
-
-var component = (0,componentNormalizer/* default */.A)(
-  uni_grid_uni_gridvue_type_script_lang_js_,
-  render,
-  staticRenderFns,
-  false,
-  null,
-  "6f48037d",
-  null,
-  false,
-  components,
-  renderjs
-)
-
-/* harmony default export */ var uni_grid = (component.exports);
-
-/***/ }),
-
-/***/ 48914:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(31601);
-/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(76314);
-/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
-// Imports
-
-
-var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
-// Module
-___CSS_LOADER_EXPORT___.push([module.id, "@charset \"UTF-8\";\n/**\n * 这里是uni-app内置的常用样式变量\n *\n * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量\n * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App\n *\n */\n/**\n * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能\n *\n * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件\n */\n/* 颜色变量 */\n/* 行为相关颜色 */\n/* 文字基本颜色 */\n/* 背景颜色 */\n/* 边框颜色 */\n/* 尺寸变量 */\n/* 文字尺寸 */\n/* 图片尺寸 */\n/* Border Radius */\n/* 水平间距 */\n/* 垂直间距 */\n/* 透明度 */\n/* 文章场景相关 */uni-page-body[data-v-38a019fc]{min-height:100%;background-color:#fff}body.?%PAGE?%[data-v-38a019fc]{background-color:#fff}[data-v-38a019fc] uni-checkbox{display:flex}[data-v-38a019fc] uni-checkbox:not([disabled]) .uni-checkbox-input:hover{border-color:#d1d1d1}[data-v-38a019fc] uni-checkbox .uni-checkbox-input.uni-checkbox-input-checked{color:#fff!important;background:#0289fe;border-color:#0289fe!important}[data-v-38a019fc] uni-checkbox .uni-checkbox-input{border-radius:50%;width:%?38?%;height:%?38?%;margin-right:%?20?%}[data-v-38a019fc] uni-checkbox-group{height:78%}.popup-content[data-v-38a019fc]{height:15%!important}.popup-content[data-v-38a019fc]  .uni-searchbar{padding:%?20?% %?30?%}.pop-wuzi[data-v-38a019fc]{height:60vh;overflow-y:auto;padding:0 %?30?%}.pop-wuzi .wuzi-list[data-v-38a019fc]{display:flex;align-items:center;padding:%?20?% 0;border-bottom:%?1?% solid #f5f5f5}.pop-wuzi .wuzi-list .title-g[data-v-38a019fc]{flex:1;display:flex;flex-direction:row;justify-content:space-between}.pop-wuzi .wuzi-list .title-g uni-view[data-v-38a019fc]{font-size:%?26?%}.pop-wuzi .wuzi-list .title-g uni-view[data-v-38a019fc]:last-of-type{font-size:%?24?%;color:#888}[data-v-38a019fc] .pop-content{height:80%!important;border-top-right-radius:%?30?%;border-top-left-radius:%?30?%;overflow:hidden}[data-v-38a019fc] uni-view{border-radius:10px 10px 0 0!important}[data-v-38a019fc] .uni-grid{display:flex;justify-content:center}.grid-item[data-v-38a019fc]{width:95%;height:100%;border-radius:3px!important;background-color:#f0f0f0;display:flex;justify-content:center;align-items:center;margin:3% 3%;padding:3% 0}.grid-item-click[data-v-38a019fc]{width:95%;height:100%;border-radius:3px!important;background-color:#e67464;color:#fff;display:flex;justify-content:center;align-items:center;margin:3% 3%;padding:3% 0}.active-bg[data-v-38a019fc]{background-color:red /* 被点击的宫格背景色设置为红色 */}", ""]);
-// Exports
-/* harmony default export */ __webpack_exports__["default"] = (___CSS_LOADER_EXPORT___);
-
 
 /***/ }),
 
@@ -1213,27 +1237,6 @@ var update = add("54e3447a", content, true, {"sourceMap":false,"shadowMode":fals
 
 /***/ }),
 
-/***/ 74408:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(31601);
-/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(76314);
-/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
-// Imports
-
-
-var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
-// Module
-___CSS_LOADER_EXPORT___.push([module.id, "@charset \"UTF-8\";\n/**\n * 这里是uni-app内置的常用样式变量\n *\n * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量\n * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App\n *\n */\n/**\n * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能\n *\n * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件\n */\n/* 颜色变量 */\n/* 行为相关颜色 */\n/* 文字基本颜色 */\n/* 背景颜色 */\n/* 边框颜色 */\n/* 尺寸变量 */\n/* 文字尺寸 */\n/* 图片尺寸 */\n/* Border Radius */\n/* 水平间距 */\n/* 垂直间距 */\n/* 透明度 */\n/* 文章场景相关 */uni-page-body[data-v-69f175c2],\nuni-view[data-v-69f175c2]{\n  /* display: flex; */}uni-page-body[data-v-69f175c2]{min-height:100%;background-color:#fff}body.?%PAGE?%[data-v-69f175c2]{background-color:#fff}.riskAssessment[data-v-69f175c2]{width:100%;background-color:#fff;position:fixed;top:env(safe-area-inset-top); /* 兼容 iOS 11.0-11.4 */top:constant(safe-area-inset-top); /* 兼容 iOS 12.0-12.1 */left:0;touch-action:none}.status_bar[data-v-69f175c2]{height:5%;width:100%;background-color:#fff}.top_view[data-v-69f175c2]{height:5%;width:100%;position:fixed;background-color:#f8f8f8;top:0;z-index:999;align-items:center}.type[data-v-69f175c2]{display:inline-flex;align-items:center;padding:0 5px;margin-left:15px;border-radius:2px;font-size:12px}.part-title[data-v-69f175c2]{display:flex;margin:0 7px;background-color:#fff;padding:2px;position:relative;border-radius:3px}.title-t[data-v-69f175c2]{flex:1;align-items:center;position:relative;width:100%;padding:10px}.infor-list[data-v-69f175c2]{display:block;width:100%;margin-top:5px;height:80%;box-sizing:border-box}.infor-list .list[data-v-69f175c2]{display:flex;padding:%?5?% %?0?%}.infor-list .list .img[data-v-69f175c2]{width:%?64?%;height:%?64?%;padding-right:%?28?%;float:left}.infor-list .list .list-part[data-v-69f175c2]{flex:1;display:block;justify-content:space-between;align-items:center}.infor-list .list .list-part uni-text[data-v-69f175c2]:last-of-type{position:relative;display:flex;justify-content:flex-start;align-items:center;color:#000}.links[data-v-69f175c2]{width:100%;overflow-x:scroll;padding:4px 0;height:4%;display:flex;align-items:center;top:48}.links .each-links[data-v-69f175c2]{display:flex;flex:1;justify-content:center;align-items:center;white-space:nowrap;height:%?52?%;padding:0 10px}.links .each-links uni-text[data-v-69f175c2]{text-align:center;color:#727272;font-size:%?28?%;position:relative}.links .each-links .colorActive[data-v-69f175c2]::after{content:\"\";position:absolute;width:%?40?%;height:%?6?%;background-color:#0289fe;bottom:%?-12?%;left:50%;margin-left:%?-20?%;border-radius:%?4?%}.links .each-links .colorActive[data-v-69f175c2]{color:#000;font-size:%?30?%}.testcase[data-v-69f175c2]{border-radius:5px;background-color:#e6f7ff;color:#0780d8;height:30px;font-size:12px;width:116px;margin:inherit;display:flex;align-items:center;justify-content:center}.testResult[data-v-69f175c2]{border-radius:5px;background-color:#e6f7ff;color:#0780d8;height:30px;font-size:12px;width:80px;margin-left:15px;display:flex;align-items:center;justify-content:center}.edit[data-v-69f175c2]{color:#2b9c94;font-size:14px;font-weight:700;padding:6% 3%;display:flex;align-items:center;justify-content:center}.red-dot-text[data-v-69f175c2]::before{content:\"●\";\n  /* 使用圆点符号作为文字前的标记 */color:red;\n  /* 设置圆点的颜色为红色 */display:inline-block;width:1em;\n  /* 调整圆点的位置 */font-size:1.5em}.checkbox[data-v-69f175c2]{display:flex;justify-content:center;align-items:center;margin-left:5px}", ""]);
-// Exports
-/* harmony default export */ __webpack_exports__["default"] = (___CSS_LOADER_EXPORT___);
-
-
-/***/ }),
-
 /***/ 76876:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -1271,21 +1274,21 @@ var update = add("2acfcbf3", content, true, {"sourceMap":false,"shadowMode":fals
 
 /***/ }),
 
-/***/ 82284:
+/***/ 83164:
 /***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(74408);
+var content = __webpack_require__(1112);
 if(content.__esModule) content = content.default;
 if(typeof content === 'string') content = [[module.id, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
 var add = (__webpack_require__(69333)/* ["default"] */ .A)
-var update = add("a5826848", content, true, {"sourceMap":false,"shadowMode":false});
+var update = add("448e9c22", content, true, {"sourceMap":false,"shadowMode":false});
 
 /***/ })
 
 }]);
-//# sourceMappingURL=pages-task-checkItems.faed950b.js.map
+//# sourceMappingURL=pages-task-checkItems.cb030883.js.map

@@ -1,5 +1,5 @@
-import React, { useMemo, useState } from 'react';
-import { View, StyleSheet, Platform } from 'react-native';
+import React, { useMemo, useState, useRef } from 'react';
+import { View, StyleSheet, Platform, Alert } from 'react-native';
 import { WebView } from 'react-native-webview';
 import { useRoute } from '@react-navigation/native';
 import { useAuthStore } from '../../stores/auth';
@@ -18,8 +18,7 @@ export default function WebViewPage() {
   const initialUrl = route.params?.url || `${defaultFile}#/pages/index/index`;
   const [url, setUrl] = useState(initialUrl);
   const { token, user, username, userId } = useAuthStore.getState();
-
-  
+  const logoutAlertShown = useRef(false);
 
   // inject javascript to webview
   const injected = useMemo(() => {
@@ -41,7 +40,12 @@ export default function WebViewPage() {
       console.log('jsonData', jsonData);
       const action = jsonData?.action || '';
       if (action === ACTIONS.logout) {
-        useAuthStore.getState().logout();
+        if (!logoutAlertShown.current) {
+          logoutAlertShown.current = true;
+          Alert.alert('Logout', 'You have been signed out', [
+            { text: 'OK', onPress: () => { logoutAlertShown.current = false; useAuthStore.getState().logout(); } }
+          ]);
+        }
         return;
       } else if (action === ACTIONS.lifecycle) {
         // setUrl(initialUrl);

@@ -53,10 +53,12 @@
 /**
  * @typedef {Object} AuthSession 登录会话数据
  * @property {number|string} multi_depart 多部门标记
- * @property {UserInfoModel} userInfo 用户信息
+ * @property {import('./user.js').UserInfoModel} userInfo 用户信息
  * @property {SysAllDictItems} sysAllDictItems 系统全部字典
  * @property {Array<AuthorizeUser>} authorizeUserList 授权用户列表
  * @property {Array<DepartInfo>} departs 部门列表
  * @property {string} token 访问令牌
  */
 
+
+export const Types = {};

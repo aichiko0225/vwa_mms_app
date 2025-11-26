@@ -1,21 +1,5 @@
 (self["webpackChunkhello_uniapp"] = self["webpackChunkhello_uniapp"] || []).push([[22],{
 
-/***/ 2907:
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(49247);
-if(content.__esModule) content = content.default;
-if(typeof content === 'string') content = [[module.id, content, '']];
-if(content.locals) module.exports = content.locals;
-// add the styles to the DOM
-var add = (__webpack_require__(69333)/* ["default"] */ .A)
-var update = add("a5326752", content, true, {"sourceMap":false,"shadowMode":false});
-
-/***/ }),
-
 /***/ 8921:
 /***/ (function(__unused_webpack_module, __unused_webpack_exports, __webpack_require__) {
 
@@ -34,7 +18,44 @@ $({ target: 'Array', proto: true, forced: lastIndexOf !== [].lastIndexOf }, {
 
 /***/ }),
 
-/***/ 23864:
+/***/ 24233:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(31601);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(76314);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
+// Imports
+
+
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, "@charset \"UTF-8\";\n/**\n * 这里是uni-app内置的常用样式变量\n *\n * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量\n * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App\n *\n */\n/**\n * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能\n *\n * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件\n */\n/* 颜色变量 */\n/* 行为相关颜色 */\n/* 文字基本颜色 */\n/* 背景颜色 */\n/* 边框颜色 */\n/* 尺寸变量 */\n/* 文字尺寸 */\n/* 图片尺寸 */\n/* Border Radius */\n/* 水平间距 */\n/* 垂直间距 */\n/* 透明度 */\n/* 文章场景相关 */.infor[data-v-42a84685]{background-color:#f0f3f4;padding-top:env(safe-area-inset-top);\n  /* 兼容 iOS 11.0-11.4 */padding-top:constant(safe-area-inset-top)\n  /* 兼容 iOS 12.0-12.1 */}.fields[data-v-42a84685]{background-color:#fff;border-radius:10px;margin:20px;padding:20px}.field[data-v-42a84685]{padding:0 0 20px 0;border-bottom:2px solid #f1f1f1;text-align:right}.field[data-v-42a84685]  .uni-easyinput{text-align:right!important}.field[data-v-42a84685]  .uni-forms-item__label{width:40%!important}[data-v-42a84685] .u-transition .u-slide-up-enter-to .u-slide-up-enter-active{height:30%!important}[data-v-42a84685] .is-disabled{background:#fff!important}", ""]);
+// Exports
+/* harmony default export */ __webpack_exports__["default"] = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
+/***/ 34797:
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(24233);
+if(content.__esModule) content = content.default;
+if(typeof content === 'string') content = [[module.id, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var add = (__webpack_require__(69333)/* ["default"] */ .A)
+var update = add("1783f837", content, true, {"sourceMap":false,"shadowMode":false});
+
+/***/ }),
+
+/***/ 36224:
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -46,7 +67,7 @@ __webpack_require__.d(__webpack_exports__, {
   "default": function() { return /* binding */ fillInInformation; }
 });
 
-;// ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js??clonedRuleSet-42[0].rules[0].use[0]!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/filter-modules-template.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/page-meta.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/index.js??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-scoped-loader/index.js!./src/pages/task/fillInInformation.vue?vue&type=template&id=12c2d9c2&scoped=true&
+;// ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js??clonedRuleSet-42[0].rules[0].use[0]!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/filter-modules-template.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/page-meta.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/index.js??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-scoped-loader/index.js!./src/pages/task/fillInInformation.vue?vue&type=template&id=42a84685&scoped=true&
 var components = {'uniForms': (__webpack_require__(14874)/* ["default"] */ .A),'uniFormsItem': (__webpack_require__(9844)/* ["default"] */ .A),'uniEasyinput': (__webpack_require__(68872)/* ["default"] */ .A)}
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('v-uni-view',{staticClass:"infor",style:({height:_vm.containerHeight}),on:{"touchmove":function($event){$event.preventDefault();
 arguments[0] = $event = _vm.$handleEvent($event);
@@ -71,7 +92,7 @@ var recyclableRender = false
 var staticRenderFns = []
 
 
-;// ./src/pages/task/fillInInformation.vue?vue&type=template&id=12c2d9c2&scoped=true&
+;// ./src/pages/task/fillInInformation.vue?vue&type=template&id=42a84685&scoped=true&
 
 // EXTERNAL MODULE: ./node_modules/core-js/modules/es.array.concat.js
 var es_array_concat = __webpack_require__(28706);
@@ -312,7 +333,7 @@ function debounce(func, wait) {
       var params = {
         id: this.tqsList[e.detail.value].id
       };
-      this.$http.get(this.url.resultList, {
+      this.$http.get(API.testCase.resultAppList, {
         params: params
       }).then(function (res) {
         if (res.data.success) {
@@ -327,7 +348,7 @@ function debounce(func, wait) {
       } else {
         this.clusterShow = true;
       }
-      this.$http.get(this.url.getTestCluster).then(function (res) {
+      this.$http.get(API.testCase.getTestCluster).then(function (res) {
         if (res.data.success) {
           _this2.testClusterList = res.data.result.map(function (item) {
             return item.item_text;
@@ -358,7 +379,7 @@ function debounce(func, wait) {
           }
           //从测试日历进入，一定有临时测试结果，从扫码进入，可能没有临时测试结果数据，需要生成  is_temp = 0,calendar_id == '扫码'
           // //有临时测试结果的时候  id有值，没有测试结果id没有值
-          that.$http.post("/testService/qaTestResult/insertOrUpdate", that.valiFormData).then(function (res) {
+          that.$http.post(API.testCase.insertOrUpdate, that.valiFormData).then(function (res) {
             if (res.data.success) {
               uni.showToast({
                 title: 'Save Successfully'
@@ -458,10 +479,10 @@ function debounce(func, wait) {
 });
 ;// ./src/pages/task/fillInInformation.vue?vue&type=script&lang=js&
  /* harmony default export */ var task_fillInInformationvue_type_script_lang_js_ = (fillInInformationvue_type_script_lang_js_); 
-// EXTERNAL MODULE: ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/h5-vue-style-loader/index.js??clonedRuleSet-22[0].rules[0].use[0]!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-22[0].rules[0].use[1]!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js??clonedRuleSet-22[0].rules[0].use[2]!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-22[0].rules[0].use[3]!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-22[0].rules[0].use[4]!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/sass-loader/dist/cjs.js??clonedRuleSet-22[0].rules[0].use[5]!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js??clonedRuleSet-22[0].rules[0].use[6]!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/index.js??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-scoped-loader/index.js!./src/pages/task/fillInInformation.vue?vue&type=style&index=0&id=12c2d9c2&lang=scss&scoped=true&
-var fillInInformationvue_type_style_index_0_id_12c2d9c2_lang_scss_scoped_true_ = __webpack_require__(2907);
-;// ./src/pages/task/fillInInformation.vue?vue&type=style&index=0&id=12c2d9c2&lang=scss&scoped=true&
- /* harmony default export */ var task_fillInInformationvue_type_style_index_0_id_12c2d9c2_lang_scss_scoped_true_ = ((/* unused pure expression or super */ null && (mod))); 
+// EXTERNAL MODULE: ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/h5-vue-style-loader/index.js??clonedRuleSet-22[0].rules[0].use[0]!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-22[0].rules[0].use[1]!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js??clonedRuleSet-22[0].rules[0].use[2]!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-22[0].rules[0].use[3]!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-22[0].rules[0].use[4]!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/sass-loader/dist/cjs.js??clonedRuleSet-22[0].rules[0].use[5]!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js??clonedRuleSet-22[0].rules[0].use[6]!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/index.js??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-scoped-loader/index.js!./src/pages/task/fillInInformation.vue?vue&type=style&index=0&id=42a84685&lang=scss&scoped=true&
+var fillInInformationvue_type_style_index_0_id_42a84685_lang_scss_scoped_true_ = __webpack_require__(34797);
+;// ./src/pages/task/fillInInformation.vue?vue&type=style&index=0&id=42a84685&lang=scss&scoped=true&
+ /* harmony default export */ var task_fillInInformationvue_type_style_index_0_id_42a84685_lang_scss_scoped_true_ = ((/* unused pure expression or super */ null && (mod))); 
 // EXTERNAL MODULE: ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/runtime/componentNormalizer.js
 var componentNormalizer = __webpack_require__(18535);
 ;// ./src/pages/task/fillInInformation.vue
@@ -480,7 +501,7 @@ var component = (0,componentNormalizer/* default */.A)(
   staticRenderFns,
   false,
   null,
-  "12c2d9c2",
+  "42a84685",
   null,
   false,
   components,
@@ -488,27 +509,6 @@ var component = (0,componentNormalizer/* default */.A)(
 )
 
 /* harmony default export */ var fillInInformation = (component.exports);
-
-/***/ }),
-
-/***/ 49247:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(31601);
-/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(76314);
-/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
-// Imports
-
-
-var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
-// Module
-___CSS_LOADER_EXPORT___.push([module.id, "@charset \"UTF-8\";\n/**\n * 这里是uni-app内置的常用样式变量\n *\n * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量\n * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App\n *\n */\n/**\n * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能\n *\n * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件\n */\n/* 颜色变量 */\n/* 行为相关颜色 */\n/* 文字基本颜色 */\n/* 背景颜色 */\n/* 边框颜色 */\n/* 尺寸变量 */\n/* 文字尺寸 */\n/* 图片尺寸 */\n/* Border Radius */\n/* 水平间距 */\n/* 垂直间距 */\n/* 透明度 */\n/* 文章场景相关 */.infor[data-v-12c2d9c2]{background-color:#f0f3f4;padding-top:env(safe-area-inset-top);\n  /* 兼容 iOS 11.0-11.4 */padding-top:constant(safe-area-inset-top)\n  /* 兼容 iOS 12.0-12.1 */}.fields[data-v-12c2d9c2]{background-color:#fff;border-radius:10px;margin:20px;padding:20px}.field[data-v-12c2d9c2]{padding:0 0 20px 0;border-bottom:2px solid #f1f1f1;text-align:right}.field[data-v-12c2d9c2]  .uni-easyinput{text-align:right!important}.field[data-v-12c2d9c2]  .uni-forms-item__label{width:40%!important}[data-v-12c2d9c2] .u-transition .u-slide-up-enter-to .u-slide-up-enter-active{height:30%!important}[data-v-12c2d9c2] .is-disabled{background:#fff!important}", ""]);
-// Exports
-/* harmony default export */ __webpack_exports__["default"] = (___CSS_LOADER_EXPORT___);
-
 
 /***/ }),
 
@@ -523,4 +523,4 @@ vue__WEBPACK_IMPORTED_MODULE_0__["default"].prototype.$bus = new vue__WEBPACK_IM
 /***/ })
 
 }]);
-//# sourceMappingURL=pages-task-fillInInformation.e1faec0a.js.map
+//# sourceMappingURL=pages-task-fillInInformation.fabf111c.js.map

@@ -15,6 +15,12 @@ const userService = {
    */
   appSelectUserRoleByUsername: username => http.post(APIPATHS.sys.appSelectUserRoleByUsername, { username }),
   /**
+   * 根据用户ID查询角色
+   * @param {string} userId 用户ID
+   * @returns {Promise} 角色查询结果
+   */
+  selectUserRoleByUserId: userId => http.post(APIPATHS.sys.selectUserRoleByUserId, { userId }),
+  /**
    * 发送短信验证码
    * @param {object} params 包含用户名、手机号、密码的参数对象
    * @returns {Promise} 包含发送结果的Promise对象

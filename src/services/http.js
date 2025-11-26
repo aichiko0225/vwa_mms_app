@@ -2,14 +2,13 @@ import axios from 'axios';
 import { useAuthStore } from '../stores/auth';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { ACCESS_TOKEN } from '../common/constants';
-import { getLogger } from './logger';
+import logger from './logger';
 
 /**
  * Axios 实例（可设置 baseURL）。
  * @type {import('axios').AxiosInstance}
  */
 export const http = axios.create({ baseURL: 'http://139.196.151.216:9998' });
-const log = getLogger('http');
 
 /**
  * 注入认证头：X-Access-Token（优先取 store，回退到 AsyncStorage 的 ACCESS_TOKEN）
@@ -35,7 +34,7 @@ http.interceptors.request.use(async config => {
     const headers = config.headers || {};
     const ct = headers['Content-Type'] || headers['content-type'];
     const tokenMask = headers['X-Access-Token'] ? '***' : undefined;
-    log.info('Request', { method, url, params: config.params, data: config.data, headers: { 'Content-Type': ct, 'X-Access-Token': tokenMask } });
+    logger.info('Request', { method, url, params: config.params, data: config.data, headers: { 'Content-Type': ct, 'X-Access-Token': tokenMask } });
   }
   return config;
 });
@@ -51,7 +50,7 @@ http.interceptors.response.use(
       const duration = start ? Date.now() - start : undefined;
       const method = (response.config.method || 'GET').toUpperCase();
       const url = `${response.config.baseURL || ''}${response.config.url || ''}`;
-      log.info('Response', { method, url, status: response.status, duration, data: response.data });
+      logger.info('Response', { method, url, status: response.status, duration, data: response.data });
     }
     return response;
   },
@@ -64,7 +63,7 @@ http.interceptors.response.use(
       const url = `${cfg.baseURL || ''}${cfg.url || ''}`;
       const status = error.response && error.response.status;
       const message = error.message;
-      log.error('Error', { method, url, status, duration, message, data: error.response && error.response.data });
+      logger.error('Error', { method, url, status, duration, message, data: error.response && error.response.data });
     }
     return Promise.reject(error);
   },

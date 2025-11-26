@@ -593,6 +593,22 @@ module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADYAAAA8CAYAAAAt
 
 /***/ }),
 
+/***/ 10632:
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(71429);
+if(content.__esModule) content = content.default;
+if(typeof content === 'string') content = [[module.id, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var add = (__webpack_require__(69333)/* ["default"] */ .A)
+var update = add("0a6325d2", content, true, {"sourceMap":false,"shadowMode":false});
+
+/***/ }),
+
 /***/ 11429:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -1202,22 +1218,6 @@ var component = (0,componentNormalizer/* default */.A)(
 
 /***/ }),
 
-/***/ 36061:
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(82368);
-if(content.__esModule) content = content.default;
-if(typeof content === 'string') content = [[module.id, content, '']];
-if(content.locals) module.exports = content.locals;
-// add the styles to the DOM
-var add = (__webpack_require__(69333)/* ["default"] */ .A)
-var update = add("2367fd43", content, true, {"sourceMap":false,"shadowMode":false});
-
-/***/ }),
-
 /***/ 38525:
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
@@ -1754,7 +1754,81 @@ module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADYAAAA8CAYAAAAt
 
 /***/ }),
 
-/***/ 59726:
+/***/ 60579:
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(20447);
+if(content.__esModule) content = content.default;
+if(typeof content === 'string') content = [[module.id, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var add = (__webpack_require__(69333)/* ["default"] */ .A)
+var update = add("e3e42cc0", content, true, {"sourceMap":false,"shadowMode":false});
+
+/***/ }),
+
+/***/ 63808:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(31601);
+/* harmony import */ var _css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(76314);
+/* harmony import */ var _css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
+// Imports
+
+
+var ___CSS_LOADER_EXPORT___ = _css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, "@charset \"UTF-8\";\n/**\n * 这里是uni-app内置的常用样式变量\n *\n * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量\n * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App\n *\n */\n/**\n * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能\n *\n * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件\n */\n/* 颜色变量 */\n/* 行为相关颜色 */\n/* 文字基本颜色 */\n/* 背景颜色 */\n/* 边框颜色 */\n/* 尺寸变量 */\n/* 文字尺寸 */\n/* 图片尺寸 */\n/* Border Radius */\n/* 水平间距 */\n/* 垂直间距 */\n/* 透明度 */\n/* 文章场景相关 */uni-view[data-v-51442d1a], uni-scroll-view[data-v-51442d1a], uni-swiper-item[data-v-51442d1a]{display:flex;flex-direction:column;flex-shrink:0;flex-grow:0;flex-basis:auto;align-items:stretch;align-content:flex-start}.u-loading-icon[data-v-51442d1a]{flex-direction:row;align-items:center;justify-content:center;color:#c8c9cc}.u-loading-icon__text[data-v-51442d1a]{margin-left:4px;color:#606266;font-size:14px;line-height:20px}.u-loading-icon__spinner[data-v-51442d1a]{width:30px;height:30px;position:relative;box-sizing:border-box;max-width:100%;max-height:100%;-webkit-animation:u-rotate-data-v-51442d1a 1s linear infinite;animation:u-rotate-data-v-51442d1a 1s linear infinite}.u-loading-icon__spinner--semicircle[data-v-51442d1a]{border-width:2px;border-color:transparent;border-top-right-radius:100px;border-top-left-radius:100px;border-bottom-left-radius:100px;border-bottom-right-radius:100px;border-style:solid}.u-loading-icon__spinner--circle[data-v-51442d1a]{border-top-right-radius:100px;border-top-left-radius:100px;border-bottom-left-radius:100px;border-bottom-right-radius:100px;border-width:2px;border-top-color:#e5e5e5;border-right-color:#e5e5e5;border-bottom-color:#e5e5e5;border-left-color:#e5e5e5;border-style:solid}.u-loading-icon--vertical[data-v-51442d1a]{flex-direction:column}[data-v-51442d1a]:host{font-size:0;line-height:1}.u-loading-icon__spinner--spinner[data-v-51442d1a]{-webkit-animation-timing-function:steps(12);animation-timing-function:steps(12)}.u-loading-icon__text[data-v-51442d1a]:empty{display:none}.u-loading-icon--vertical .u-loading-icon__text[data-v-51442d1a]{margin:6px 0 0;color:#606266}.u-loading-icon__dot[data-v-51442d1a]{position:absolute;top:0;left:0;width:100%;height:100%}.u-loading-icon__dot[data-v-51442d1a]:before{display:block;width:2px;height:25%;margin:0 auto;background-color:currentColor;border-radius:40%;content:\" \"}.u-loading-icon__dot[data-v-51442d1a]:nth-of-type(1){-webkit-transform:rotate(30deg);transform:rotate(30deg);opacity:1}.u-loading-icon__dot[data-v-51442d1a]:nth-of-type(2){-webkit-transform:rotate(60deg);transform:rotate(60deg);opacity:.9375}.u-loading-icon__dot[data-v-51442d1a]:nth-of-type(3){-webkit-transform:rotate(90deg);transform:rotate(90deg);opacity:.875}.u-loading-icon__dot[data-v-51442d1a]:nth-of-type(4){-webkit-transform:rotate(120deg);transform:rotate(120deg);opacity:.8125}.u-loading-icon__dot[data-v-51442d1a]:nth-of-type(5){-webkit-transform:rotate(150deg);transform:rotate(150deg);opacity:.75}.u-loading-icon__dot[data-v-51442d1a]:nth-of-type(6){-webkit-transform:rotate(180deg);transform:rotate(180deg);opacity:.6875}.u-loading-icon__dot[data-v-51442d1a]:nth-of-type(7){-webkit-transform:rotate(210deg);transform:rotate(210deg);opacity:.625}.u-loading-icon__dot[data-v-51442d1a]:nth-of-type(8){-webkit-transform:rotate(240deg);transform:rotate(240deg);opacity:.5625}.u-loading-icon__dot[data-v-51442d1a]:nth-of-type(9){-webkit-transform:rotate(270deg);transform:rotate(270deg);opacity:.5}.u-loading-icon__dot[data-v-51442d1a]:nth-of-type(10){-webkit-transform:rotate(300deg);transform:rotate(300deg);opacity:.4375}.u-loading-icon__dot[data-v-51442d1a]:nth-of-type(11){-webkit-transform:rotate(330deg);transform:rotate(330deg);opacity:.375}.u-loading-icon__dot[data-v-51442d1a]:nth-of-type(12){-webkit-transform:rotate(1turn);transform:rotate(1turn);opacity:.3125}@-webkit-keyframes u-rotate-data-v-51442d1a{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}to{-webkit-transform:rotate(1turn);transform:rotate(1turn)}}@keyframes u-rotate-data-v-51442d1a{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}to{-webkit-transform:rotate(1turn);transform:rotate(1turn)}}", ""]);
+// Exports
+/* harmony default export */ __webpack_exports__["default"] = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
+/***/ 64668:
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(63808);
+if(content.__esModule) content = content.default;
+if(typeof content === 'string') content = [[module.id, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var add = (__webpack_require__(69333)/* ["default"] */ .A)
+var update = add("76667335", content, true, {"sourceMap":false,"shadowMode":false});
+
+/***/ }),
+
+/***/ 65235:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(31601);
+/* harmony import */ var _css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(76314);
+/* harmony import */ var _css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
+// Imports
+
+
+var ___CSS_LOADER_EXPORT___ = _css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, "@charset \"UTF-8\";\n/**\n * 这里是uni-app内置的常用样式变量\n *\n * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量\n * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App\n *\n */\n/**\n * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能\n *\n * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件\n */\n/* 颜色变量 */\n/* 行为相关颜色 */\n/* 文字基本颜色 */\n/* 背景颜色 */\n/* 边框颜色 */\n/* 尺寸变量 */\n/* 文字尺寸 */\n/* 图片尺寸 */\n/* Border Radius */\n/* 水平间距 */\n/* 垂直间距 */\n/* 透明度 */\n/* 文章场景相关 */uni-view[data-v-83991a1a], uni-scroll-view[data-v-83991a1a], uni-swiper-item[data-v-83991a1a]{display:flex;flex-direction:column;flex-shrink:0;flex-grow:0;flex-basis:auto;align-items:stretch;align-content:flex-start}", ""]);
+// Exports
+/* harmony default export */ __webpack_exports__["default"] = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
+/***/ 65474:
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1766,7 +1840,7 @@ __webpack_require__.d(__webpack_exports__, {
   "default": function() { return /* binding */ login; }
 });
 
-;// ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js??clonedRuleSet-42[0].rules[0].use[0]!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/filter-modules-template.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/page-meta.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/index.js??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-scoped-loader/index.js!./src/pages/login/login.vue?vue&type=template&id=6620c352&scoped=true&
+;// ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js??clonedRuleSet-42[0].rules[0].use[0]!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/filter-modules-template.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/page-meta.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/index.js??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-scoped-loader/index.js!./src/pages/login/login.vue?vue&type=template&id=822ae9ba&scoped=true&
 var components = {'uniEasyinput': (__webpack_require__(68872)/* ["default"] */ .A),'uInput': (__webpack_require__(28080)/* ["default"] */ .A),'uCode': (__webpack_require__(38525)/* ["default"] */ .A),'uButton': (__webpack_require__(702)/* ["default"] */ .A),'uPopup': (__webpack_require__(71791)/* ["default"] */ .A)}
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('v-uni-view',{staticClass:"zai-box",attrs:{"id":"login-page"}},[_c('v-uni-image',{staticClass:"login-bg-img",attrs:{"src":__webpack_require__(23461),"alt":"image"}}),_c('v-uni-image',{staticStyle:{"width":"159px","height":"80px"},attrs:{"src":__webpack_require__(839),"alt":"image"}}),_c('v-uni-scroll-view',{staticClass:"page",staticStyle:{"background-color":"rgba(0, 0, 0, 0)"},attrs:{"scroll-y":true}},[_c('v-uni-view',{staticClass:"box padding-lr-xl login-paddingtop",staticStyle:{"padding-top":"10%"}},[_c('v-uni-view',{staticStyle:{"display":"flex","justify-content":"center","align-items":"center"}},[_c('v-uni-view',{staticClass:"zai-title"},[_c('v-uni-text',{staticStyle:{"text-align":"center","font-size":"20px","color":"black","display":"block","font-weight":"bold"}},[_vm._v("QA Platform")]),_c('v-uni-text',{staticStyle:{"text-align":"center","font-size":"20px","color":"black","display":"flex","align-items":"center","justify-content":"center","font-weight":"bold"}},[_vm._v("Test Case Management")])],1)],1),_c('v-uni-view',[_c('v-uni-text',{staticStyle:{"padding-top":"25px","font-size":"15px","color":"#ffffff","display":"block"}},[_vm._v("User")]),_c('v-uni-view',{staticClass:"login-input cu-form-group shadow-blur"},[_c('uni-easyinput',{staticStyle:{"display":"block","padding":"5px"},attrs:{"focus":true,"placeholder":"Please enter the account"},on:{"blur":function($event){
 arguments[0] = $event = _vm.$handleEvent($event);
@@ -1791,7 +1865,7 @@ var recyclableRender = false
 var staticRenderFns = []
 
 
-;// ./src/pages/login/login.vue?vue&type=template&id=6620c352&scoped=true&
+;// ./src/pages/login/login.vue?vue&type=template&id=822ae9ba&scoped=true&
 
 // EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/esm/objectSpread2.js
 var objectSpread2 = __webpack_require__(49943);
@@ -1805,6 +1879,8 @@ var es_regexp_test = __webpack_require__(90906);
 var vuex_common = __webpack_require__(45013);
 // EXTERNAL MODULE: ./src/common/util/constants.js
 var constants = __webpack_require__(36710);
+// EXTERNAL MODULE: ./src/api/api.js
+var api = __webpack_require__(21629);
 ;// ./node_modules/babel-loader/lib/index.js??clonedRuleSet-40[0].rules[0].use[0]!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js??clonedRuleSet-40[0].rules[0].use[1]!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js??clonedRuleSet-43[0].rules[0].use[0]!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/using-components.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/index.js??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-scoped-loader/index.js!./src/pages/login/login.vue?vue&type=script&lang=js&
 
 
@@ -1884,6 +1960,7 @@ var constants = __webpack_require__(36710);
 //
 //
 //
+
 
 
 
@@ -2055,7 +2132,7 @@ var constants = __webpack_require__(36710);
       var params = {
         username: that.userName
       };
-      this.$http.post(this.$apiUrl + '/sys/user/queryEmail', params).then(function (res) {
+      this.$http.post(this.$apiUrl + api/* API */.nC.sys.queryEmail, params).then(function (res) {
         if (res.data.success && res.data.result != null) {
           that.phone = res.data.result.phone;
         } else {
@@ -2080,7 +2157,7 @@ var constants = __webpack_require__(36710);
         // password:that.password,
         password: sm2.doEncrypt(that.password, publicKey)
       };
-      that.$http.post(that.$apiUrl + '/sys/sms/sendSms', params).then(function (res) {
+      that.$http.post(that.$apiUrl + api/* API */.nC.sys.sendSms, params).then(function (res) {
         if (res.data.success) {
           that.isSend = true;
           uni.showToast({
@@ -2220,10 +2297,10 @@ var constants = __webpack_require__(36710);
 });
 ;// ./src/pages/login/login.vue?vue&type=script&lang=js&
  /* harmony default export */ var login_loginvue_type_script_lang_js_ = (loginvue_type_script_lang_js_); 
-// EXTERNAL MODULE: ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/h5-vue-style-loader/index.js??clonedRuleSet-12[0].rules[0].use[0]!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-12[0].rules[0].use[1]!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js??clonedRuleSet-12[0].rules[0].use[2]!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-12[0].rules[0].use[3]!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-12[0].rules[0].use[4]!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/index.js??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-scoped-loader/index.js!./src/pages/login/login.vue?vue&type=style&index=0&id=6620c352&scoped=true&lang=css&
-var loginvue_type_style_index_0_id_6620c352_scoped_true_lang_css_ = __webpack_require__(36061);
-;// ./src/pages/login/login.vue?vue&type=style&index=0&id=6620c352&scoped=true&lang=css&
- /* harmony default export */ var login_loginvue_type_style_index_0_id_6620c352_scoped_true_lang_css_ = ((/* unused pure expression or super */ null && (mod))); 
+// EXTERNAL MODULE: ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/h5-vue-style-loader/index.js??clonedRuleSet-12[0].rules[0].use[0]!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-12[0].rules[0].use[1]!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js??clonedRuleSet-12[0].rules[0].use[2]!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-12[0].rules[0].use[3]!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-12[0].rules[0].use[4]!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/index.js??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-scoped-loader/index.js!./src/pages/login/login.vue?vue&type=style&index=0&id=822ae9ba&scoped=true&lang=css&
+var loginvue_type_style_index_0_id_822ae9ba_scoped_true_lang_css_ = __webpack_require__(10632);
+;// ./src/pages/login/login.vue?vue&type=style&index=0&id=822ae9ba&scoped=true&lang=css&
+ /* harmony default export */ var login_loginvue_type_style_index_0_id_822ae9ba_scoped_true_lang_css_ = ((/* unused pure expression or super */ null && (mod))); 
 // EXTERNAL MODULE: ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/runtime/componentNormalizer.js
 var componentNormalizer = __webpack_require__(18535);
 ;// ./src/pages/login/login.vue
@@ -2242,7 +2319,7 @@ var component = (0,componentNormalizer/* default */.A)(
   staticRenderFns,
   false,
   null,
-  "6620c352",
+  "822ae9ba",
   null,
   false,
   components,
@@ -2250,80 +2327,6 @@ var component = (0,componentNormalizer/* default */.A)(
 )
 
 /* harmony default export */ var login = (component.exports);
-
-/***/ }),
-
-/***/ 60579:
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(20447);
-if(content.__esModule) content = content.default;
-if(typeof content === 'string') content = [[module.id, content, '']];
-if(content.locals) module.exports = content.locals;
-// add the styles to the DOM
-var add = (__webpack_require__(69333)/* ["default"] */ .A)
-var update = add("e3e42cc0", content, true, {"sourceMap":false,"shadowMode":false});
-
-/***/ }),
-
-/***/ 63808:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(31601);
-/* harmony import */ var _css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(76314);
-/* harmony import */ var _css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
-// Imports
-
-
-var ___CSS_LOADER_EXPORT___ = _css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
-// Module
-___CSS_LOADER_EXPORT___.push([module.id, "@charset \"UTF-8\";\n/**\n * 这里是uni-app内置的常用样式变量\n *\n * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量\n * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App\n *\n */\n/**\n * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能\n *\n * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件\n */\n/* 颜色变量 */\n/* 行为相关颜色 */\n/* 文字基本颜色 */\n/* 背景颜色 */\n/* 边框颜色 */\n/* 尺寸变量 */\n/* 文字尺寸 */\n/* 图片尺寸 */\n/* Border Radius */\n/* 水平间距 */\n/* 垂直间距 */\n/* 透明度 */\n/* 文章场景相关 */uni-view[data-v-51442d1a], uni-scroll-view[data-v-51442d1a], uni-swiper-item[data-v-51442d1a]{display:flex;flex-direction:column;flex-shrink:0;flex-grow:0;flex-basis:auto;align-items:stretch;align-content:flex-start}.u-loading-icon[data-v-51442d1a]{flex-direction:row;align-items:center;justify-content:center;color:#c8c9cc}.u-loading-icon__text[data-v-51442d1a]{margin-left:4px;color:#606266;font-size:14px;line-height:20px}.u-loading-icon__spinner[data-v-51442d1a]{width:30px;height:30px;position:relative;box-sizing:border-box;max-width:100%;max-height:100%;-webkit-animation:u-rotate-data-v-51442d1a 1s linear infinite;animation:u-rotate-data-v-51442d1a 1s linear infinite}.u-loading-icon__spinner--semicircle[data-v-51442d1a]{border-width:2px;border-color:transparent;border-top-right-radius:100px;border-top-left-radius:100px;border-bottom-left-radius:100px;border-bottom-right-radius:100px;border-style:solid}.u-loading-icon__spinner--circle[data-v-51442d1a]{border-top-right-radius:100px;border-top-left-radius:100px;border-bottom-left-radius:100px;border-bottom-right-radius:100px;border-width:2px;border-top-color:#e5e5e5;border-right-color:#e5e5e5;border-bottom-color:#e5e5e5;border-left-color:#e5e5e5;border-style:solid}.u-loading-icon--vertical[data-v-51442d1a]{flex-direction:column}[data-v-51442d1a]:host{font-size:0;line-height:1}.u-loading-icon__spinner--spinner[data-v-51442d1a]{-webkit-animation-timing-function:steps(12);animation-timing-function:steps(12)}.u-loading-icon__text[data-v-51442d1a]:empty{display:none}.u-loading-icon--vertical .u-loading-icon__text[data-v-51442d1a]{margin:6px 0 0;color:#606266}.u-loading-icon__dot[data-v-51442d1a]{position:absolute;top:0;left:0;width:100%;height:100%}.u-loading-icon__dot[data-v-51442d1a]:before{display:block;width:2px;height:25%;margin:0 auto;background-color:currentColor;border-radius:40%;content:\" \"}.u-loading-icon__dot[data-v-51442d1a]:nth-of-type(1){-webkit-transform:rotate(30deg);transform:rotate(30deg);opacity:1}.u-loading-icon__dot[data-v-51442d1a]:nth-of-type(2){-webkit-transform:rotate(60deg);transform:rotate(60deg);opacity:.9375}.u-loading-icon__dot[data-v-51442d1a]:nth-of-type(3){-webkit-transform:rotate(90deg);transform:rotate(90deg);opacity:.875}.u-loading-icon__dot[data-v-51442d1a]:nth-of-type(4){-webkit-transform:rotate(120deg);transform:rotate(120deg);opacity:.8125}.u-loading-icon__dot[data-v-51442d1a]:nth-of-type(5){-webkit-transform:rotate(150deg);transform:rotate(150deg);opacity:.75}.u-loading-icon__dot[data-v-51442d1a]:nth-of-type(6){-webkit-transform:rotate(180deg);transform:rotate(180deg);opacity:.6875}.u-loading-icon__dot[data-v-51442d1a]:nth-of-type(7){-webkit-transform:rotate(210deg);transform:rotate(210deg);opacity:.625}.u-loading-icon__dot[data-v-51442d1a]:nth-of-type(8){-webkit-transform:rotate(240deg);transform:rotate(240deg);opacity:.5625}.u-loading-icon__dot[data-v-51442d1a]:nth-of-type(9){-webkit-transform:rotate(270deg);transform:rotate(270deg);opacity:.5}.u-loading-icon__dot[data-v-51442d1a]:nth-of-type(10){-webkit-transform:rotate(300deg);transform:rotate(300deg);opacity:.4375}.u-loading-icon__dot[data-v-51442d1a]:nth-of-type(11){-webkit-transform:rotate(330deg);transform:rotate(330deg);opacity:.375}.u-loading-icon__dot[data-v-51442d1a]:nth-of-type(12){-webkit-transform:rotate(1turn);transform:rotate(1turn);opacity:.3125}@-webkit-keyframes u-rotate-data-v-51442d1a{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}to{-webkit-transform:rotate(1turn);transform:rotate(1turn)}}@keyframes u-rotate-data-v-51442d1a{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}to{-webkit-transform:rotate(1turn);transform:rotate(1turn)}}", ""]);
-// Exports
-/* harmony default export */ __webpack_exports__["default"] = (___CSS_LOADER_EXPORT___);
-
-
-/***/ }),
-
-/***/ 64668:
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(63808);
-if(content.__esModule) content = content.default;
-if(typeof content === 'string') content = [[module.id, content, '']];
-if(content.locals) module.exports = content.locals;
-// add the styles to the DOM
-var add = (__webpack_require__(69333)/* ["default"] */ .A)
-var update = add("76667335", content, true, {"sourceMap":false,"shadowMode":false});
-
-/***/ }),
-
-/***/ 65235:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(31601);
-/* harmony import */ var _css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(76314);
-/* harmony import */ var _css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
-// Imports
-
-
-var ___CSS_LOADER_EXPORT___ = _css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
-// Module
-___CSS_LOADER_EXPORT___.push([module.id, "@charset \"UTF-8\";\n/**\n * 这里是uni-app内置的常用样式变量\n *\n * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量\n * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App\n *\n */\n/**\n * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能\n *\n * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件\n */\n/* 颜色变量 */\n/* 行为相关颜色 */\n/* 文字基本颜色 */\n/* 背景颜色 */\n/* 边框颜色 */\n/* 尺寸变量 */\n/* 文字尺寸 */\n/* 图片尺寸 */\n/* Border Radius */\n/* 水平间距 */\n/* 垂直间距 */\n/* 透明度 */\n/* 文章场景相关 */uni-view[data-v-83991a1a], uni-scroll-view[data-v-83991a1a], uni-swiper-item[data-v-83991a1a]{display:flex;flex-direction:column;flex-shrink:0;flex-grow:0;flex-basis:auto;align-items:stretch;align-content:flex-start}", ""]);
-// Exports
-/* harmony default export */ __webpack_exports__["default"] = (___CSS_LOADER_EXPORT___);
-
 
 /***/ }),
 
@@ -2343,7 +2346,7 @@ var update = add("48d03bdb", content, true, {"sourceMap":false,"shadowMode":fals
 
 /***/ }),
 
-/***/ 82368:
+/***/ 71429:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2368,7 +2371,7 @@ var ___CSS_LOADER_URL_REPLACEMENT_1___ = _node_modules_css_loader_dist_runtime_g
 var ___CSS_LOADER_URL_REPLACEMENT_2___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_2___);
 var ___CSS_LOADER_URL_REPLACEMENT_3___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_3___);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "html[data-v-6620c352],\n \tbody[data-v-6620c352]{height:100%}uni-page-body[data-v-6620c352]{background-color:#fff!important;\n \t\t/* background-image: url(../../static/qa/App-bg.jpg); */background-size:100% 100%;font-family:uniicons}.cu-form-group[data-v-6620c352]{background-color:#fff;padding-right:5px;display:-webkit-box;display:-webkit-flex;display:flex;-webkit-box-align:center;-webkit-align-items:center;align-items:center;min-height:50px;-webkit-box-pack:justify;-webkit-justify-content:space-between;justify-content:space-between}.cu-form-group uni-input[data-v-6620c352]{-webkit-box-flex:1;-webkit-flex:1;flex:1;font-size:15px;color:#555;padding-right:10px}.margin-top[data-v-6620c352]{margin-top:15px}.login-bg-img[data-v-6620c352]{position:fixed;top:0;right:0;left:0;bottom:0;z-index:0;width:100%;height:100%!important}.login-input[data-v-6620c352]{height:51px;line-height:51px;background:#fff}.login-input uni-input[data-v-6620c352]{webkit-box-shadow:0 0 0 1000px #fff inset;text-align:left!important;background:transparent!important;color:#5b5b5b;text-align:center;border-left:1px solid hsla(0,0%,100%,.55)!important;height:36px;line-height:36px}\n\n \t/* .login-input .login-icon{width: 18px;height: 20px;display: inline;} */.lg.cu-btn[data-v-6620c352]{height:51px;line-height:51px;background:#e46f64;border-radius:5px;margin-top:16px;color:hsla(0,0%,100%,.55)}.login-icon[data-v-6620c352]{width:33px;height:20px;display:inline;padding-right:15px}.login-icon.pswd[data-v-6620c352]{background:url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ") no-repeat 0;background-size:20px}.login-icon.user[data-v-6620c352]{background:url(" + ___CSS_LOADER_URL_REPLACEMENT_1___ + ") no-repeat 0;background-size:20px}.input-placeholder[data-v-6620c352],\n \t.zai-input[data-v-6620c352]{color:hsla(0,0%,100%,.55)!important}.lg.cu-btn[data-v-6620c352]{color:#fff!important}.forgetPassword[data-v-6620c352]{display:flex;justify-content:right;color:#fff;padding:5px}uni-input[data-v-6620c352]:-internal-autofill-selected{-webkit-appearance:menulist-button;appearance:menulist-button;background-color:initial!important;background-image:none!important;color:-internal-light-dark(#000,#fff)!important}.login-paddingtop[data-v-6620c352]{padding-top:200 upx}.zai-box[data-v-6620c352]{position:absolute;width:100%;height:100%;display:flex;justify-content:center;flex-direction:column;align-items:center}.zai-logo[data-v-6620c352]{width:60px!important}.zai-title[data-v-6620c352]{font-size:14px;color:#999}.input-placeholder[data-v-6620c352],\n \t.zai-input[data-v-6620c352]{color:#94afce}.zai-label[data-v-6620c352]{padding:60 upx 0;text-align:center;font-size:20 upx;color:#a7b6d0}.zai-btn[data-v-6620c352]{background:#ff65a3;color:#fff;border:0;border-radius:100 upx;font-size:36 upx}.zai-btn[data-v-6620c352]:after{border:0}\n\n \t/*按钮点击效果*/.zai-btn.button-hover[data-v-6620c352]{-webkit-transform:translate(1 upx,1 upx);transform:translate(1 upx,1 upx)}.padding-lr-xl[data-v-6620c352]{padding-left:%?50?%;padding-right:%?30?%}uni-input[data-v-6620c352]:-internal-autofill-selected{background-color:initial!important}.eyeBtn[data-v-6620c352]{width:22px;height:22px;position:absolute;top:15px;right:10px;z-index:9;background:url(" + ___CSS_LOADER_URL_REPLACEMENT_2___ + ") no-repeat 50%;background-size:20px}.eyeClass[data-v-6620c352]{width:22px;height:22px;position:absolute;top:15px;right:10px;z-index:9;background:url(" + ___CSS_LOADER_URL_REPLACEMENT_3___ + ") no-repeat 50%;background-size:20px}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "html[data-v-822ae9ba],\n \tbody[data-v-822ae9ba]{height:100%}uni-page-body[data-v-822ae9ba]{background-color:#fff!important;\n \t\t/* background-image: url(../../static/qa/App-bg.jpg); */background-size:100% 100%;font-family:uniicons}.cu-form-group[data-v-822ae9ba]{background-color:#fff;padding-right:5px;display:-webkit-box;display:-webkit-flex;display:flex;-webkit-box-align:center;-webkit-align-items:center;align-items:center;min-height:50px;-webkit-box-pack:justify;-webkit-justify-content:space-between;justify-content:space-between}.cu-form-group uni-input[data-v-822ae9ba]{-webkit-box-flex:1;-webkit-flex:1;flex:1;font-size:15px;color:#555;padding-right:10px}.margin-top[data-v-822ae9ba]{margin-top:15px}.login-bg-img[data-v-822ae9ba]{position:fixed;top:0;right:0;left:0;bottom:0;z-index:0;width:100%;height:100%!important}.login-input[data-v-822ae9ba]{height:51px;line-height:51px;background:#fff}.login-input uni-input[data-v-822ae9ba]{webkit-box-shadow:0 0 0 1000px #fff inset;text-align:left!important;background:transparent!important;color:#5b5b5b;text-align:center;border-left:1px solid hsla(0,0%,100%,.55)!important;height:36px;line-height:36px}\n\n \t/* .login-input .login-icon{width: 18px;height: 20px;display: inline;} */.lg.cu-btn[data-v-822ae9ba]{height:51px;line-height:51px;background:#e46f64;border-radius:5px;margin-top:16px;color:hsla(0,0%,100%,.55)}.login-icon[data-v-822ae9ba]{width:33px;height:20px;display:inline;padding-right:15px}.login-icon.pswd[data-v-822ae9ba]{background:url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ") no-repeat 0;background-size:20px}.login-icon.user[data-v-822ae9ba]{background:url(" + ___CSS_LOADER_URL_REPLACEMENT_1___ + ") no-repeat 0;background-size:20px}.input-placeholder[data-v-822ae9ba],\n \t.zai-input[data-v-822ae9ba]{color:hsla(0,0%,100%,.55)!important}.lg.cu-btn[data-v-822ae9ba]{color:#fff!important}.forgetPassword[data-v-822ae9ba]{display:flex;justify-content:right;color:#fff;padding:5px}uni-input[data-v-822ae9ba]:-internal-autofill-selected{-webkit-appearance:menulist-button;appearance:menulist-button;background-color:initial!important;background-image:none!important;color:-internal-light-dark(#000,#fff)!important}.login-paddingtop[data-v-822ae9ba]{padding-top:200 upx}.zai-box[data-v-822ae9ba]{position:absolute;width:100%;height:100%;display:flex;justify-content:center;flex-direction:column;align-items:center}.zai-logo[data-v-822ae9ba]{width:60px!important}.zai-title[data-v-822ae9ba]{font-size:14px;color:#999}.input-placeholder[data-v-822ae9ba],\n \t.zai-input[data-v-822ae9ba]{color:#94afce}.zai-label[data-v-822ae9ba]{padding:60 upx 0;text-align:center;font-size:20 upx;color:#a7b6d0}.zai-btn[data-v-822ae9ba]{background:#ff65a3;color:#fff;border:0;border-radius:100 upx;font-size:36 upx}.zai-btn[data-v-822ae9ba]:after{border:0}\n\n \t/*按钮点击效果*/.zai-btn.button-hover[data-v-822ae9ba]{-webkit-transform:translate(1 upx,1 upx);transform:translate(1 upx,1 upx)}.padding-lr-xl[data-v-822ae9ba]{padding-left:%?50?%;padding-right:%?30?%}uni-input[data-v-822ae9ba]:-internal-autofill-selected{background-color:initial!important}.eyeBtn[data-v-822ae9ba]{width:22px;height:22px;position:absolute;top:15px;right:10px;z-index:9;background:url(" + ___CSS_LOADER_URL_REPLACEMENT_2___ + ") no-repeat 50%;background-size:20px}.eyeClass[data-v-822ae9ba]{width:22px;height:22px;position:absolute;top:15px;right:10px;z-index:9;background:url(" + ___CSS_LOADER_URL_REPLACEMENT_3___ + ") no-repeat 50%;background-size:20px}", ""]);
 // Exports
 /* harmony default export */ __webpack_exports__["default"] = (___CSS_LOADER_EXPORT___);
 
@@ -2392,4 +2395,4 @@ var update = add("4faac856", content, true, {"sourceMap":false,"shadowMode":fals
 /***/ })
 
 }]);
-//# sourceMappingURL=pages-login-login.858aad4f.js.map
+//# sourceMappingURL=pages-login-login.386c2eb4.js.map

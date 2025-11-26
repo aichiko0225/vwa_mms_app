@@ -1,9 +1,12 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import MaterialDesignIcons from '@react-native-vector-icons/material-design-icons';
 import HomeTab from './home/HomeTab.jsx';
 import MessageTab from './messages/MessageTab.jsx';
 import UserTab from './user/UserTab.jsx';
+import useSystemData from '../hooks/useSystemData';
+import useUserData from '../hooks/useUserData';
+import { useAuthStore } from '../stores/auth';
 
 const tabIcons = (name) => {
   const map = {
@@ -25,6 +28,20 @@ const renderTabBarIcon = (routeName) => ({ color, size }) => (
 const Tab = createBottomTabNavigator();
 
 export default function HomeScreen() {
+  const { dicts, refresh: refreshDicts, initialized: sysReady } = useSystemData();
+  const { roles, refresh: refreshRoles, initialized: userReady } = useUserData();
+  const user = useAuthStore(s => s.user);
+
+  useEffect(() => {
+    // 启动时刷新系统字典（仅一次，后续读取缓存）
+    if (sysReady) { refreshDicts().catch(() => {}); }
+  }, [sysReady, refreshDicts]);
+
+  useEffect(() => {
+    // 用户登录后刷新用户角色（不缓存）
+    if (userReady && user && user.id) { refreshRoles(user.id).catch(() => {}); }
+  }, [userReady, user, refreshRoles]);
+
   return (
     <Tab.Navigator
       screenOptions={({ route }) => ({
