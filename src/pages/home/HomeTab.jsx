@@ -27,7 +27,7 @@ export default function HomeTab() {
       <Text style={styles.heading}>Modules</Text>
       <View style={styles.grid}>
         <ModuleButton title="Tasks" icon={tasksIcon} onPress={() => navigation.navigate('Tasks')} />
-        <ModuleButton title="Update Password" icon={updateIcon} onPress={() => navigation.navigate('ForgetPassword')} />
+        <ModuleButton title="Update Password" icon={updateIcon} onPress={() => navigation.navigate('UpdatePassword')} />
         <ModuleButton title="About" icon={aboutIcon} onPress={() => {}} />
         <ModuleButton
           title="Web H5"

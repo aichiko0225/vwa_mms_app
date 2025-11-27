@@ -65,6 +65,10 @@ http.interceptors.response.use(
       const message = error.message;
       logger.error('Error', { method, url, status, duration, message, data: error.response && error.response.data });
     }
+    const status = error.response && error.response.status;
+    if (status === 401 || status === 403 || status === 500) {
+      useAuthStore.getState().logout();
+    }
     return Promise.reject(error);
   },
 );

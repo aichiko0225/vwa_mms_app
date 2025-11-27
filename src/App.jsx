@@ -15,6 +15,7 @@ import RootNavigator from './navigation/RootNavigator';
 import { enableScreens } from 'react-native-screens';
 import Toast from 'react-native-toast-message';
 import GlobalDialogProvider from './components/GlobalDialogProvider';
+import './i18n/i18n';
 
 enableScreens();
 
@@ -26,7 +27,11 @@ enableScreens();
 function AppProviders({ children }) {
   return (
     <SafeAreaProvider>
-      <PaperProvider settings={{ icon: (props) => <MaterialDesignIcons name={props.name} size={props.size} color={props.color} /> }}>
+      <PaperProvider settings={{
+        icon: (props) => <MaterialDesignIcons name={props.name}
+          size={props.size}
+          color={props.color} />
+      }}>
         {children}
       </PaperProvider>
     </SafeAreaProvider>

@@ -46,7 +46,7 @@ export default function UpdatePasswordPage() {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.header}>Update Password</Text>
+      <View style={{marginBottom: 36}}/>
       <Controller control={control} name="oldPassword" render={({ field: { value, onChange } }) => (
         <TextInput
           label="Original Password"

@@ -56,7 +56,7 @@ export default function RootNavigator() {
   return (
     <NavigationContainer>
       {token ? (
-        <Stack.Navigator initialRouteName='Home' screenOptions={{ headerShown: true, statusBarTranslucent: true, statusBarColor: 'transparent', animation: 'none' }}>
+        <Stack.Navigator initialRouteName='Home' screenOptions={{ headerShown: true, statusBarTranslucent: true, statusBarColor: 'transparent' }}>
           <Stack.Screen name="Home" component={HomeScreen} options={{ title: 'Home', headerShown: false }} />
           <Stack.Screen name="Tasks" component={TasksScreen} options={{ title: 'Tasks' }} />
           <Stack.Screen name="WebView" component={WebViewPage} options={{ title: 'H5' }} />
@@ -64,7 +64,7 @@ export default function RootNavigator() {
           <Stack.Screen name="UpdatePassword" component={UpdatePasswordPage} options={{ title: 'Update Password' }} />
         </Stack.Navigator>
       ) : (
-        <Stack.Navigator screenOptions={{ animation: 'none' }}>
+        <Stack.Navigator>
           <Stack.Screen name="Login" component={LoginPage} options={{ headerShown: false, statusBarTranslucent: true, statusBarColor: 'transparent', statusBarStyle: 'light' }} />
           <Stack.Screen name="ForgetPassword" component={ForgetPasswordPage} options={{ headerShown: true, title: 'Forget Password', headerStyle: { backgroundColor: '#FFFFFF' }, headerShadowVisible: false, statusBarTranslucent: true, statusBarColor: '#FFFFFF', statusBarStyle: 'dark' }} />
           <Stack.Screen name="LoginError" component={LoginErrorPage} options={{ headerShown: true, title: 'Error', headerStyle: { backgroundColor: '#FFFFFF' }, headerShadowVisible: false, statusBarTranslucent: true, statusBarColor: '#FFFFFF', statusBarStyle: 'dark' }} />
