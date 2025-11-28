@@ -60,5 +60,13 @@
  * @property {string} token 访问令牌
  */
 
+/**
+ * @typedef {Object} SystemData 系统基础数据
+ * @property {string} id 系统ID
+ * @property {string} titleCn 系统中文名称
+ * @property {string} titleEn 系统英文名称
+ * @property {string|null} issys 是否系统
+ * @property {Array<string>} imglist 系统图标列表
+ */
 
 export const Types = {};

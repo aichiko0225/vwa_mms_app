@@ -41,7 +41,7 @@ export const APIPATHS = {
     downloadFile: '/sys/common/downloadFile', // 文件下载
     static: '/sys/common/static', // 静态资源访问
     // 系统基础数据
-    sysBaseDataGetAll: '/sys/sysBaseData/getAll',
+    sysBaseDataGetAll: 'system/sysBaseData/getAll',
   },
   testService: {
     // 组与内容

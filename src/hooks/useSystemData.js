@@ -8,7 +8,13 @@ const KEY = 'sysAllDictItems';
 
 /**
  * 缓存系统字典并提供读取与刷新能力
- * @returns {{ dicts: Object, getDict: (code:string)=>Array, refresh: (codes?:string[])=>Promise<void>, initialized: boolean }}
+ * @returns {{ 
+ * dicts: Object, 
+ * getDict: (code:string)=>Array, refresh: (codes?:string[])=>Promise<void>, 
+ * initialized: boolean,
+ * systems: Array,
+ * refreshSystems: ()=>Promise<void>,
+ * }}
  */
 export default function useSystemData() {
   const [dicts, setDicts] = useState({});

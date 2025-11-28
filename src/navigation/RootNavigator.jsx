@@ -12,6 +12,7 @@ import AboutPage from '../pages/user/AboutPage.jsx';
 import UpdatePasswordPage from '../pages/user/UpdatePasswordPage.jsx';
 import PortalScreen from '../pages/PortalScreen.jsx';
 import { useAuthStore } from '../stores/auth';
+import PlatformScreen from '../pages/platform/PlatformScreen.jsx';
 
 /**
  * @typedef {Object} RootStackParamList
@@ -60,6 +61,7 @@ export default function RootNavigator() {
         <Stack.Navigator initialRouteName='Portal' screenOptions={{ headerShown: true, statusBarTranslucent: true, statusBarColor: 'transparent' }}>
           <Stack.Screen name="Portal" component={PortalScreen} options={{ title: 'Portal' }} />
           <Stack.Screen name="Home" component={HomeScreen} options={{ title: 'Home', headerShown: false }} />
+          <Stack.Screen name="Platform" component={PlatformScreen} options={{ title: 'Platform' }} />
           <Stack.Screen name="Tasks" component={TasksScreen} options={{ title: 'Tasks' }} />
           <Stack.Screen name="WebView" component={WebViewPage} options={{ title: 'H5' }} />
           <Stack.Screen name="TestCase" component={WebViewPage} options={{ title: 'Test Case' }} />
