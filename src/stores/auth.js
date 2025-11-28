@@ -43,6 +43,12 @@ export const useAuthStore = create(
           await AsyncStorage.multiRemove([ACCESS_TOKEN, USER_NAME, USER_ID, USER_INFO]);
         } catch {}
       },
+      async updateUserInfo(userInfo) {
+        set({ user: userInfo });
+        try {
+          await AsyncStorage.setItem(USER_INFO, JSON.stringify(userInfo ?? {}));
+        } catch {}
+      }
     }),
     {
       name: 'auth_user',

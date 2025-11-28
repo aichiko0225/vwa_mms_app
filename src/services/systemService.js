@@ -2,6 +2,9 @@ import http from './http';
 import APIPATHS from './api';
 
 const systemService = {
+  // sysBaseDataGetAll
+  getAllBaseData: () => http.get(APIPATHS.sys.baseDataGetAll),
+
   /**
    * 获取全部字典项（如果后端支持无参返回全量）
    * @returns {Promise<import('axios').AxiosResponse<{ success: boolean, result: Object }>>}

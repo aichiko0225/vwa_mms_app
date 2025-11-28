@@ -27,15 +27,13 @@ export default function HomeTab() {
       <Text style={styles.heading}>Modules</Text>
       <View style={styles.grid}>
         <ModuleButton title="Tasks" icon={tasksIcon} onPress={() => navigation.navigate('Tasks')} />
-        <ModuleButton title="Update Password" icon={updateIcon} onPress={() => navigation.navigate('UpdatePassword')} />
-        <ModuleButton title="About" icon={aboutIcon} onPress={() => {}} />
         <ModuleButton
-          title="Web H5"
+          title="TestCase"
           icon={h5Icon}
-          onPress={() => navigation.navigate('WebView', 
+          onPress={() => navigation.navigate('TestCase', 
             { 
-              url: 'file:///android_asset/index.html#/pages/index/index'
-              // __DEV__ ? 'http://192.168.51.43:8080/#/pages/index/index' : 'file:///android_asset/index.html#/pages/index/index' 
+              // url: 'file:///android_asset/index.html#/pages/index/index'
+              url: __DEV__ ? 'http://127.0.0.1:8888/#/pages/index/index' : 'file:///android_asset/index.html#/pages/index/index' 
             })}
         />
       </View>

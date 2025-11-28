@@ -15,7 +15,7 @@ export default function LoginPage() {
   const { t } = useTranslation();
   const navigation = useNavigation();
   const login = useAuthStore(s => s.login);
-  const { control, handleSubmit, setValue, watch } = useForm({ defaultValues: { username: 'A132H66', password: 'Pass@word123', phone: '', code: '' } });
+  const { control, handleSubmit, setValue, watch } = useForm({ defaultValues: { username: 'A132H66', password: '123456', phone: '', code: '' } });
   const [showPswd, setShowPswd] = useState(false);
   const { loading, countdown, queryPhone, sendSmsCode, login: loginReq } = useAuthFlow();
   const username = watch('username');
@@ -85,7 +85,7 @@ export default function LoginPage() {
         const token = result.token;
         const userInfo = result.userInfo;
         await login(token, userInfo);
-        navigation.reset({ index: 0, routes: [{ name: 'Home' }] });
+        navigation.reset({ index: 0, routes: [{ name: 'Portal' }] });
       } else {
         Alert.alert(t('login.loginFailed'), (res.data && res.data.message) || t('login.incorrectCreds'));
       }

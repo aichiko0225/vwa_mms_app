@@ -2,7 +2,7 @@ import axios from 'axios';
 import { useAuthStore } from '../stores/auth';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { ACCESS_TOKEN } from '../common/constants';
-import logger from './logger';
+import logger from '../common/logger';
 
 /**
  * Axios 实例（可设置 baseURL）。

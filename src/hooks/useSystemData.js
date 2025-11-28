@@ -1,7 +1,7 @@
 import { useEffect, useState, useCallback } from 'react';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import systemService from '../services/systemService';
-import { getLogger } from '../services/logger';
+import { getLogger } from '../common/logger';
 
 const log = getLogger('useSystemData');
 const KEY = 'sysAllDictItems';
@@ -13,6 +13,7 @@ const KEY = 'sysAllDictItems';
 export default function useSystemData() {
   const [dicts, setDicts] = useState({});
   const [initialized, setInitialized] = useState(false);
+  const [systems, setSystems] = useState([]);
 
   const getDict = useCallback((code) => {
     return dicts && dicts[code] ? dicts[code] : [];
@@ -42,6 +43,14 @@ export default function useSystemData() {
     } catch (e) { log.error('Refresh dicts error', { message: e.message }); }
   }, []);
 
+  const refreshSystems = useCallback(async () => {
+    try {
+      const res = await systemService.getAllBaseData();
+      const list = (res.data && res.data.result) || [];
+      setSystems(Array.isArray(list) ? list : []);
+    } catch (e) { log.error('Refresh systems error', { message: e.message }); }
+  }, []);
+
   useEffect(() => {
     (async () => {
       await loadCache();
@@ -49,5 +58,5 @@ export default function useSystemData() {
     })();
   }, [loadCache]);
 
-  return { dicts, getDict, refresh, initialized };
+  return { dicts, getDict, refresh, initialized, systems, refreshSystems };
 }

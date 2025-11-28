@@ -7,6 +7,7 @@ import UserTab from './user/UserTab.jsx';
 import useSystemData from '../hooks/useSystemData';
 import useUserData from '../hooks/useUserData';
 import { useAuthStore } from '../stores/auth';
+import logger from '../common/logger';
 
 const tabIcons = (name) => {
   const map = {
@@ -27,16 +28,23 @@ const renderTabBarIcon = (routeName) => ({ color, size }) => (
 
 const Tab = createBottomTabNavigator();
 
-export default function HomeScreen() {
+export default function HomeScreen({ route }) {
+  const { systemId, systemName } = route.params;
+  logger.info(`HomeScreen: systemId=${systemId}, systemName=${systemName}`);
   const { userInfo, roles, refresh: refreshRoles, initialized: userReady } = useUserData();
   const user = useAuthStore(s => s.user);
+  const updateUserInfo = useAuthStore(s => s.updateUserInfo);
 
   useEffect(() => {
-    // 用户登录后刷新用户角色（不缓存）
-    if (userReady && user && user.id) { 
-      // refreshRoles(user.id).catch(() => {});
-    }
   }, [userReady, user, refreshRoles]);
+
+  useEffect(() => {
+    if (!userReady) return;
+    if (!user || !userInfo || !user.id || user.id !== userInfo.id) return;
+    const a = JSON.stringify(user);
+    const b = JSON.stringify(userInfo);
+    if (a !== b) updateUserInfo(userInfo);
+  }, [userReady, userInfo, user, updateUserInfo]);
 
   return (
     <Tab.Navigator
@@ -48,8 +56,8 @@ export default function HomeScreen() {
       })}
     >
       <Tab.Screen name="HomeTab" component={HomeTab} options={{ tabBarLabel: 'Home' }} />
-      <Tab.Screen name="MessageTab" component={MessageTab} options={{ tabBarLabel: 'Message' }} />
-      <Tab.Screen name="UserTab" component={UserTab} options={{ headerShown: true, title: 'User', tabBarLabel: 'User', tabBarBadge: undefined }} />
+      <Tab.Screen name="MessageTab" component={MessageTab} options={{ headerShown: true, title: 'Message', tabBarLabel: 'Message' }} />
+      <Tab.Screen name="UserTab" component={UserTab} options={{ headerShown: true, title: 'User', tabBarBadge: undefined }} />
     </Tab.Navigator>
   );
 }
